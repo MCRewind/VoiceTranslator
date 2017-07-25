@@ -1,259 +1,259 @@
 			
-the	"el, la"		
-"of, from"	de		
-"that, which"	que		
+the	el la		
+of from	de		
+that which	que		
 and	y		
-"to, at"	a 		
-"in, on"	en		
-"a, an"	"un, una"		
+to at	a 		
+in on	en		
+a an	un una		
 to be	ser		
-"(""reflexive"" marker)"	se		
+(reflexive marker)	se		
 no	no		
 to have	haber		
-"by, for, through"	por		
+by for through	por		
 with	con		
-"his, her, their, your"	su		
-"for, to, in order to"	para		
-"like, as"	como		
+his her their your	su		
+for to in order to	para		
+like as	como		
 to be	estar		
 to have	tener		
 (3rd person ) (indirect object)	le		
 the (+neuter)	lo		
 (3rd person) (direct object- masculine)	lo		
-"all, every"	todo		
-"but, yet, except"	pero		
+all every	todo		
+but yet except	pero		
 more	más		
-"to do, to make"	hacer		
+to do to make	hacer		
 or	o		
-"to be able to, can"	poder		
-"to tell, say"	decir		
-"this (m), esta (f)"	este		
+to be able to can	poder		
+to tell say	decir		
+this (m) esta (f)	este		
 to go	ir		
-"other, another"	otro		
+other another	otro		
 that (m) esa (f)	ese		
 (3rd person ) (direct object -feminine)	la		
-"if, whether"	si		
+if whether	si		
 me (obj)	me		
-"already, still"	ya		
+already still	ya		
 to see	ver		
 because	porque		
 to give	dar		
 when	cuando		
-"he, (ellos) them (m)"	él		
-"very, really"	muy		
+he (ellos) them (m)	él		
+very really	muy		
 without	sin		
 time (specific occurrence)	vez		
-"much, many, a lot (adv)"	mucho		
-"to know (a fact), to find out"	saber		
-"what?, which?, how (+adj)!"	qué		
-"on top, over, about"	sobre		
+much many a lot (adv)	mucho		
+to know (a fact) to find out	saber		
+what? which? how (+adj)!	qué		
+on top over about	sobre		
 my	mi		
-"some, someone (pron)"	alguno		
+some someone (pron)	alguno		
 same	mismo		
 i (subj)	yo		
 also	también		
-"untill, up to, even"	hasta		
+untill up to even	hasta		
 year	año		
 two	dos		
-"to want, to love"	querer		
-"between, among"	entre		
+to want to love	querer		
+between among	entre		
 like that	así		
 first	primero		
-"from, since"	desde		
-"large, big, great"	grande		
+from since	desde		
+large big great	grande		
 that (n)	eso		
-"not even, neither, nor"	ni		
+not even neither nor	ni		
 us (obj)	nos		
 to arrive	llegar		
-"to pass, spend(time)"	pasar		
-"time (general), weather"	tiempo		
-"she, (ellas) them (f)"	ella		
+to pass spend(time)	pasar		
+time (general) weather	tiempo		
+she (ellas) them (f)	ella		
 yes	sí		
 day	día		
 one	uno		
 well	bien		
-"little, few, a little big (adv)"	poco		
-"should, ought to; to owe"	deber		
-"so, then"	entonces		
-"to put(on), get(+adj)"	poner		
+little few a little big (adv)	poco		
+should ought to; to owe	deber		
+so then	entonces		
+to put(on) get(+adj)	poner		
 thing	cosa		
-"so much, so many"	tanto		
-"man, mankind, husband"	hombre		
-"to seem, look like"	parecer		
+so much so many	tanto		
+man mankind husband	hombre		
+to seem look like	parecer		
 our	nuestro		
-"such, as, too, so"	tan		
+such as too so	tan		
 where	donde		
 now	ahora		
-"part, portion"	parte		
+part portion	parte		
 after	después		
 life	vida		
-"to remain, stay"	quedar		
+to remain stay	quedar		
 Always	siempre		
-"to believe, think"	creer		
-"to speak, talk"	hablar		
-"to take, carry"	llevar		
-"to let, leave"	dejar		
+to believe think	creer		
+to speak talk	hablar		
+to take carry	llevar		
+to let leave	dejar		
 nothing (not) at all	nada		
-"each, every"	cada		
-"to follow, keep on"	seguir		
-"less, fewer"	menos		
+each every	cada		
+to follow keep on	seguir		
+less fewer	menos		
 New	nuevo		
 to find	encontrar		
-"something, somewhat"	algo		
-"only, just"	sólo		
-"then, well then"	pues		
-"to call, name"	llamar		
+something somewhat	algo		
+only just	sólo		
+then well then	pues		
+to call name	llamar		
 to come	venir		
 to think	pensar		
 that (over there)	aquel		
-"moment, time"	momento		
-"but, except, rather"	sino		
+moment time	momento		
+but except rather	sino		
 this (n)	esto		
-"to leave, go out"	salir		
-"to return, to v again"	volver		
-"form, shape, way"	forma		
+to leave go out	salir		
+to return to v again	volver		
+form shape way	forma		
 before	antes		
 good	bueno		
 house	casa		
-"although, even though"	aunque		
+although even though	aunque		
 world	mundo		
 three	tres		
 such (a)	tal		
-"best, better (adv)"	mejor		
+best better (adv)	mejor		
 to take to drink	tomar		
-"certain, sure, true"	cierto		
-"to know(someone, or place)"	conocer		
-"toward, towards"	hacia		
+certain sure true	cierto		
+to know(someone or place)	conocer		
+toward towards	hacia		
 how?	cómo		
-"woman, wife"	mujer		
+woman wife	mujer		
 to live	vivir		
 here	aquí		
-"case, occasion"	caso		
-"to feel, regret"	sentir		
-"later, afterwards"	luego		
+case occasion	caso		
+to feel regret	sentir		
+later afterwards	luego		
 country	país		
-"to try, treat, deal with"	tratar		
-"place, position"	lugar		
-"you (obj, +fam)"	te		
+to try treat deal with	tratar		
+place position	lugar		
+you (obj +fam)	te		
 person	persona		
-"larger, older, main"	mayor		
-"last, final"	último		
-"own, proper, typical"	propio		
-"who, whom"	quien		
-"to look, watch"	mirar		
-"hour, time (specific)"	hora		
-"no, none, nobody (pron)"	ninguno		
-"work, job, effort"	trabajo		
+larger older main	mayor		
+last final	último		
+own proper typical	propio		
+who whom	quien		
+to look watch	mirar		
+hour time (specific)	hora		
+no none nobody (pron)	ninguno		
+work job effort	trabajo		
 almost	casi		
-"point, dot, period"	punto		
+point dot period	punto		
 during	durante		
-"any, anyone (pron)"	cualquier		
+any anyone (pron)	cualquier		
 hand	mano		
-"never, ever"	nunca		
-"way, manner"	manera		
-"which, who, whom"	cual		
-"while, whereas, as long as"	mientras		
-"to tell, count"	contar		
+never ever	nunca		
+way manner	manera		
+which who whom	cual		
+while whereas as long as	mientras		
+to tell count	contar		
 end	fin		
-"type, kind"	tipo		
+type kind	tipo		
 people	gente		
-"also, as well, besides"	además		
-"lonely, alone"	solo		
-"to begin, start"	empezar		
+also as well besides	además		
+lonely alone	solo		
+to begin start	empezar		
 example	ejemplo		
-"to wait, hope(for), expect"	esperar		
-"today, nowadays"	hoy		
+to wait hope(for) expect	esperar		
+today nowadays	hoy		
 side	lado		
-"son, children"	hijo		
+son children	hijo		
 there	allí		
-"this one (m), ésta (f)"	éste		
+this one (m) ésta (f)	éste		
 problem	problema		
-"bill, account"	cuenta		
-"means, middle; por medio: through"	medio		
-"against, opposite"	contra		
+bill account	cuenta		
+means middle; por medio: through	medio		
+against opposite	contra		
 to look for	buscar		
 inside	dentro		
 long	largo		
 word	palabra		
 to exist	existir		
-"child, little boy"	niño		
+child little boy	niño		
 to enter	entrar		
 sin embargo: nevertheless	embargo		
-"only, unique, sole"	único		
+only unique sole	único		
 father	padre		
 to work	trabajar		
-"little, small, young"	pequeño		
-"tall, high"	alto		
+little small young	pequeño		
+tall high	alto		
 change	cambio		
 to write	escribir		
 four	cuatro		
 there	ahí		
-"to loose, miss"	perder		
+to loose miss	perder		
 we (subj)	nosotros		
-"history, story"	historia		
+history story	historia		
 idea	idea		
 water	agua		
-"to produce, cause"	producir		
-"night, evening"	noche		
+to produce cause	producir		
+night evening	noche		
 city	ciudad		
-"way, manner"	modo		
-"name, noun"	nombre		
-"to happen, occur"	ocurrir		
+way manner	modo		
+name noun	nombre		
+to happen occur	ocurrir		
 family	familia		
-"reality, actuality"	realidad		
+reality actuality	realidad		
 to understand	entender		
-"to ask for, request"	pedir		
+to ask for request	pedir		
 to receive	recibir		
-"work, book, deed"	obra		
+work book deed	obra		
 Important	importante		
-"half, middle"	medio		
+half middle	medio		
 Truth	verdad		
 month	mes		
-"still, yet"	todavía		
+still yet	todavía		
 reason; tener razón: to be right	razón		
-"in terms of, regarding"	cuanto		
-"under, underneath"	bajo		
-"to remember, remind"	recordar		
+in terms of regarding	cuanto		
+under underneath	bajo		
+to remember remind	recordar		
 group	grupo		
 thousand	mil		
 human	humano		
-"to finish, end"	terminar		
-"to allow, permit"	permitir		
+to finish end	terminar		
+to allow permit	permitir		
 to appear	aparecer		
-"to get, aquire,obtain"	conseguir		
-"to begin, start"	comenzar		
-"several, various"	varios		
+to get aquireobtain	conseguir		
+to begin start	comenzar		
+several various	varios		
 possible	posible		
 to serve	servir		
 general	general		
 to take out	sacar		
 to need	necesitar		
-"relationship, relation"	relación		
+relationship relation	relación		
 five	cinco		
 body	cuerpo		
-"nobody, anybody"	nadie		
-"to keep, maintain"	mantener		
-"fact, happening"	hecho		
-"before, in the presence of"	ante		
-"beginning, principle"	principio		
-"to result, turn out"	resultar		
-"equal, same (as)"	igual		
-"sir, mr, lord"	señor		
-"people, village"	pueblo		
-"afternoon, evening"	tarde		
+nobody anybody	nadie		
+to keep maintain	mantener		
+fact happening	hecho		
+before in the presence of	ante		
+beginning principle	principio		
+to result turn out	resultar		
+equal same (as)	igual		
+sir mr lord	señor		
+people village	pueblo		
+afternoon evening	tarde		
 second	segundo		
 to read	leer		
 to fall	caer		
 to change	cambiar		
 eye	ojo		
 street	calle		
-"to introduce, present"	presentar		
+to introduce present	presentar		
 white	blanco		
 to create	crear		
 to open	abrir		
 book	libro		
-"distinct, different"	distinto		
-"strength, power, force"	fuerza		
+distinct different	distinto		
+strength power force	fuerza		
 light	luz		
 according to	según		
 saint	santo		
@@ -263,359 +263,359 @@ to consider	considerar
 friend	amigo		
 to hear	oír		
 whose	cuyo		
-"sense, feeling"	sentido		
+sense feeling	sentido		
 to finish	acabar		
-"step, pace"	paso		
+step pace	paso		
 situation	situación		
-"you (subj, -fam)"	usted		
-"rather, fairly, quite a bit"	bastante		
-"to convert, change, become"	convertir		
-"thank you (pl); grace, favor"	gracia		
-"century, age"	siglo		
-"god, divinity"	dios		
+you (subj -fam)	usted		
+rather fairly quite a bit	bastante		
+to convert change become	convertir		
+thank you (pl); grace favor	gracia		
+century age	siglo		
+god divinity	dios		
 bad	malo		
-"earth, land, ground"	tierra		
-"paper, role, part"	papel		
+earth land ground	tierra		
+paper role part	papel		
 mother	madre		
-"neither, nor, either"	tampoco		
+neither nor either	tampoco		
 social	social		
-"old, aged"	viejo		
-"still, yet"	aún		
-"theme, subject, topic"	tema		
+old aged	viejo		
+still yet	aún		
+theme subject topic	tema		
 political	político		
 spanish	español		
-"to win, earn"	ganar		
+to win earn	ganar		
 to form	formar		
-"kind, class, order"	clase		
-"to bring, carry"	traer		
-"to divide, leave"	partir		
+kind class order	clase		
+to bring carry	traer		
+to divide leave	partir		
 money	dinero		
-"who?, whom?"	quién		
+who? whom?	quién		
 to die	morir		
-"including, even"	incluso		
-"field, country"	campo		
+including even	incluso		
+field country	campo		
 to accept	aceptar		
-"perhaps, maybe"	quizás		
+perhaps maybe	quizás		
 head (of body)	cabeza		
-"to fulfill, carry out"	realizar		
+to fulfill carry out	realizar		
 hundred	ciento		
 badly	mal		
-"order; sequence, religious"	orden		
+order; sequence religious	orden		
 courtesy title	don		
 week	semana 		
-"to suppose, assume"	suponer		
+to suppose assume	suponer		
 to understand	comprender		
-"finally, in the end"	final		
+finally in the end	final		
 interest	interés		
-"following, next"	siguiente		
-"view, sight"	vista		
-"to achieve, get, manage"	lograr		
-"the rest, other"	demás		
+following next	siguiente		
+view sight	vista		
+to achieve get manage	lograr		
+the rest other	demás		
 in agreement	acuerdo		
-"difficult, hard"	difícil		
+difficult hard	difícil		
 number	número		
 to explain	explicar		
 black	negro		
-"bottom, end"	fondo		
-"road, route, path"	camino		
+bottom end	fondo		
+road route path	camino		
 voice	voz		
-"study, learning"	estudio		
+study learning	estudio		
 necessary	necesario		
 to ask (a question)	preguntar		
-"there, over there"	allá		
-"to touch, to play (instrument)"	tocar		
-"value, worth"	valor		
-"to recognize, admit"	reconocer		
+there over there	allá		
+to touch to play (instrument)	tocar		
+value worth	valor		
+to recognize admit	reconocer		
 to study	estudiar		
-"to reach, catch up with"	alcanzar		
+to reach catch up with	alcanzar		
 to be born	nacer		
-"to direct, to manage"	dirigir		
+to direct to manage	dirigir		
 to run	correr		
 measure; a medida que: to the extent	medida		
-"younger, youngest"	menor		
-"too much, too many"	demasiado		
+younger youngest	menor		
+too much too many	demasiado		
 only	solamente		
 well	bueno		
-"to use, utilize"	utilizar		
-"center, middle, downtown"	centro		
-"necessity, need"	necesidad		
+to use utilize	utilizar		
+center middle downtown	centro		
+necessity need	necesidad		
 condition	condición		
 to pay	pagar		
 it (subj-n)	ello		
-"lack, shortage"	falta		
+lack shortage	falta		
 to help	ayudar		
 ten	diez		
-"across, over, through"	través(a través)		
-"old, ancient, former"	antiguo		
+across over through	través(a través)		
+old ancient former	antiguo		
 your	tu		
 age	edad		
-"state, condition, status"	estado		
+state condition status	estado		
 being	ser		
 to be pleasing to	gustar		
 door	puerta		
-"to play (sport, game)"	jugar		
-"face, expression"	cara		
+to play (sport game)	jugar		
+face expression	cara		
 me (obj prep)	mí		
-"time, age, period"	época		
+time age period	época		
 color	color		
 to listen to	escuchar		
 experience	experiencia		
 movement	movimiento		
 to fulfill	cumplir		
 special	especial		
-"different, separate"	diferente		
+different separate	diferente		
 sorrow; a pesar de: in spite of	pesar		
 possibility	posibilidad		
-"to offer, present"	ofrecer		
+to offer present	ofrecer		
 to discover	descubrir		
-"previous, preceding"	anterior		
-"game, play, sport"	juego		
-"to raise, to lift"	levantar		
+previous preceding	anterior		
+game play sport	juego		
+to raise to lift	levantar		
 poor	pobre		
-"air, wind, appearance"	aire		
+air wind appearance	aire		
 six	seis		
-"to try, attempt"	intentar		
-"war, warfare"	guerra 		
-"together, with, next to"	junto		
-"result, outcome"	resultado		
+to try attempt	intentar		
+war warfare	guerra 		
+together with next to	junto		
+result outcome	resultado		
 to use	usar		
 to decide	decidir		
 to repeat	repetir		
 to forget	olvidar		
-"law, bill, rule"	ley		
-"aspect, appearance"	aspecto		
-"foot, base"	pie		
-"to be worth, cost"	valer 		
-"kind, sort, species"	especie		
+law bill rule	ley		
+aspect appearance	aspecto		
+foot base	pie		
+to be worth cost	valer 		
+kind sort species	especie		
 to eat	comer		
-"service, helpfulness"	servicio		
-"close, near"	cerca		
+service helpfulness	servicio		
+close near	cerca		
 to show	mostrar		
-"activity, action"	actividad		
+activity action	actividad		
 third	tercero		
 which?	cuál		
-"soon, quick"	pronto		
-"to occupy, use"	ocupar		
-"question, matter"	cuestión		
+soon quick	pronto		
+to occupy use	ocupar		
+question matter	cuestión		
 doubt	duda		
 difference	diferencia		
-"morning, tomorrow"	mañana		
-"to move, incite"	mover		
+morning tomorrow	mañana		
+to move incite	mover		
 to continue	continuar		
-"quantity, amount"	cantidad		
-"action, act, deed"	acción		
+quantity amount	cantidad		
+action act deed	acción		
 to happen	suceder		
-"to set, fix"	fijar		
+to set fix	fijar		
 society	sociedad		
 to refer	referir		
 to come near	acercar		
-"capable, able"	capaz		
-"short, low"	bajo		
-"free, vacant"	libre		
+capable able	capaz		
+short low	bajo		
+free vacant	libre		
 natural	natural		
-"to dedicate, devote"	dedicar		
-"really, actually, in fact"	realmente		
-"peso, weight, load"	peso		
+to dedicate devote	dedicar		
+really actually in fact	realmente		
+peso weight load	peso		
 effect	efecto		
-"object, thing"	objeto		
-"true, real"	verdadero		
+object thing	objeto		
+true real	verdadero		
 where	dónde		
 to learn	aprender		
 love	amor		
 death	muerte		
-"party, group, match"	partido		
+party group match	partido		
 economic	económico		
-"right, justice, law"	derecho		
+right justice law	derecho		
 power	poder		
 importance	importancia		
 system	sistema		
-"travel, trip"	viaje		
-"ground, floor"	suelo		
-"respect, con respecto a: with regards to"	respecto		
+travel trip	viaje		
+ground floor	suelo		
+respect con respecto a: with regards to	respecto		
 knowledge	conocimiento		
-"freedom, liberty"	libertad		
-"above, on top, in addition"	encima		
+freedom liberty	libertad		
+above on top in addition	encima		
 to buy	comprar		
 common	común		
-"open, unlocked"	abierto		
+open unlocked	abierto		
 next	próximo		
 attention	atención		
 young	joven		
 to go up	subir		
-"effort, endeavor"	esfuerzo		
-"past, last"	pasado		
-"to avoid, prevent"	evitar		
-"rest, remainder, leftover"	resto		
+effort endeavor	esfuerzo		
+past last	pasado		
+to avoid prevent	evitar		
+rest remainder leftover	resto		
 to interest	interesar		
-"area, zone"	zona		
+area zone	zona		
 fear	miedo		
-"out, outside, away"	fuera		
-"process, procedure"	proceso		
-"alive, bright"	vivo		
+out outside away	fuera		
+process procedure	proceso		
+alive bright	vivo		
 to close	cerrar		
-"to throw, cast"	echar		
-"to answer, respond"	responder		
-"to suffer, undergo"	sufrir		
+to throw cast	echar		
+to answer respond	responder		
+to suffer undergo	sufrir		
 complete	completo		
 minute	minuto		
-"contrary, opposite"	contrario		
-"table, board"	mesa		
-"royal, real, authentic"	real		
-"opportunity, occasion"	ocasión		
-"to matter, import"	importar		
+contrary opposite	contrario		
+table board	mesa		
+royal real authentic	real		
+opportunity occasion	ocasión		
+to matter import	importar		
 public	público		
 to obtain	obtener		
-"program, plan"	programa		
-"favor, benefit"	favor		
-"far (away, off)"	lejos		
+program plan	programa		
+favor benefit	favor		
+far (away off)	lejos		
 seven	siete		
-"enormous, vast"	enorme		
-"answer, reply, response"	respuesta		
-"line, course"	línea		
-"space, room"	espacio		
+enormous vast	enorme		
+answer reply response	respuesta		
+line course	línea		
+space room	espacio		
 level	nivel		
 government	gobierno		
-"end, bit, llevar a cabo: to carry out"	cabo		
+end bit llevar a cabo: to carry out	cabo		
 to observe	observar		
 to indicate	indicar		
-"somebody, someone, anyone"	alguien		
-"question, matter"	pregunta		
-"of course, clearly"	claro		
-"back, behind, ago"	atrás		
-"image, picture"	imagen		
-"career, course, race"	carrera		
+somebody someone anyone	alguien		
+question matter	pregunta		
+of course clearly	claro		
+back behind ago	atrás		
+image picture	imagen		
+career course race	carrera		
 figure	figura		
 to imagine	imaginar		
 to be accustomed to 	soler		
 both	ambos		
-"deep, profound"	profundo		
-"to stop, detain"	detener		
+deep profound	profundo		
+to stop detain	detener		
 to develop	desarrollar		
 eight	ocho		
 to point out	señalar		
-"to choose, elect"	elegir		
-"main, principal"	principal		
+to choose elect	elegir		
+main principal	principal		
 animal	animal		
-"base, basis"	base		
+base basis	base		
 to prepare	preparar		
 to propose	proponer		
-"to show, demonstrate"	demostrar		
+to show demonstrate	demostrar		
 to mean	significar		
 position	posición		
-"motive, cause"	motivo		
-"proof, trial, test"	prueba		
-"politics, policy"	política		
+motive cause	motivo		
+proof trial test	prueba		
+politics policy	política		
 national	nacional		
-"full, filled"	lleno		
-"to gather, meet, collect"	reunir		
+full filled	lleno		
+to gather meet collect	reunir		
 to be lacking	faltar		
 supposed; por supuesto: of course	supuesto		
 to accompany	acompañar		
-"data, fact"	dato		
+data fact	dato		
 easy	fácil		
-"to want, desire, wish for"	desear		
-"forward, further"	adelante		
-"firm, company, venture"	empresa		
-"matter, issue, affair"	asunto		
-"presence, appearance"	presencia		
-"his, hers, yours, theirs"	suyo		
+to want desire wish for	desear		
+forward further	adelante		
+firm company venture	empresa		
+matter issue affair	asunto		
+presence appearance	presencia		
+his hers yours theirs	suyo		
 culture	cultura		
 series	serie		
 million	millón		
-"to teach, show"	enseñar		
-"to construct, build"	construir		
+to teach show	enseñar		
+to construct build	construir		
 to sell	vender		
 to represent	representar		
 to disappear	desaparecer		
-"to send, order"	mandar		
-"personality, nature"	carácter		
+to send order	mandar		
+personality nature	carácter		
 majority	mayoría		
 school	escuela		
 reed	rojo		
-"after, behind"	tras		
-"superior, upper"	superior		
-"to walk, function"	andar		
-"short, brief"	corto		
-"writer, author"	autor		
-"brother, pl siblings"	hermano		
-"known, well-known"	conocido		
+after behind	tras		
+superior upper	superior		
+to walk function	andar		
+short brief	corto		
+writer author	autor		
+brother pl siblings	hermano		
+known well-known	conocido		
 to prefer	preferir		
 to assure	asegurar		
-"function, meeting"	función		
-"up, above"	arriba		
+function meeting	función		
+up above	arriba		
 serious	serio		
 cause	causa		
-"sufficient, enough"	suficiente		
-"serious, solemn"	grave		
+sufficient enough	suficiente		
+serious solemn	grave		
 decision	decisión		
 music	música		
-"strange, foreign"	extraño		
+strange foreign	extraño		
 to grow	crecer		
 to appear	surgir		
-"you (sub-sg, +fam)"	tú		
+you (sub-sg +fam)	tú		
 expression	expresión		
-"about, around, round"	alrededor		
+about around round	alrededor		
 to kill	matar		
 to deliver	entregar		
 river	río		
-"security, safety"	seguridad		
-"term (language), end"	término		
+security safety	seguridad		
+term (language) end	término		
 to place	colocar		
-"meter, subway"	metro		
+meter subway	metro		
 doctor	médico		
 to establish	establecer		
-"to keep, save"	guardar		
-"art, skill"	arte		
-"to initiate, start"	iniciar		
+to keep save	guardar		
+art skill	arte		
+to initiate start	iniciar		
 to come down	bajar		
 consequence	consecuencia		
 to notice	notar		
-"act, action"	acto		
+act action	acto		
 to put(into)	meter		
 absolute	absoluto		
-"trouble, valer la pena: be of worth"	pena		
+trouble valer la pena: be of worth	pena		
 to act	actuar		
 second	segundo		
-"height, altitude"	altura		
-"desire, wish"	deseo		
+height altitude	altura		
+desire wish	deseo		
 precisely	precisamente		
-"teenager, young person"	joven		
+teenager young person	joven		
 twenty	veinte		
-"dream, sleep"	sueño		
+dream sleep	sueño		
 to attempt	pretender		
-"task, job"	tarea		
-"letter, (playing) card"	carta		
-"hardly, barely"	apenas		
+task job	tarea		
+letter (playing) card	carta		
+hardly barely	apenas		
 property	propiedad		
 product	producto		
 personal	personal		
-"simply, just"	simplemente		
+simply just	simplemente		
 impossible 	imposible		
-"pleasure, task, preference"	gusto		
-"help, aid"	ayuda		
+pleasure task preference	gusto		
+help aid	ayuda		
 to remember	acordar		
-"language, tongue, strip (of land)"	lengua		
+language tongue strip (of land)	lengua		
 to cut	cortar		
 plan	plan		
 to correspond with	corresponder		
-"return, turn"	vuelta		
+return turn	vuelta		
 to break	romper		
 even (if)	siquiera		
-"to acquire, get"	adquirir		
-"project, plan"	proyecto		
+to acquire get	adquirir		
+project plan	proyecto		
 memory	memoria		
-"origin, cause"	origen		
+origin cause	origen		
 element	elemento		
 English	inglés		
 market	mercado		
 course	curso		
-"to throw, launch"	lanzar		
+to throw launch	lanzar		
 to take advantage of	aprovechar		
 blood	sangre		
 interior	interior		
 hard	duro		
-"to support, lean on"	apoyar		
-"to deny, refuse"	negar		
+to support lean on	apoyar		
+to deny refuse	negar		
 to advance	avanzar		
 use	uso		
 arm	brazo		
@@ -624,23 +624,23 @@ to resolve	resolver
 future	futuro		
 opportunity	oportunidad		
 half	mitad		
-"to cost,  be hard"	costar		
-"rich, tasty"	rico		
+to cost  be hard	costar		
+rich tasty	rico		
 memory	recuerdo		
-"total, entire"	total		
+total entire	total		
 to demand	exigir		
-"down, below, downward"	abajo		
+down below downward	abajo		
 opinion	opinión		
 to increase	aumentar		
 to pick up	recoger		
 mouth	boca		
 direction	dirección		
-"pure, clean"	puro		
+pure clean	puro		
 to abandon	abandonar		
 piece	pieza		
 professional	profesional		
 to impose	imponer		
-"to obligate, force"	obligar		
+to obligate force	obligar		
 physical	físico		
 attitude	actitud		
 sea	mar		
@@ -650,20 +650,20 @@ contact	contacto
 heart	corazón		
 to apply	aplicar		
 capital	capital		
-"quick, fast"	rápido		
+quick fast	rápido		
 title	título		
 to belong	pertenecer		
 room	cuarto		
 material	material		
 hit	golpe		
-"to have means, dispose"	disponer		
+to have means dispose	disponer		
 communication	comunicación		
 to express	expresar		
-"simple, mere, simple-minded"	simple		
-"totally, completely"	totalmente		
-"to cause, provoke"	provocar		
-"normal, usual, regular"	normal		
-"to defend, protect"	defender		
+simple mere simple-minded	simple		
+totally completely	totalmente		
+to cause provoke	provocar		
+normal usual regular	normal		
+to defend protect	defender		
 illness	enfermedad		
 goods	bien		
 matter	materia		
@@ -675,9 +675,9 @@ to depend on	depender
 nature	naturaleza		
 capacity	capacidad		
 current	actual		
-"to mark, note, dial"	marcar		
+to mark note dial	marcar		
 distance	distancia		
-"complete, full"	pleno		
+complete full	pleno		
 closed	cerrado		
 to share	compartir		
 information	información		
@@ -687,16 +687,16 @@ development	desarrollo
 sun	sol		
 dead	muerto		
 to consist of	consistir		
-"to constitute, consist of"	construir		
-"willing, ready"	dispuesto		
+to constitute consist of	construir		
+willing ready	dispuesto		
 to cover	cubrir		
-"to work, function"	funcionar		
+to work function	funcionar		
 companion	compañero		
 exit	salida		
 to fit (into)	caber		
 conscience	conciencia		
-"to serve, attend to"	atender		
-"ill, sick"	enfermo		
+to serve attend to	atender		
+ill sick	enfermo		
 to insist on	insistir		
 habit	costumbre		
 behind	detrás		
@@ -708,198 +708,198 @@ private	privado
 style	estilo		
 price	precio		
 popular	popular		
-"to sit (down), seat"	sentar		
-"plant, floor"	planta		
+to sit (down) seat	sentar		
+plant floor	planta		
 character	personaje		
-"famous, well known"	famoso		
+famous well known	famoso		
 success	éxito		
 daughter	hija		
-"to deserve, be worthy of"	merecer		
+to deserve be worthy of	merecer		
 building	edificio		
 authority	autoridad		
 stone	piedra		
 to include	incluir		
-"group, set"	conjunto		
+group set	conjunto		
 thirty	treinta		
 how much? 	cuánto		
 immediate	inmediato		
-"luck, fortune"	suerte		
+luck fortune	suerte		
 to cross	cruzar		
-"to tend to, lay out"	tender		
-"finally, at least"	finalmente		
+to tend to lay out	tender		
+finally at least	finalmente		
 together	junto		
-"to announce, advertise"	anunciar		
-"spirit, ghost"	espíritu		
-"member, limb"	miembro		
-"direct, straight"	directo		
-"to wake (up), arouse"	despertar		
-"resource, recourse, means"	recurso		
+to announce advertise	anunciar		
+spirit ghost	espíritu		
+member limb	miembro		
+direct straight	directo		
+to wake (up) arouse	despertar		
+resource recourse means	recurso		
 (interior) wall	pared		
-"team, equipment, outfit"	equipo		
-"error, mistake"	error		
-"precise, necessary "	preciso		
-"different, several, diverse"	diverso		
-"difficulty, obstacle"	dificultad		
+team equipment outfit	equipo		
+error mistake	error		
+precise necessary 	preciso		
+different several diverse	diverso		
+difficulty obstacle	dificultad		
 to comment on	comentar		
 to publish	publicar		
-"familiar, of the family"	familiar		
-"will, willpower, intention"	voluntad		
-"meeting, reunion"	reunión		
-"model, pattern"	modelo		
-"to load(up), carry"	cargar		
-"date, day"	fecha		
+familiar of the family	familiar		
+will willpower intention	voluntad		
+meeting reunion	reunión		
+model pattern	modelo		
+to load(up) carry	cargar		
+date day	fecha		
 to participate	participar		
-"to prevent, hinder"	impedir		
-"intention, purpose"	propósito		
-"to save, rescue"	salvar		
-"care, carefulness"	cuidado		
-"job, place, position"	puesto		
-"degree, grade"	grado		
+to prevent hinder	impedir		
+intention purpose	propósito		
+to save rescue	salvar		
+care carefulness	cuidado		
+job place position	puesto		
+degree grade	grado		
 to escape	escapar		
-"fight, struggle, wrestle"	lucha		
-"to throw, pull"	tirar		
-"entire, whole, complete"	entero		
-"leader, boss, manager"	jefe		
+fight struggle wrestle	lucha		
+to throw pull	tirar		
+entire whole complete	entero		
+leader boss manager	jefe		
 interesting	interesante		
-"wide, ample, broad"	amplio		
-"to answer, reply"	contestar		
-"newspaper, periodical"	periódico		
+wide ample broad	amplio		
+to answer reply	contestar		
+newspaper periodical	periódico		
 to worry	preocupar		
 to lend	prestar		
-"pair, couple"	par		
-"public, audience"	público		
+pair couple	par		
+public audience	público		
 to weigh	pesar		
 final	final		
 quality	calidad		
-"to expound, expose"	exponer		
+to expound expose	exponer		
 civil	civil		
-"science, knowledge"	ciencia		
-"size, dimension"	tamaño		
-"but, however"	mas		
+science knowledge	ciencia		
+size dimension	tamaño		
+but however	mas		
 doctor	doctor		
-"painting, picture"	cuadro		
+painting picture	cuadro		
 horse	caballo		
 responsibility	responsabilidad		
 fifty	cincuenta		
 internal	interno		
 detail	detalle		
-"march, progress"	marcha		
+march progress	marcha		
 nine	nueve		
-"meat, flesh"	carne		
+meat flesh	carne		
 never	jamás		
-"thought, thinking"	pensamiento		
+thought thinking	pensamiento		
 to travel	viajar		
-"position, charge, fee"	cargo		
+position charge fee	cargo		
 to separate	separar		
 saint	santa		
 construction	construcción		
 judgment	juicio		
-"ground, earth, terrain"	terreno		
-"floor, story"	piso		
+ground earth terrain	terreno		
+floor story	piso		
 company	compañía		
 to return (to a place)	regresar		
 text	texto		
-"source, fountain"	fuente		
+source fountain	fuente		
 present	presente		
-"definitive, conclusive"	definitivo		
-"magazine, journal"	revista		
+definitive conclusive	definitivo		
+magazine journal	revista		
 hope	esperanza		
 machine	máquina		
 to contemplate	contemplar		
-"to travel, cover (distance)"	recorrer		
+to travel cover (distance)	recorrer		
 phrase	frase		
 perfect	perfecto		
-"room, hall"	sala		
+room hall	sala		
 to last	durar		
 instrument	instrumento		
 that over there (n)	aquello		
-"defense, plea"	defensa		
-"director, manager, principal"	director		
-"to take away, retire"	retirar		
+defense plea	defensa		
+director manager principal	director		
+to take away retire	retirar		
 explanation	explicación		
-"article, product, item"	artículo		
-"underneath, below"	debajo		
-"to stay, remain"	permanecer		
+article product item	artículo		
+underneath below	debajo		
+to stay remain	permanecer		
 to attend	asistir		
 twelve	doce		
-"radio; set (m), communication (f)"	radio		
+radio; set (m) communication (f)	radio		
 to organize	organizar		
-"movie, film"	película		
-"election, choice"	elección		
-"visit, visitor, guest"	visita		
+movie film	película		
+election choice	elección		
+visit visitor guest	visita		
 to contain	contener		
-"support, backing"	apoyo		
+support backing	apoyo		
 president	presidente		
 weapon	arma		
 tree	árbol		
 to visit	visitar		
 to inform	informar		
-"meeting, game, skirmish"	encuentro		
+meeting game skirmish	encuentro		
 similar	parecido		
-"current, flow"	corriente		
+current flow	corriente		
 reading	lectura		
-"existence, life"	existencia		
-"language, speech"	lenguaje		
+existence life	existencia		
+language speech	lenguaje		
 to send	enviar		
-"even (though), still"	aun		
-"destination, destiny"	destino		
+even (though) still	aun		
+destination destiny	destino		
 education	educación		
 to take care of	cuidar		
 to intervene	intervenir		
 operation	operación		
-"strange, rare, scare"	raro		
+strange rare scare	raro		
 perfectly	perfectamente		
-"to extend, spread"	extender		
-"to verify, prove"	comprobar		
-"note, grade"	nota		
-"particular, peculiar"	particular		
-"that one (m), (ésa (f))"	ése		
+to extend spread	extender		
+to verify prove	comprobar		
+note grade	nota		
+particular peculiar	particular		
+that one (m) (ésa (f))	ése		
 military	militar		
 to sleep	dormir		
 united	unido		
-"to argue, discuss"	discutir		
-"extraordinary, exceptional"	extraordinario		
-"theater, drama"	teatro		
-"to confront, face"	enfrentar		
-"recently, just"	recién		
-"business, transaction"	negocio		
-"letter, handwriting, lyrics"	letra		
+to argue discuss	discutir		
+extraordinary exceptional	extraordinario		
+theater drama	teatro		
+to confront face	enfrentar		
+recently just	recién		
+business transaction	negocio		
+letter handwriting lyrics	letra		
 worse	peor		
-"feeling, sentiment"	sentimiento		
-"to lead, drive"	conducir		
+feeling sentiment	sentimiento		
+to lead drive	conducir		
 completely	completamente		
 to sign	firmar		
-"solution, answer"	solución		
+solution answer	solución		
 mine	mío		
-"food, meal"	comida		
-"impression, printing"	impresión		
-"plane, map, level"	plano		
+food meal	comida		
+impression printing	impresión		
+plane map level	plano		
 intention	intención		
 rhythm	ritmo		
 green	verde		
 exact	exacto		
 to respect	respetar		
-"bank (financial), bench"	banco		
+bank (financial) bench	banco		
 immediately	inmediatamente		
-"to support, hold up"	sostener		
-"skin, hide, fur"	piel		
-"(in) front (of), ahead"	delante		
+to support hold up	sostener		
+skin hide fur	piel		
+(in) front (of) ahead	delante		
 religious	religioso		
-"to notice, warn"	advertir		
+to notice warn	advertir		
 dark	oscuro		
 control	control		
 investigation	investigación		
-"to transform, change"	transformar		
+to transform change	transformar		
 conversation	conversación		
 summer	verano		
-"respect, regard"	respeto		
+respect regard	respeto		
 north	norte		
 by means of	mediante		
 fourth	cuarto		
 tradition	tradición		
 to be sufficient	bastar		
 population	población		
-"couple, pair"	pareja		
+couple pair	pareja		
 past	pasado		
 newspaper	diario		
 blue	azul		
@@ -908,8 +908,8 @@ generation	generación
 cold	frio		
 vision	visión		
 concrete	concreto		
-"to present, propose"	plantear		
-"to test, prove, try"	probar		
+to present propose	plantear		
+to test prove try	probar		
 right	derecho		
 danger	peligro		
 gold	oro		
@@ -918,11 +918,11 @@ to drive	manejar
 wine	vino		
 to unify	unir		
 to walk	caminar		
-"to coincide, agree"	coincidir		
-"stage, period"	etapa		
+to coincide agree	coincidir		
+stage period	etapa		
 simple	sencillo		
 silence	silencio		
-"except (for), but"	salvo		
+except (for) but	salvo		
 to fill	llenar		
 to dominate	dominar		
 determined	determinado		
@@ -933,10 +933,10 @@ lost	perdido
 sky	cielo		
 practice	práctica		
 limit	limite		
-"mass, bulk"	masa		
-"directly, straight away"	directamente		
+mass bulk	masa		
+directly straight away	directamente		
 to cross	atravesar		
-"formation, education"	formación		
+formation education	formación		
 dog	perro		
 left	izquierda		
 to emphasize	destacar		
@@ -945,7 +945,7 @@ forty	cuarenta
 to pronounce	pronunciar		
 to distinguish	distinguir		
 energy	energía		
-"confidence, trust"	confianza		
+confidence trust	confianza		
 adequate	adecuado		
 to introduce	introducir		
 flower	flor		
@@ -962,19 +962,19 @@ to improve	mejorar
 teachers	maestro		
 to employ	emplear		
 German	alemán		
-"to be agreeable, convenient"	convenir		
-"to recover, recuperate"	recuperar		
+to be agreeable convenient	convenir		
+to recover recuperate	recuperar		
 phenomenon	fenómeno		
 pressure	presión		
 given	dado		
-"student, pupil"	alumno		
+student pupil	alumno		
 theory	teoría		
 probably	probablemente		
 tone	tono		
 health	salud		
 to define	definir		
-"to overcome, surpass"	superar		
-"mrs., lady, ma'am"	señora		
+to overcome surpass	superar		
+mrs. lady ma'am	señora		
 exactly	exactamente		
 to assert	afirmar		
 daily	diario		
@@ -990,10 +990,10 @@ party	fiesta
 heat	calor		
 minimum	mínimo		
 to affect	afectar		
-"home, hearth"	hogar		
+home hearth	hogar		
 mind	mente		
-"surely, securely"	seguramente		
-"worry, concern"	preocupación		
+surely securely	seguramente		
+worry concern	preocupación		
 to reduce	reducir		
 concept	concepto		
 to mount	montar		

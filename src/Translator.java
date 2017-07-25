@@ -34,16 +34,20 @@ import javaFlacEncoder.FLACFileWriter;
  * @author Aaron Gokaslan (Skylion)
  *
  */
-public class Test extends JFrame {
+public class Translator extends JFrame {
 	
+	Dictionary_Reader reader = new Dictionary_Reader();
 	Graphics graphics = new Graphics();
 	boolean google = true;
 	
 	public static void main(String[] args) {
-		new Test();
+		new Translator();
 	}
 
-	public Test() {
+	public Translator() {
+		//System.out.println(reader.dictMap.containsValue("que tal"));
+		reader.cleaner("Eng to Spn New.txt");
+		
 		//Init window stuff
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setSize(500, 500);
@@ -104,8 +108,8 @@ public class Test extends JFrame {
 				System.out.println("Google Response: " + response.getResponse());
 				graphics.inText.setText("Input: " + response.getResponse());
 				repaint();
-				talk(response.getResponse());
 				graphics.outText.setText("Output: " + translate(response.getResponse(), "es-mx"));
+				System.out.println(translate(response.getResponse(), "es-mx"));
 				graphics.status.setText("Waiting");
 				repaint();
 				System.out.println("Google is " + Double.parseDouble(response.getConfidence())*100 + "% confident in"
@@ -127,7 +131,8 @@ public class Test extends JFrame {
 	public void talk(String text){
 		//String language = "auto";//Uses language autodetection
 		//** While the API can detect language by itself, this is reliant on the Google Translate API which is prone to breaking. For maximum stability, please specify the language.**//
-		String language = toISO(graphics.curOutLang);//English (US) language code	 //If you want to specify a language use the ISO code for your country. Ex: en-us
+		System.out.println(graphics.curOutLang);
+		String language = toISO("es-mx");//English (US) language code	 //If you want to specify a language use the ISO code for your country. Ex: en-us
 		/*If you are unsure of this code, use the Translator class to automatically detect based off of
 		 * Either text from your language or your system settings.
 		 */
@@ -157,8 +162,19 @@ public class Test extends JFrame {
 	public String translate(String text, String lang) {
 		if (lang == "en-us")
 			return text;
-		else if (lang == "es-mx")
-			return text;
+		else if (lang == "es-mx") {
+			String[] words = text.split(" ");
+			String[] newWords = new String[words.length];
+			for(int i = 0; i < words.length; i++) {
+				newWords[i] = reader.dictMap.get(words[i]);
+			}
+			String newSentence = "";
+			for(String word : newWords) {
+				newSentence += word + " ";
+			}
+			talk(newSentence);
+			return newSentence;
+		}
 		return text;
 	}
 	
@@ -173,7 +189,7 @@ public class Test extends JFrame {
 	}
 	
 	public class Graphics extends JPanel {
-
+		
 		GridBagConstraints gbc = new GridBagConstraints();
 		
 		JComboBox<String> inLang = new JComboBox<String>(new String[]{"English", "Spanish"});

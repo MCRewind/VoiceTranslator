@@ -3047,7 +3047,7 @@ economize	economisár
 stereo	estereo
 firearm	arma de fuego
 theocratic	teocrático
-hlo	que tal
+hello	que tal
 bactericidal	bactericida
 testimonies	testimonios
 bacterium	bacteria
