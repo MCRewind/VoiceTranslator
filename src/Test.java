@@ -127,7 +127,7 @@ public class Test extends JFrame {
 	public void talk(String text){
 		//String language = "auto";//Uses language autodetection
 		//** While the API can detect language by itself, this is reliant on the Google Translate API which is prone to breaking. For maximum stability, please specify the language.**//
-		String language = "es-mx";//English (US) language code	 //If you want to specify a language use the ISO code for your country. Ex: en-us
+		String language = toISO(graphics.curOutLang);//English (US) language code	 //If you want to specify a language use the ISO code for your country. Ex: en-us
 		/*If you are unsure of this code, use the Translator class to automatically detect based off of
 		 * Either text from your language or your system settings.
 		 */
@@ -160,6 +160,16 @@ public class Test extends JFrame {
 		else if (lang == "es-mx")
 			return text;
 		return text;
+	}
+	
+	public String toISO(String lang) {
+		switch (lang) {
+			case "English":
+				return "en-us";
+			case "Spanish":
+				return "es-mx";
+		}
+		return lang;
 	}
 	
 	public class Graphics extends JPanel {
