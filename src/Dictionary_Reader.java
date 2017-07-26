@@ -1,7 +1,9 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.HashMap;
 
 public class Dictionary_Reader {
@@ -104,7 +106,7 @@ public class Dictionary_Reader {
 				}
 
 				System.out.println(words[1]);
-				
+
 				//System.out.println(words[0]);
 
 				String plural = null;
@@ -144,6 +146,22 @@ public class Dictionary_Reader {
 		}
 		catch(IOException ex) {
 			ex.printStackTrace();
+		} 
+	}
+
+		public void write(String fileName, HashMap<String, String> map) {
+			try {
+				PrintWriter printWriter = new PrintWriter(fileName);
+				BufferedWriter bufferedWriter = new BufferedWriter(printWriter);
+				for (String key : map.keySet()){
+					bufferedWriter.write(key);
+					bufferedWriter.write("	");
+					bufferedWriter.write(map.get(key));
+					bufferedWriter.newLine();	
+				}
+				bufferedWriter.close();
+			}
+			catch (IOException ex){
+			}
 		}
 	}
-}
