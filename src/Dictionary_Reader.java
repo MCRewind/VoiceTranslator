@@ -1,7 +1,9 @@
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 
 public class Dictionary_Reader {
@@ -17,8 +19,7 @@ public class Dictionary_Reader {
 
 		try {
 			//Makes readers to cycle through the dictionary file
-			FileReader fileReader = new FileReader(file);
-			BufferedReader bufferedReader = new BufferedReader(fileReader);
+			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));
 
 			/*Establishes line and creates an array of strings that 
 			holds the English word and the corresponding word */
@@ -75,8 +76,8 @@ public class Dictionary_Reader {
 
 		try {
 			//Makes readers to cycle through the dictionary file
-			FileReader fileReader = new FileReader(file);
-			BufferedReader bufferedReader = new BufferedReader(fileReader);
+			//FileReader fileReader = new FileReader(file);
+			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));
 
 			/*Establishes line and creates an array of strings that 
 				holds the English word and the corresponding word */

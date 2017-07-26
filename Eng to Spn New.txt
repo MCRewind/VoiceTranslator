@@ -921,10 +921,10 @@ to do to make	hacer
 or	o		
 to be able to can	poder		
 to tell say	decir		
-this (m) esta (f)	este		
+this esta	este		
 to go	ir		
 other another	otro		
-that (m) esa (f)	ese		
+that esa	ese		
 (3rd person ) (direct object -feminine)	la		
 if whether	si		
 me (obj)	me		
@@ -933,7 +933,7 @@ to see	ver
 because	porque		
 to give	dar		
 when	cuando		
-he (ellos) them (m)	él		
+he (ellos) them	él		
 very really	muy		
 without	sin		
 time (specific occurrence)	vez		
@@ -961,7 +961,7 @@ us (obj)	nos
 to arrive	llegar		
 to pass spend(time)	pasar		
 time (general) weather	tiempo		
-she (ellas) them (f)	ella		
+she (ellas) them	ella		
 yes	sí		
 day	día		
 one	uno		
@@ -1060,7 +1060,7 @@ today nowadays	hoy
 side	lado		
 son children	hijo		
 there	allí		
-this one (m) ésta (f)	éste		
+this one ésta	éste		
 problem	problema		
 bill account	cuenta		
 means middle; por medio: through	medio		
@@ -1719,7 +1719,7 @@ underneath below	debajo
 to stay remain	permanecer		
 to attend	asistir		
 twelve	doce		
-radio; set (m) communication (f)	radio		
+radio; set communication	radio		
 to organize	organizar		
 movie film	película		
 election choice	elección		
@@ -1750,7 +1750,7 @@ to extend spread	extender
 to verify prove	comprobar		
 note grade	nota		
 particular peculiar	particular		
-that one (m) (ésa (f))	ése		
+that one (ésa)	ése		
 military	militar		
 to sleep	dormir		
 united	unido		
@@ -4110,7 +4110,7 @@ eye	ojo
 envelope	sobre
 acclaims	aclamar
 rumba	rumba
-wanted	querido (m)
+wanted	querido
 toothache	dolor de muelas
 continent	continente
 brackish	salobre; semisalado
@@ -4360,7 +4360,7 @@ tactically	t'acticamente
 abandonment	abandono
 foot	pie
 tooth	diente
-radiance	brillantez (f)
+radiance	brillantez
 salty	salado
 tittie	tetica ( as in titties
 charge	cargar ( batteries)
@@ -7739,7 +7739,7 @@ teaspoon	la cucharita
 madams	damas
 absorbent	absorbente[]
 painting	la pintura
-radiation	radiación (f)
+radiation	radiación
 harangued	arengado
 cock	pija
 taxidermy	taquídermia

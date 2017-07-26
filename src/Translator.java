@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -157,10 +158,10 @@ public class Translator extends JFrame {
 			InputStream is = synth.getMP3Data(text);
 			final Path destination = Paths.get("audio.mp3");
 			Files.copy(is, destination, StandardCopyOption.REPLACE_EXISTING);
-			String bip = "audio.mp3";
-			Media hit = new Media(new File(bip).toURI().toString());
-			MediaPlayer mediaPlayer = new MediaPlayer(hit);
-			mediaPlayer.play();
+			AudioInputStream audioIn = AudioSystem.getAudioInputStream(new URL("audio.mp3"));
+			Clip clip = AudioSystem.getClip();
+			clip.open(audioIn);
+			clip.start();
 		} catch (Exception e) {
 			System.out.println("Error");
 			e.printStackTrace();
@@ -248,7 +249,7 @@ public class Translator extends JFrame {
 		JLabel status = new JLabel("Waiting...");
 		JLabel inText = new JLabel("Input: ");
 		JLabel outText = new JLabel("Output: ");
-		String curOutLang = "English", curInLang = "Spanish";
+		String curOutLang = "Spanish", curInLang = "English";
 
 		public Graphics() {
 			setLayout(new GridBagLayout());
