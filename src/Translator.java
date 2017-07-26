@@ -6,7 +6,6 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -31,11 +30,9 @@ import com.darkprograms.speech.microphone.Microphone;
 import com.darkprograms.speech.recognizer.GoogleResponse;
 import com.darkprograms.speech.recognizer.Recognizer;
 import com.darkprograms.speech.synthesiser.Synthesiser;
-import com.sun.javafx.tk.FontMetrics;
 
 import javaFlacEncoder.FLACFileWriter;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
+
 
 /**
  * Jarvis Speech API Tutorial
@@ -43,13 +40,13 @@ import javafx.scene.media.MediaPlayer;
  *
  */
 public class Translator extends JFrame {
-	
+
 	Dictionary_Reader reader = new Dictionary_Reader();
 	Graphics graphics = new Graphics();
 	Debug debugWindow = new Debug();
 	boolean google = true, debug = false;
-	
-	
+
+
 	public static void main(String[] args) {
 		new Translator();
 	}
@@ -63,7 +60,7 @@ public class Translator extends JFrame {
 		//System.out.println(reader.dictMap.containsValue("que tal"));
 		reader.spanishCleaner("Eng to Spn New.txt");
 		reader.frenchCleaner("Eng to Frn.txt");
-		
+
 		//Init window stuff
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setSize(500, 500);
@@ -105,7 +102,7 @@ public class Translator extends JFrame {
 			System.out.println("Recording...");
 			repaint();
 			Thread.sleep(5000);//In our case, we'll just wait 5 seconds.
-	                    mic.close();
+			mic.close();
 		} catch (InterruptedException ex) {
 			// TODO Auto-generated catch block
 			ex.printStackTrace();
@@ -117,7 +114,7 @@ public class Translator extends JFrame {
 		repaint();
 		if (google) {
 			Recognizer recognizer = new Recognizer(toLang(graphics.curInLang), "AIzaSyD2o9tVprWInnns4lJUaq0NW05EwBf25v8"); //Specify your language here.
-			//Although auto-detect is avalible, it is recommended you select your region for added accuracy.
+			//Although auto-detect is available, it is recommended you select your region for added accuracy.
 			try {
 				int maxNumOfResponses = 4;
 				GoogleResponse response = recognizer.getRecognizedDataForFlac(file, maxNumOfResponses, (int)mic.getAudioFormat().getSampleRate());
@@ -140,11 +137,11 @@ public class Translator extends JFrame {
 				System.out.println("Please try speaking more clearly");
 				ex.printStackTrace();
 			}
-	
+
 			file.deleteOnExit();//Deletes the file as it is no longer necessary.
 		}
 	}
-	
+
 	public void talk(String text){
 		//String language = "auto";//Uses language autodetection
 		//** While the API can detect language by itself, this is reliant on the Google Translate API which is prone to breaking. For maximum stability, please specify the language.**//
@@ -158,10 +155,6 @@ public class Translator extends JFrame {
 			InputStream is = synth.getMP3Data(text);
 			final Path destination = Paths.get("audio.mp3");
 			Files.copy(is, destination, StandardCopyOption.REPLACE_EXISTING);
-			AudioInputStream audioIn = AudioSystem.getAudioInputStream(new URL("audio.mp3"));
-			Clip clip = AudioSystem.getClip();
-			clip.open(audioIn);
-			clip.start();
 		} catch (Exception e) {
 			System.out.println("Error");
 			e.printStackTrace();
@@ -170,12 +163,18 @@ public class Translator extends JFrame {
 	}
 
 	public String translate(String text, String lang) {
-		//input = english
+		//output = english
 		if (lang == "en-us") {
 			String[] words = text.split(" ");
 			String[] newWords = new String[words.length];
-			for(int i = 0; i < words.length; i++) {
-				newWords[i] = reader.spnEngMap.get(words[i]);
+			if (graphics.curInLang == "Spanish"){
+				for(int i = 0; i < words.length; i++) {
+					newWords[i] = reader.spnEngMap.get(words[i]);
+				}
+			} else if (graphics.curInLang == "French"){
+				for(int i = 0; i < words.length; i++) {
+					newWords[i] = reader.frnEngMap.get(words[i]);
+				}
 			}
 			String newSentence = "";
 			for(String word : newWords) {
@@ -183,12 +182,18 @@ public class Translator extends JFrame {
 			}
 			talk(newSentence);
 			return newSentence;
-		//input = spanish
+			//output = spanish
 		} else if (lang == "es-mx") {
 			String[] words = text.split(" ");
 			String[] newWords = new String[words.length];
-			for(int i = 0; i < words.length; i++) {
-				newWords[i] = reader.engSpnMap.get(words[i]);
+			if (graphics.curInLang == "English"){
+				for(int i = 0; i < words.length; i++) {
+					newWords[i] = reader.engSpnMap.get(words[i]);
+				}
+			} else if (graphics.curInLang == "French"){
+				for(int i = 0; i < words.length; i++) {
+					newWords[i] = reader.frnSpnMap.get(words[i]);
+				}
 			}
 			String newSentence = "";
 			for(String word : newWords) {
@@ -196,11 +201,18 @@ public class Translator extends JFrame {
 			}
 			talk(newSentence);
 			return newSentence;
+			//output = french
 		} else if (lang == "fr-fr") {
 			String[] words = text.split(" ");
 			String[] newWords = new String[words.length];
-			for(int i = 0; i < words.length; i++) {
-				newWords[i] = reader.engFrnMap.get(words[i]);
+			if (graphics.curInLang == "English"){
+				for(int i = 0; i < words.length; i++) {
+					newWords[i] = reader.engFrnMap.get(words[i]);
+				}
+			} else if (graphics.curInLang == "Spanish"){
+				for(int i = 0; i < words.length; i++) {
+					newWords[i] = reader.spnFrnMap.get(words[i]);
+				}
 			}
 			String newSentence = "";
 			for(String word : newWords) {
@@ -211,36 +223,36 @@ public class Translator extends JFrame {
 		}
 		return text;
 	}
-	
+
 	public String toISO(String lang) {
 		switch (lang) {
-			case "English":
-				return "en-us";
-			case "Spanish":
-				return "es-mx";
-			case "French":
-				return "fr-fr";
+		case "English":
+			return "en-us";
+		case "Spanish":
+			return "es-mx";
+		case "French":
+			return "fr-fr";
 		}
 		return lang;
 	}
-	
+
 	public Recognizer.Languages toLang(String lang) {
 		switch(lang) {
-			case "English":
-				return Recognizer.Languages.ENGLISH_US;
-			case "Spanish":
-				return Recognizer.Languages.SPANISH_MEXICO;
-			case "French":
-				return Recognizer.Languages.FRENCH;
+		case "English":
+			return Recognizer.Languages.ENGLISH_US;
+		case "Spanish":
+			return Recognizer.Languages.SPANISH_MEXICO;
+		case "French":
+			return Recognizer.Languages.FRENCH;
 		}
 		return null;
-		
+
 	}
-	
+
 	public class Graphics extends JPanel {
-		
+
 		GridBagConstraints gbc = new GridBagConstraints();
-		
+
 		JComboBox<String> inLang = new JComboBox<String>(new String[]{"English", "Spanish", "French"});
 		JComboBox<String> outLang = new JComboBox<String>(new String[]{"Spanish", "English", "French"});
 		JButton record = new JButton("Record");
@@ -249,11 +261,11 @@ public class Translator extends JFrame {
 		JLabel status = new JLabel("Waiting...");
 		JLabel inText = new JLabel("Input: ");
 		JLabel outText = new JLabel("Output: ");
-		String curOutLang = "Spanish", curInLang = "English";
+		String curOutLang = "English", curInLang = "Spanish";
 
 		public Graphics() {
 			setLayout(new GridBagLayout());
-			
+
 			inLang.setSelectedIndex(0);
 			outLang.setSelectedIndex(0);
 
@@ -276,25 +288,25 @@ public class Translator extends JFrame {
 				}
 
 			});
-			
+
 			record.addActionListener(new ActionListener() {
 
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					record();
 				}
-				
+
 			});
-			
+
 			play.addActionListener(new ActionListener() {
 
 				@Override
 				public void actionPerformed(ActionEvent arg0) {
-					
+
 				}
-				
+
 			});
-			
+
 			gbc.fill = GridBagConstraints.HORIZONTAL;
 			gbc.gridx = 0;
 			gbc.gridy = 0;
@@ -327,7 +339,7 @@ public class Translator extends JFrame {
 			gbc.gridx = 0;
 			gbc.gridy = 5;
 			add(play, gbc);
-			
+
 			inLang.setVisible(true);
 			outLang.setVisible(true);
 			to.setVisible(true);
@@ -338,16 +350,16 @@ public class Translator extends JFrame {
 		}
 
 	}
-	
+
 	public void debugUpdate() {
 		debugWindow.text(graphics.curInLang, graphics.curOutLang, toISO(graphics.curInLang), toISO(graphics.curInLang), toLang(graphics.curInLang).toString(), toLang(graphics.curOutLang).toString());
 		debugWindow.repaint();
 	}
-	
+
 	public class Debug extends JFrame {
-		
+
 		JPanel gfx = new JPanel();
-		
+
 		public Debug() {
 			setDefaultCloseOperation(EXIT_ON_CLOSE);
 			setSize(200, 500);
@@ -356,7 +368,7 @@ public class Translator extends JFrame {
 			add(gfx);
 			setVisible(true);
 		}
-		
+
 		public void text(String... vars) {
 			for(int i = 0; i < vars.length; i++) {
 				JLabel text = new JLabel(vars[i]);
@@ -364,7 +376,7 @@ public class Translator extends JFrame {
 				text.setVisible(true);
 			}
 		}
-		
+
 	}
 
 }
