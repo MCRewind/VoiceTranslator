@@ -313,7 +313,7 @@ Indian Ocean	Océan indien
 Indonesia ; Republic of Indonesia	Indonésie
 Indonesian	indonésien
 Indre	Indre
-Interlingua ; Interlingua, "Simplified" Latin ; Interlingua, "Simplified" Latin	interlingua
+Interlingua ; Interlingua "Simplified" Latin ; Interlingua "Simplified" Latin	interlingua
 International Court of Justice	Cour internationale de justice
 Internet	internet
 Iran ; Islamic Republic of Iran	Iran ; République Islamique d' Iran
@@ -3065,7 +3065,7 @@ heat pump	pompe à chaleur
 heat storage	stockage de chaleur
 heat supply	fourniture de chaleur
 heater	appareil de chauffage
-heathen ; infidel ; pagan	infidèle, ; infidèle ; païen
+heathen ; infidel ; pagan	infidèle ; infidèle ; païen
 heathland	lande
 heating	chauffage
 heating plant	centrale de chauffage
@@ -4113,7 +4113,7 @@ nitrosamine	nitrosamine
 no	non
 nobelium	nobélium
 noise	bruit
-noise ; noise, vibrations ; racket	bruit ; bruit, vibrations
+noise ; noise vibrations ; racket	bruit ; bruit vibrations
 noise abatement	diminution du bruit
 noise analysis	analyse de bruit
 noise barrier	écran antibruit
@@ -5232,7 +5232,7 @@ spleen	lien ; rate
 spoon	cuiller
 sport	sport
 spring	printemps
-spring ; spring (hydrology, land)	source
+spring ; spring (hydrology land)	source
 spring water	eau de source
 square	carré
 stage	scène
@@ -5278,7 +5278,7 @@ surface tension	tension superficielle
 surgeon	chirurgien
 surgery	chirurgie
 surprise	étonner
-swans, geese and ducks	anatidé
+swans geese and ducks	anatidé
 sweet	doux
 sweetener	édulcorant
 swimming pool	piscine

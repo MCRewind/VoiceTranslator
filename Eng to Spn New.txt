@@ -1028,7 +1028,7 @@ later afterwards	luego
 country	país		
 to try treat deal with	tratar		
 place position	lugar		
-you (obj +fam)	te		
+you	te		
 person	persona		
 larger older main	mayor		
 last final	último		
@@ -1091,7 +1091,7 @@ to produce cause	producir
 night evening	noche		
 city	ciudad		
 way manner	modo		
-name noun	nombre		
+name	nombre		
 to happen occur	ocurrir		
 family	familia		
 reality actuality	realidad		
@@ -1264,7 +1264,9 @@ possibility	posibilidad
 to offer present	ofrecer		
 to discover	descubrir		
 previous preceding	anterior		
-game play sport	juego		
+game	juego
+play	jugar
+sport	deporte	
 to raise to lift	levantar		
 poor	pobre		
 air wind appearance	aire		
@@ -5239,7 +5241,7 @@ appreciate	apreciar
 yon	ahí allí
 killer	asasino
 beer	la cerveza
-you	vosotros(plural/informal)
+you	vosotros
 limitations	las limitaciones
 chlorides	clorúros
 incant	encantar
@@ -6113,7 +6115,7 @@ economize	economisár
 stereo	estereo
 firearm	arma de fuego
 theocratic	teocrático
-hello	que tal
+hello	hola
 bactericidal	bactericida
 testimonies	testimonios
 bacterium	bacteria
