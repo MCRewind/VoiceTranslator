@@ -145,7 +145,7 @@ public class Dictionary_Reader {
 			ex.printStackTrace();
 		} 
 	}
-	
+
 	public HashMap<String, String> dictInverter (HashMap<String, String> map){
 		HashMap<String, String> invertedMap = new HashMap<String, String>();
 		map.forEach((key, value) -> {
@@ -163,7 +163,7 @@ public class Dictionary_Reader {
 				bufferedWriter.write("	");
 				bufferedWriter.write(map.get(key));
 				bufferedWriter.newLine();	
-				}
+			}
 			bufferedWriter.close();
 		}
 		catch (IOException ex){

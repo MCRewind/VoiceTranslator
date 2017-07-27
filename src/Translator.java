@@ -55,8 +55,6 @@ public class Translator extends JFrame {
 		reader.frenchCleaner("Eng to Frn.txt");
 		reader.spnFrnMap = reader.dictMaker(reader.engSpnMap, reader.engFrnMap);
 		reader.frnSpnMap = reader.dictInverter(reader.spnFrnMap);
-		
-		//Init window stuff
 
 		//Init window	 stuff
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
