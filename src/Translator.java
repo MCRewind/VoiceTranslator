@@ -52,7 +52,9 @@ public class Translator extends JFrame {
 		//System.out.println(reader.dictMap.containsValue("que tal"));
 		reader.spanishCleaner("Eng to Spn New.txt");
 		reader.frenchCleaner("Eng to Frn.txt");
-
+		reader.spnFrnMap = reader.dictMaker(reader.engSpnMap, reader.engFrnMap);
+		reader.frnSpnMap = reader.dictInverter(reader.spnFrnMap);
+		
 		//Init window stuff
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setSize(500, 500);
@@ -254,7 +256,7 @@ public class Translator extends JFrame {
 		JLabel inText = new JLabel("Input: ");
 		JLabel outText = new JLabel("Output: ");
 
-		String curOutLang = "English", curInLang = "Spanish";
+		String curOutLang = "Spanish", curInLang = "English";
 
 		public Graphics() {
 			setLayout(new GridBagLayout());

@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
+import java.util.Map;
 
 public class Dictionary_Reader {
 
@@ -148,20 +149,44 @@ public class Dictionary_Reader {
 			ex.printStackTrace();
 		} 
 	}
+	
+	public HashMap<String, String> dictInverter (HashMap<String, String> map){
+		HashMap<String, String> invertedMap = new HashMap<String, String>();
+		map.forEach((key, value) -> {
+			invertedMap.put(value, key);
+		});
+		return invertedMap;
+	}
 
-		public void write(String fileName, HashMap<String, String> map) {
-			try {
-				PrintWriter printWriter = new PrintWriter(fileName);
-				BufferedWriter bufferedWriter = new BufferedWriter(printWriter);
-				for (String key : map.keySet()){
-					bufferedWriter.write(key);
-					bufferedWriter.write("	");
-					bufferedWriter.write(map.get(key));
-					bufferedWriter.newLine();	
-				}
-				bufferedWriter.close();
+	public void write(String fileName, HashMap<String, String> map) {
+		try {
+			PrintWriter printWriter = new PrintWriter(fileName);
+			BufferedWriter bufferedWriter = new BufferedWriter(printWriter);
+			for (String key : map.keySet()){
+				bufferedWriter.write(key);
+				bufferedWriter.write("	");
+				bufferedWriter.write(map.get(key));
+				bufferedWriter.newLine();	
 			}
-			catch (IOException ex){
-			}
+			bufferedWriter.close();
+		}
+		catch (IOException ex){
 		}
 	}
+	
+	public HashMap<String,String> dictMaker (HashMap<String, String> first, HashMap<String, String> second){
+		HashMap<String, String> newDict = new HashMap<String, String>();
+		for (Map.Entry<String, String> entry : first.entrySet()){
+			String firstKey = entry.getKey();
+			String firstValue = entry.getValue();
+			for (Map.Entry<String, String> entry2 : second.entrySet()){
+				String secondKey = entry2.getKey();
+				String secondValue = entry2.getValue();
+				if (firstKey == secondKey){
+					newDict.put(firstValue, secondValue);
+				}
+			}
+		}
+		return newDict;
+	}
+}
