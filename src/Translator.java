@@ -50,11 +50,24 @@ public class Translator extends JFrame {
 			debugWindow.setVisible(true);
 		else
 			debugWindow.setVisible(false);
-		//System.out.println(reader.dictMap.containsValue("que tal"));
-		reader.spanishCleaner("Eng to Spn New.txt");
-		reader.frenchCleaner("Eng to Frn.txt");
-		reader.spnFrnMap = reader.dictMaker(reader.engSpnMap, reader.engFrnMap);
+		//Spanish Dictionaries
+		reader.spanishCleaner("Eng to Spn New.txt", reader.engSpnMap);
+		reader.spnEngMap = reader.dictInverter(reader.engSpnMap);
+		//French Dictionaries
+		reader.frenchCleaner("Eng to Frn.txt", reader.engFrnMap);
+		reader.frnEngMap = reader.dictInverter(reader.engFrnMap);
+		
+		
+		//Non English Dictionaries
+		reader.frenchCleaner("Spn to Frn.txt", reader.spnFrnMap);
+		//reader.spnFrnMap = reader.dictMaker(reader.engSpnMap, reader.engFrnMap);
+		//reader.write("Spn to Frn.txt", reader.spnFrnMap);
+
 		reader.frnSpnMap = reader.dictInverter(reader.spnFrnMap);
+		
+		
+		System.out.println(reader.spnFrnMap.keySet());
+		System.out.println(reader.frnSpnMap.keySet());
 
 		//Init window	 stuff
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -116,7 +129,7 @@ public class Translator extends JFrame {
 				System.out.println("Google Response: " + response.getResponse());
 				graphics.inText.setText("Input: " + response.getResponse());
 				repaint();
-				graphics.outText.setText("Output: " + translate(response.getResponse(), toISO(graphics.curOutLang)));
+				graphics.outText.setText("Output: " + translate(response.getResponse().toLowerCase(), toISO(graphics.curOutLang)));
 				System.out.println(translate(response.getResponse(), toISO(graphics.curOutLang)));
 				graphics.status.setText("Waiting");
 				repaint();

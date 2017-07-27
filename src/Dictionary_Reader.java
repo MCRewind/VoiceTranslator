@@ -2,9 +2,11 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
@@ -19,7 +21,7 @@ public class Dictionary_Reader {
 	public HashMap<String, String> frnSpnMap = new HashMap<String, String>();
 
 
-	public void spanishCleaner(String file){
+	public void spanishCleaner(String file, HashMap<String, String> map){
 		String line = null;
 
 		try {
@@ -58,14 +60,12 @@ public class Dictionary_Reader {
 				the actual character can be input (ñ , á)*/
 				String engPlural = words[0] + "s";
 
-				engSpnMap.put(words[0], spanishWords[0].toLowerCase());
-				engSpnMap.put(engPlural, plural.toLowerCase());
+				map.put(words[0], spanishWords[0].toLowerCase());
+				map.put(engPlural, plural.toLowerCase());
 			}
 
 			bufferedReader.close();
-			engSpnMap.forEach((key, value) -> {
-				spnEngMap.put(value, key);
-			});
+
 		} catch(FileNotFoundException ex) {
 			System.out.println(
 					"Unable to open file '" + 
@@ -76,7 +76,7 @@ public class Dictionary_Reader {
 		}
 	}
 
-	public void frenchCleaner(String file){
+	public void frenchCleaner(String file, HashMap<String, String> map){
 		String line = null;
 
 		try {
@@ -94,7 +94,7 @@ public class Dictionary_Reader {
 			while( (line = bufferedReader.readLine()) != null) {
 				//System.out.println(lineNumb);
 				//lineNumb += 1;
-				String[] frenchWords = {"j"};
+				String[] frenchWords = {""};
 				String[] words = line.split("	");
 				if (words[1] != null) {
 					if (line.contains(";")) {
@@ -125,14 +125,12 @@ public class Dictionary_Reader {
 					the actual character can be input (ñ , á)*/
 				String engPlural = words[0] + "s";
 
-				engFrnMap.put(words[0], frenchWords[0].toLowerCase());
-				engFrnMap.put(engPlural, plural.toLowerCase());
+				map.put(words[0], frenchWords[0].toLowerCase());
+				map.put(engPlural, plural.toLowerCase());
 			}
 
 			bufferedReader.close();
-			engFrnMap.forEach((key, value) -> {
-				frnEngMap.put(value, key);
-			});
+
 		}
 
 
@@ -156,14 +154,14 @@ public class Dictionary_Reader {
 
 	public void write(String fileName, HashMap<String, String> map) {
 		try {
-			PrintWriter printWriter = new PrintWriter(fileName);
-			BufferedWriter bufferedWriter = new BufferedWriter(printWriter);
+			BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fileName), "UTF-8"));
 			for (String key : map.keySet()){
 				bufferedWriter.write(key);
 				bufferedWriter.write("	");
 				bufferedWriter.write(map.get(key));
 				bufferedWriter.newLine();	
 			}
+			System.out.println("done");
 			bufferedWriter.close();
 		}
 		catch (IOException ex){
@@ -175,10 +173,14 @@ public class Dictionary_Reader {
 		for (Map.Entry<String, String> entry : first.entrySet()){
 			String firstKey = entry.getKey();
 			String firstValue = entry.getValue();
+		//	System.out.println(firstKey + "First Map!");
+			int firstHash = System.identityHashCode(firstKey);
 			for (Map.Entry<String, String> entry2 : second.entrySet()){
 				String secondKey = entry2.getKey();
 				String secondValue = entry2.getValue();
-				if (firstKey == secondKey){
+		//		System.out.println(secondKey);
+				int secondHash = System.identityHashCode(secondKey);
+				if (firstKey.equals(secondKey)){
 					newDict.put(firstValue, secondValue);
 				}
 			}
