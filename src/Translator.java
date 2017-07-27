@@ -65,10 +65,6 @@ public class Translator extends JFrame {
 
 		reader.frnSpnMap = reader.dictInverter(reader.spnFrnMap);
 		
-		
-		System.out.println(reader.spnFrnMap.keySet());
-		System.out.println(reader.frnSpnMap.keySet());
-
 		//Init window	 stuff
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setSize(500, 500);
