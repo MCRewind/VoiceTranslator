@@ -1241,7 +1241,7 @@ to pay	pagar
 it (subj-n)	ello		
 lack shortage	falta		
 to help	ayudar		
-ten	diez		
+ten	diez
 across over through	través(a través)		
 old ancient former	antiguo		
 your	tu		
@@ -2201,7 +2201,6 @@ interpreter	intérprete
 iodine	yodo 
 iridium	iridio 
 iron	planchar
-is	es ; está ; hay 
 island	is
 it	lo 
 jackdaw	grajil
@@ -6884,7 +6883,7 @@ machinated	maquinado
 gallantly	galantemente
 title	título
 whore	puta
-lackeys	lacayos (sirvientes)
+lackeys	lacayos
 miss	extrañar
 undershirt	camiseta
 incentives	incentivos
@@ -9607,3 +9606,4 @@ poetical	poética
 abhorred	aborrecido
 racist	racista
 won't	no
+is	es

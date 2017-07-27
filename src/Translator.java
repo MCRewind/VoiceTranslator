@@ -50,13 +50,14 @@ public class Translator extends JFrame {
 			debugWindow.setVisible(true);
 		else
 			debugWindow.setVisible(false);
+		
 		//Spanish Dictionaries
 		reader.spanishCleaner("Eng to Spn New.txt", reader.engSpnMap);
 		reader.spnEngMap = reader.dictInverter(reader.engSpnMap);
+		
 		//French Dictionaries
 		reader.frenchCleaner("Eng to Frn.txt", reader.engFrnMap);
 		reader.frnEngMap = reader.dictInverter(reader.engFrnMap);
-		
 		
 		//Non English Dictionaries
 		reader.frenchCleaner("Spn to Frn.txt", reader.spnFrnMap);
