@@ -105,9 +105,9 @@ Christian	cristiano  ; cristiana
 Christianity	cristianismo 
 Christmas	Navidad 
 Christopher	Cristóbal
-Coca	Coca-Cola 
+Coca	Coca-Co
 Colombia	Colombia 
-Constantinople	Constantinopla 
+Constantinople	Constantinop
 Costa Rica	Costa Rica 
 Croatia	Croacia 
 Croatian	croata 
@@ -116,7 +116,7 @@ Cyprus	Chipre
 Cyrillic	cirílico 
 Cyrillic alphabet	alfabeto cirílico  ; cirílico 
 Czech	checo 
-Czech Republic	la República Checa 
+Czech Republic	República Checa 
 Czechia	Chequia 
 Czechoslovakia	Checoslovaquia 
 Damascus	Damasco 
@@ -130,7 +130,7 @@ Dutch	neerlandés ; holandés
 Earth	tierra 
 East Timor	Timor Oriental
 Easter	pascua 
-Easter Island	Isla de Pascua 
+Easter Island	Isde Pascua 
 Eastern Europe	Europa Oriental 
 Edmonton	Edmonton
 Egypt	Egipto 
@@ -370,7 +370,7 @@ South Ossetia	Osetia dSur
 Southeast Asia	Sureste Asiático 
 Soviet Union	Unión Soviética 
 Spain	España 
-Spanish	español  ; española 
+Spanish	español  ; españo
 Sparta	Esparta 
 Sri Lanka	Sri Lanka
 Stalin	Stalin 
@@ -416,9 +416,9 @@ Uranus	Urano
 Uzbekistan	Uzbekistán 
 Valkyrie	valquiria 
 Vatican City	Vaticano, Ciudad dVaticano
-Venezuela	Venezuela 
+Venezuela	Venezue
 Venus	Venus
-Victory Day	Día de la Victoria 
+Victory Day	Día de Victoria 
 Vienna	Viena 
 Vietnam	Vietnam 
 Vishnu	Vishnú
@@ -490,7 +490,7 @@ ampersand	y comercial  ;
 an	un  ; una 
 anal sex	sexo anal 
 anarchism	anarquismo 
-anchor	ancla 
+anchor	anc
 and	y ; e
 angel	áng
 anger	ira  ; enfado  ; enojo  ; rabia  ; bravura 
@@ -514,7 +514,7 @@ architecture	arquitectura
 argent	plata 
 argon	argón 
 arm	brazo 
-armpit	axila  ; sobaco 
+armpit	axi ; sobaco 
 army	ejército 
 arrow	flecha 
 arsenic	arsénico 
@@ -562,8 +562,8 @@ basket	cesta  ; cesto
 basketball	baloncesto  ; básquetbol 
 bat	murciélago 
 bathroom	cuarto de baño  ; baño
-battery	pila  ; batería 
-battle	batalla  ; lucha 
+battery	pi ; batería 
+battle	batal ; lucha 
 bay	bahía 
 be	ser
 beach	playa 
@@ -585,7 +585,7 @@ beetle	escarabajo
 before	antes de
 begin	comenzar ; iniciar ; empezar
 behind	detrás
-bell	campana  ; campanilla  
+bell	campana  ; campanil 
 belly	barriga ; panza ; vientre
 belt	cinturón  ; cincho  ; cinto  ; correa  ; faja  
 berkelium	berkelio 
@@ -633,7 +633,7 @@ book	libro
 bookshop	librería 
 boot	bota 
 boron	boro 
-bottle	botella  ; frasco 
+bottle	botel ; frasco 
 bow	arco 
 box	caja 
 boy	niño  (gloss'child), chico  (gloss'teens or twenties), muchacho  (gloss'teens or twenties), chaval  (slang), varón , (gloss'gender specification: boy or girl?) ¿varón o mujer?
@@ -653,19 +653,19 @@ bromine	bromo
 broom	escoba 
 brother	hermano 
 brown	marrón ; café ; pardo
-brush	cepillo  ; escobilla 
+brush	cepillo  ; escobil
 bucket	balde  ; cubeta  ; cubo  ; pozal  ; tobo  
 buffalo	búfalo 
 building	edificación  ; construcción 
 bull	toro 
-bullet	bala  ; proyectil 
+bullet	ba ; proyectil 
 bumblebee	abejorro  ; abejarrón 
 burn	arder ; quemar
 bus	bus  
 busy	ocupado
 but	aunque ; pero
 butcher	carnicero  ; carnicera 
-butter	mantequilla , manteca  (Argentina, Paraguay, Uruguay)
+butter	mantequil, manteca  (Argentina, Paraguay, Uruguay)
 butterfly	mariposa 
 buy	comprar
 buzzard	ratonero común  ;  gavilán 
@@ -683,7 +683,7 @@ can	poder
 canal	canal 
 canary	canario 
 cancer	cáncer 
-candle	vela  ; candela  ; cirio 
+candle	ve ; cande ; cirio 
 cannabis	cannabis  ; cáñamos 
 canyon	cañón  ; barranca 
 capercaillie	urogallo , gallo silvestre 
@@ -703,7 +703,7 @@ cauliflower	coliflor
 cave	cueva 
 cedar	cedro 
 ceiling	techo 
-cell	célula 
+cell	célu
 cell phone	teléfono celular  (Latin America), teléfono móvil  (Spain)
 center	centro 
 centimetre	centímetro 
@@ -711,14 +711,14 @@ centipede	ciempiés
 century	centuria  ; siglo 
 cerium	cerio 
 chain	cadena 
-chair	silla  ; asiento
+chair	sil ; asiento
 chamois	gamuza  ; rebeco  ; sarrio 
 change	cambio  ; modificación  ; mutación  ; evolución 
 chaos	caos
 chapter	capítulo 
 chase	perseguir
 cheap	barato ; económico
-cheek	mejilla  ; cacha  ; cachete 
+cheek	mejil ; cacha  ; cachete 
 cheers	salud
 cheese	queso 
 cheetah	guepardo  ; chita 
@@ -732,7 +732,7 @@ chew	masticar
 chicken	pollo  ; gallina 
 child	niño  ; niña  ; infante 
 chimpanzee	chimpancé
-chin	barbilla  ; mentón  ; pera 
+chin	barbil ; mentón  ; pera 
 chlorine	cloro 
 chocolate	chocolate 
 choice	selección 
@@ -746,7 +746,7 @@ cinema	cinematógrafo  ; cine
 circle	círculo 
 city	ciudad  ; urbe 
 clarinet	clarinete 
-clay	arcilla  ; barro 
+clay	arcil ; barro 
 clean	limpio
 clitoris	clítoris 
 clock	reloj 
@@ -769,7 +769,7 @@ comb	peine
 come	venir
 common gull	gaviota 
 communism	comunismo 
-compass	brújula 
+compass	brúju
 computer	computador  ; computadora  ; ordenador 
 computer language	lenguaje de programación 
 comrade	camarada  ; compañero  ; compañera 
@@ -791,7 +791,7 @@ country	campo
 courage	coraje  ; valor 
 cow	vaca 
 crab	cangrejo  ; jaiba 
-crane	grulla 
+crane	grul
 cream	nata  ; crema 
 cricket	grillo 
 crime	delito 
@@ -837,7 +837,7 @@ devil	diablo
 dew	rocío ; sereno 
 dialect	dialecto 
 diary	diario
-dick	bicho  ; cipote  ; huevo  ; paloma  ; pico  ; pichi  ; pichula  ; pija  ; pinga  ; pito  ; polla  ; tranca  ; turca  ; verga  ;   picha  ; pipe  ; pirula  ; pirulo  ; poste  ; 
+dick	bicho  ; cipote  ; huevo  ; paloma  ; pico  ; pichi  ; pichu ; pija  ; pinga  ; pito  ; pol ; tranca  ; turca  ; verga  ;   picha  ; pipe  ; piru ; pirulo  ; poste  ; 
 dictionary	diccionario 
 die	dado 
 difficult	difícil
@@ -848,7 +848,7 @@ dirty	sucio
 discussion	discusión 
 disease	enfermedad 
 do	hacer
-do you speak English	hablas inglés'¿Hablas inglés? (informal), habla inglés'¿Habla inglés? (formal)
+do you speak English	hablas inglés'¿Hablas inglés? (informal), habinglés'¿Habinglés? (formal)
 doctor	doctor  ; doctora 
 documentation	documentación
 dog	perro 
@@ -864,7 +864,7 @@ doubt	duda  ; incertidumbre
 dove	paloma , pichón  (dove's chick)
 dozen	docena 
 dragon	dragón  ; guiverno  
-dragonfly	libélula  ; aguacil  ; pipilacha  
+dragonfly	libélu ; aguacil  ; pipilacha  
 dream	soñar
 dress	vestido  ; traje 
 drink	bebida 
@@ -883,7 +883,7 @@ dysprosium	disprosio
 e	correo electrónico 
 e.g.	por ejemplo
 each	cada
-eagle	águila 
+eagle	águi
 eagle owl	búho real 
 ear	oreja  ; oído 
 early	temprano
@@ -899,7 +899,8 @@ that which	que
 and	y		
 to at	a 		
 in on	en		
-a an	un una		
+a	un
+an	un	
 to be	ser		
 (reflexive marker)	se		
 no	no		
@@ -910,7 +911,8 @@ his her their your	su
 for to in order to	para		
 like as	como		
 to be	estar		
-to have	tener		
+to have	tener
+having	teniendo
 (3rd person ) (indirect object)	le		
 the (+neuter)	lo		
 (3rd person) (direct object- masculine)	lo		
@@ -1470,7 +1472,7 @@ to notice	notar
 act action	acto		
 to put(into)	meter		
 absolute	absoluto		
-trouble valer la pena: be of worth	pena		
+trouble valer pena: be of worth	pena		
 to act	actuar		
 second	segundo		
 height altitude	altura		
@@ -1900,7 +1902,7 @@ eco	eco-
 ecology	ecología 
 economics	economía 
 education	educación 
-eel	anguila 
+eel	angui
 egg	huevo 
 eight	ocho
 eighteen	dieciocho
@@ -1975,7 +1977,7 @@ fifth	quinto , quinta  ; (abbreviations) 5º , 5ª
 fifty	cincuenta
 fig	higo  ; breva 
 fight	pelear ; luchar
-film	película  ; filme 
+film	pelícu ; filme 
 finger	dedo 
 fir	abeto 
 fire	incendio 
@@ -1992,7 +1994,7 @@ flower	florecer
 fluorine	flúor 
 flute	flauta 
 fly	volar
-fog	niebla 
+fog	nieb
 food	alimento  ; comida 
 fool	bobo  ; tonto  ; necio 
 foot	fiebre aftosa  ; glosopeda 
@@ -2027,7 +2029,7 @@ fungus	hongo
 future	futuro  ; venidero  ; porvenir 
 gadolinium	gadolinio 
 galaxy	galaxia 
-gall bladder	vesícula biliar 
+gall bladder	vesícubiliar 
 gallium	galio 
 game	juego 
 garbage	basura 
@@ -2051,12 +2053,12 @@ give	dar ; entregar
 glacier	glaciar 
 glass	vaso  ; copa  
 glove	guante 
-glue	cola  ; goma  ; pegamento 
+glue	co ; goma  ; pegamento 
 go	ir
 goat	cabra  ; chivo 
 god	dios 
 gold	oro 
-golden eagle	águila real 
+golden eagle	águireal 
 golf	golf 
 gonorrhea	gonorrea 
 good	bien 
@@ -2066,7 +2068,7 @@ good evening	buenas noches  ; buenas tardes
 good luck	buena suerte ; suerte
 good morning	buenos días ; buen día
 good night	buenas noches
-goodbye	adiós ; hasta luego ; hasta la vista ; hasta pronto ; nos vemos
+goodbye	adiós ; hasta luego ; hasta vista ; hasta pronto ; nos vemos
 goose	ganso  ; oca  ; ánsar  
 goshawk	azor 
 government	gobierno 
@@ -2074,7 +2076,7 @@ grammar	gramática
 grandchild	nieto
 granddaughter	nieta 
 grandfather	abuelo 
-grandmother	abuela 
+grandmother	abue
 grape	uva 
 grass	pasto  ; hierba  ; grama 
 grasshopper	saltamontes 
@@ -2130,7 +2132,7 @@ heel	talón
 helicopter	helicóptero  ; autogiro 
 helium	helio 
 hell	infierno 
-hello	aló ; dígame ; hola 
+hello	aló ; dígame ; ho
 help	¡socorro!, ¡auxilio!
 hemp	cáñamo  ; marihuana 
 hen	gallina 
@@ -2150,7 +2152,7 @@ homosexuality	homosexualidad
 honey	mi
 hoof	pezuña  ; casco 
 hope	esperar
-horn	cuerno , cacho  (Bolivia'Central America'Colombia'Chile'Ecuador'Peru'Venezuela - colloquial)
+horn	cuerno , cacho  (Bolivia'Central America'Colombia'Chile'Ecuador'Peru'Venezue- colloquial)
 horse	caballo  ; yegua 
 hospital	hospital 
 hot	caliente ; muy caliente
@@ -2200,11 +2202,11 @@ iodine	yodo
 iridium	iridio 
 iron	planchar
 is	es ; está ; hay 
-island	isla 
-it	ello ; él ; ella ; eso ; lo 
-jackdaw	grajilla 
+island	is
+it	lo 
+jackdaw	grajil
 jay	arrendajo , urraca 
-jellyfish	medusa , aguamala  (Colombia'Costa Rica'Cuba'Ecuador'Mexico'Nicaragua'Panama'Southern Spain'Venezuela), aguaviva  (Argentina'Southern Spain and Canary Islands'Uruguay), malagua  (Peru)
+jellyfish	medusa
 jihad	yihad 
 joy	alegría  ; gozo  ; felicidad
 juice	zumo  ; jugo 
@@ -2221,13 +2223,14 @@ king	rey
 kingdom	reino 
 kiss	besar
 kitchen	cocina 
-kite	cometa  (especially Spain'Colombia'Ecuador'Panama'Peru'Uruguay), barrilete  (Argentina'Guatemala'Nicaragua), cachirulo  (Eastern Central Spain), chichigua  (Dominican Republic), chiringa  (Puerto Rico), lechuza (Nicaragua), pandero  (Southern Spain), pandorga  (Southern Spain'Paraguay'Northeastern and Northern Central Argentina'Western Uruguay), papagayo  (Venezuela, Southeastern Mexico), papalote  (Costa Rica'Cuba'Mexico), papelote  (Honduras), petaca  (Northwestern Venezuela), piscucha  (El Salvador), volador  (Bolivia' Eastern Venezuela), volantín  (Chile'Central and Eastern Bolivia'Western Central and Northwestern Argentina'Northwestern Venezuela'Western Puerto Rico)
-knee	rodilla  ; hinojo 
+kite	cometa
+knee	rodil ; hinojo 
 knife	cuchillo 
 knight	caballo 
 know	conocer
-koala	koala 
+koala	koa
 krypton	criptón 
+coming	viniendo
 ladybird	mariquita  ; vaquita de San Antonio  (Argentina)
 ladybug	mariquita  ; catarinita  ; chinita  ; San Antonio  ; sarantontón  ; vaquita de San Antonio  
 lake	lago 
@@ -2248,9 +2251,9 @@ lazy	perezoso ; flojo ; locho ; haragán
 lead	plomo 
 leaf	hoja 
 learn	aprender
-least weasel	mostela 
+least weasel	moste
 leather	cuero 
-leech	sanguijuela , hirudíneo 
+leech	sanguijue, hirudíneo 
 leek	puerro  ; porro  ; poro 
 left	izquierdo ; izquierda
 leg	pierna , pata  (animal)
@@ -2294,7 +2297,7 @@ lute	laúd
 lutetium	lutecio 
 lynx	lince 
 machine language	lenguaje de máquina 
-mackerel	caballa 
+mackerel	cabal
 mad	loco  ; trastornado 
 magma	magma 
 magnesium	magnesio 
@@ -2314,7 +2317,7 @@ market	plaza
 marmot	marmota 
 marten	marta 
 masturbation	masturbación , paja  (slang)
-match	cerilla  ; fósforo 
+match	ceril ; fósforo 
 mathematics	matemáticas 
 mattress	colchón 
 maybe	quizá ; tal vez
@@ -2344,7 +2347,7 @@ mirror	espejo
 moat	fosa  ; foso 
 mobile phone	teléfono móvil ; móvil  ; celular  ; teléfono celular 
 mole	topo 
-molecule	molécula 
+molecule	molécu
 molybdenum	molibdeno 
 moment	momento 
 monarchy	monarquía 
@@ -2358,7 +2361,7 @@ morning	madrugada  ; mañana  ; AM
 mosque	mezquita
 mosquito	mosquito  ; mosco  ; plaga  ; zancudo  
 moss	musgo 
-moth	polilla 
+moth	polil
 mother	suegra 
 mother tongue	lengua materna
 motorcycle	motocicleta  (formal), moto , motor  (Dominican Republic' colloquial), motora  (Puerto Rico' colloquial)
@@ -2367,10 +2370,10 @@ mountain	montaña
 mouse	ratón  ; mouse 
 moustache	bigote 
 mouth	boca 
-movie	película  (1) ; cine  (2)
+movie	pelícu (1) ; cine  (2)
 much	mucho
 mud	lodo  ; barro  ; fango 
-mule	mulo  ; mula 
+mule	mulo  ; mu
 murder	asesinato 
 muscle	músculo 
 museum	museo 
@@ -2409,7 +2412,7 @@ nickel	níqu
 niece	sobrina 
 night	noche 
 nightingale	ruiseñor 
-nightmare	pesadilla 
+nightmare	pesadil
 nine	nueve
 nineteen	diecinueve
 ninety	noventa
@@ -2451,7 +2454,7 @@ olive	aceituna  ; oliva
 on	en ; sobre
 once upon a time	érase una vez, había una vez, era una vez
 one	uno
-onion	cebolla 
+onion	cebol
 open	abierto 
 operating system	sistema operativo 
 opinion	opinión 
@@ -2479,7 +2482,7 @@ palladium	paladio
 palm	palma  
 pancreas	páncreas 
 pants	pantalón 
-papaya	#Spanish'papaya , fruta bomba (Cuban standard usage - Eastern Cuba : papaya), lechosa  (Dominican Republic'Eastern Central Colombia and Llanos'Venezuela - Colombia standard usage : papaya), mamón (Argentina'Paraguay)
+papaya	#Spanish'papaya , fruta bomba (Cuban standard usage - Eastern Cuba : papaya), lechosa  (Dominican Republic'Eastern Central Colombia and Llanos'Venezue- Colombia standard usage : papaya), mamón (Argentina'Paraguay)
 paper	pap
 paradox	paradoja 
 park	parque 
@@ -2497,8 +2500,8 @@ pen	pluma  ;
 pencil	lápiz 
 penguin	pingüino 
 penicillin	penicilina 
-peninsula	península 
-penis	pene  ; carajo  ; pirula  ; pirulo ; pito  ; polla  ; pija  ; tranca  ; verga  ; chota  ; garompa  ; pipe  ; poste  ; poronga  ; papirola  ; miembro 
+peninsula	penínsu
+penis	pene  ; carajo  ; piru ; pirulo ; pito  ; pol ; pija  ; tranca  ; verga  ; chota  ; garompa  ; pipe  ; poste  ; poronga  ; papiro ; miembro 
 people	pueblo 
 pepper	pimienta 
 percent	por ciento
@@ -2506,7 +2509,7 @@ peregrine falcon	halcón peregrino
 perestroika	perestroika 
 perhaps	quizá ; quizás ; tal vez
 perineum	periné  ; perineo 
-periodic table	clasificación periódica  ; tabla periódica 
+periodic table	clasificación periódica  ; tabperiódica 
 person	persona 
 petrol	gasolina  
 petroleum	petróleo 
@@ -2528,7 +2531,7 @@ pig	cerdo
 pigeon	paloma  ; palomo  ; pichón 
 piglet	lechón (n)
 pillow	almohada 
-pimple	espinilla 
+pimple	espinil
 pin	alfiler  ; aguja 
 pine	pino 
 pineapple	piña  ; ananás 
@@ -2545,7 +2548,7 @@ play	jugar
 please	por favor ; favor de ; porfa
 pleasure	placer 
 plough	arado 
-plum	ciruela 
+plum	cirue
 plutonium	plutonio 
 pocket	bolsillo  ; bolsa  
 poem	poema  ; oda 
@@ -2567,7 +2570,7 @@ poplar	álamo
 pornography	pornografía 
 port	puerto 
 post office	correos  ; casa de correos  ; oficina de correos 
-postage stamp	estampilla  ; sello  
+postage stamp	estampil ; sello  
 postcard	tarjeta postal  ; postal 
 postcode	código postal 
 postmodernism	postmodernidad 
@@ -2622,7 +2625,7 @@ recent	reciente
 rectangle	rectángulo 
 red	rojo
 red deer	ciervo rojo 
-refrigerator	frigorífico  (Spain), heladera  (Argentina'Paraguay'Uruguay), nevera  (Colombia'Dominican Republic'Puerto Rico'Venezuela - regional usage in Spain), refrigerador  (Bolivia'Chile'Cuba'Mexico), refrigeradora  (Central America'Ecuador'Peru), frío  (Cuba'colloquial)
+refrigerator	frigorífico  (Spain), heladera  (Argentina'Paraguay'Uruguay), nevera  (Colombia'Dominican Republic'Puerto Rico'Venezue- regional usage in Spain), refrigerador  (Bolivia'Chile'Cuba'Mexico), refrigeradora  (Central America'Ecuador'Peru), frío  (Cuba'colloquial)
 reindeer	reno  ; rangífero 
 relative	pariente 
 religion	religión 
@@ -2648,7 +2651,7 @@ rock dove	pomba brava
 roe deer	corzo 
 roof	tejado
 rook	torre 
-room	cuarto  ; habitación  ; pieza  ; sala  ; recámara  
+room	cuarto  ; habitación  ; pieza  ; sa ; recámara  
 rooster	gallo 
 root	raíz  ; raíces
 rope	cuerda  ; soga 
@@ -2687,7 +2690,7 @@ season	estación
 second	segundo 
 secret	secreto 
 see	ver
-seed	semilla 
+seed	semil
 selenium	selenio 
 sell	vender
 semen	semen 
@@ -2710,7 +2713,7 @@ shirt	camisa
 shit	cagar
 shoe	zapato 
 shop	tienda 
-shore	costa  ; orilla 
+shore	costa  ; oril
 shoulder	hombro 
 shrew	musaraña 
 sick	enfermo  ; enferma  
@@ -2772,12 +2775,12 @@ south	sur
 spacecraft	nave espacial ; astronave
 spaceship	nave espacial 
 spacetime	espacio-tiempo 
-spade	pala  ; azada 
+spade	pa ; azada 
 sparrow	gorrión 
 sparrow hawk	gavilán 
 speak	hablar
 spectacles	anteojos (m'p) (Latin America), espejuelos (m'p) (Cuba'Puerto Rico), gafas (f'p) (especially Colombia'Dominican Republic'Spain), lentes (m'p) (Latin America)
-sphere	esfera  ; bola 
+sphere	esfera  ; bo
 spice	especia 
 spider	araña 
 spirit	espíritu  ; alma 
@@ -2790,9 +2793,9 @@ spruce	pícea
 spy	espía  ; chivato 
 square	plaza 
 squid	calamar 
-squirrel	ardilla 
+squirrel	ardil
 stand	estar de pie, estar parado
-star	estrella 
+star	estrel
 starling	estornino 
 station	estación 
 statue	estatua 
@@ -2802,7 +2805,7 @@ stone	piedra
 stork	cigüeña 
 story	cuento  ; historia 
 strange	extraño  ; raro
-strawberry	fresa  ; frutilla  
+strawberry	fresa  ; frutil 
 street	calle 
 strength	fuerza 
 string	cord ; mecate  ; cuerda 
@@ -2816,7 +2819,7 @@ suicide	suicidio
 sulfur	azufre 
 summer	verano 
 sun	sol 
-sunflower	girasol  ; maravilla 
+sunflower	girasol  ; maravil
 surname	apellido 
 swallow	tragar ; engullir ; deglutir ; ingurgitar
 swan	cisne 
@@ -2827,10 +2830,10 @@ swim	nadar
 swimming pool	piscina  ; alberca  ; pileta de natación  
 sword	espada 
 system	sistema 
-table	tabla 
+table	tab
 tadpole	renacuajo  ; ranacuajo 
 taiga	taiga
-tail	cola 
+tail	co
 take	tomar
 talent	talento 
 talk	hablar ; conversar
@@ -2856,14 +2859,14 @@ terbium	terbio
 territory	territorio 
 terrorism	terrorismo 
 terrorist	terrorista 
-testicle	testículo , cojón  (vulgar), pelota  (vulgar, generally in plural +-s), huevo  (vulgar), bola  (vulgar, generally in plural +-s)
+testicle	testículo , cojón  (vulgar), pelota  (vulgar, generally in plural +-s), huevo  (vulgar), bo (vulgar, generally in plural +-s)
 thallium	talio 
 than	que
 thank you	gracias ; muchas gracias
 thank you very much	muchas gracias
 thanks	gracias
-that	ese , esa , esos (p), esas (f'p), eso (n) (near) ; aqu, aquella , aquellos (p), aquellas (f'p), aquello (n), (far)
-the	 ; la  ; los  ; las  ; lo (n)
+that	ese , esa , esos (p), esas (f'p), eso (n) (near) ; aqu, aquel, aquellos (p), aquellas (f'p), aquello (n), (far)
+the	 ;  ; los  ; las  ; lo (n)
 their	su ; sus
 there	allí ; ahí ; allá
 there is	hay 
@@ -2906,7 +2909,7 @@ tomorrow	mañana
 tongue	lengua 
 too	demasiado
 tooth	diente 
-toothbrush	cepillo de dientes  ; escobilla de dientes  
+toothbrush	cepillo de dientes  ; escobilde dientes  
 tortoise	tortuga  ; tortuga terrestre  ; morrocoy  
 touch	tocar
 tourism	turismo 
@@ -2932,10 +2935,10 @@ tsunami	tsunami  ; maremoto
 tungsten	tungsteno  ; wolframio 
 turkey	pavo  ; chompipe  ; guajolote  ; guanajo  ; pisco  ; totol  
 turtle	tortuga , peta  (Bolivia)
-turtle dove	tórtola 
+turtle dove	tórto
 twelve	doce
 twenty	veintitrés
-twin	gemelo , mellizo  (strictly speaking, 'gemelo' is only for monozygotic siblings, whereas dizygotic siblings should always be called 'mellizos'), cuate  (Mexico - dizygotic sibling), cuache  (Guatemala - dizygotic sibling), guacho (Honduras), guares (m'p) (Puerto Rico), jimagua  (Cuba), morocho  (Venezuela - dizygotic sibling)
+twin	gemelo , mellizo  (strictly speaking, 'gemelo' is only for monozygotic siblings, whereas dizygotic siblings should always be called 'mellizos'), cuate  (Mexico - dizygotic sibling), cuache  (Guatema- dizygotic sibling), guacho (Honduras), guares (m'p) (Puerto Rico), jimagua  (Cuba), morocho  (Venezue- dizygotic sibling)
 two	dos
 typhoon	tifón 
 umbrella	parasol  ; paraguas 
@@ -2973,7 +2976,7 @@ wait	esperar ; aguardar
 waiter	camarero  (especially Spain), garzón  (Chile), mesero  (Caribbean Islands'Colombia'Central America'Ecuador'Mexico), mesonero  (Venezuela), mozo  (Argentina'Bolivia'Chile'Paraguay'Peru'Uruguay)
 wake up	despertarse
 walk	caminar ; andar
-wall	muro  ; muralla 
+wall	muro  ; mural
 walrus	morsa 
 want	querer ; desear
 war	guerra 
@@ -2983,8 +2986,8 @@ wash	lavar
 wasp	avispa 
 watch	reloj 
 waterfall	catarata  ; cascada  ; caída de agua 
-watermelon	sandía  ; melón  ; melón de agua  ; patilla  
-wave	onda  ; ola 
+watermelon	sandía  ; melón  ; melón de agua  ; patil 
+wave	onda  ; o
 wax	cera 
 way	camino  ; vía 
 we	nosotros  ; nosotras 
@@ -3024,7 +3027,7 @@ willow	sauce
 wind	viento 
 window	ventana 
 wine	vino 
-wing	ala 
+wing	a
 winter	invierno 
 wise	sabio ; juicioso
 wisent	bisonte europeo 
@@ -3098,16 +3101,16 @@ I	yo
 blond	rubio
 taxicabs	taxis
 gold	oro
-result	la resulta
+result	resulta
 macrocosmically	macrocosmicamente
 same	mismo
 underused	infrautilizado
-staircase	la escalera
-hand	la mano
+staircase	escalera
+hand	mano
 topcoat	sobreabrigo
 b	b
 c	c
-salt	la sal
+salt	sal
 e	e
 tabletop	mesa
 laden	cargado
@@ -3117,14 +3120,14 @@ j	j
 helium	helio
 weeping	lloroso
 eating	comiendo
-blood	la sangre
-neighbor	la vecina
+blood	sangre
+neighbor	vecina
 o	or[conjunction]
 straight	derecho
 laded	cargado
 q	q
-r	net(la red)
-sale	la liquidacion
+r	net(red)
+sale	liquidacion
 readers	lectores
 cancan	cancan ( the dance)
 information	informacion
@@ -3152,17 +3155,17 @@ seacoasts	costas dmar
 abated	aplacado
 aficionada	aficionada (fan) -f
 dichroism	dicroismo
-sand	la arena
-peppermint	la menta
+sand	arena
+peppermint	menta
 categorically	categóricamente
 abstracter	abstractor
 harm	dañar
-rope	la cuerda
+rope	cuerda
 aboriginal	aborigen
 abstracted	abstracto
 polemist	polemizador
 fulfillments	obligaciones
-flannel	la franela
+flannel	franela
 thieves	ladrones
 abater	rebajador
 abates	satélites
@@ -3189,7 +3192,7 @@ abrasions	abrasiones
 exiguousness	exigüedad
 madmen	locos
 terrifying	espeleznante
-fountain	la fuente
+fountain	fuente
 catalog	catálogo
 narcissist	narcisista
 abstractor	abstractor
@@ -3215,7 +3218,7 @@ podium	posio
 castrated	castrado
 vaccination	vacuna
 pink	rosado
-woman	la mujer
+woman	mujer
 poetically	poéticamente
 save	ahorrar
 plumulate	plumulado
@@ -3236,7 +3239,7 @@ taller	más alto
 caboodle	montón
 backlogs	atrasos
 famous	famoso
-question	la pregunta
+question	pregunta
 calibre	calibre
 picture	cuadro
 abutment	lindero
@@ -3246,7 +3249,7 @@ disable	inutilizar
 tortures	torturas
 babbling	balbuceando
 torturer	atormentador
-rose	la rosa
+rose	rosa
 oceanographer	oceanografo
 captives	cautivos
 thousand	mil
@@ -3254,7 +3257,7 @@ raptor	raptor
 symphonic	sinfónico
 tortured	torturado
 fuckers	chingadores
-cow	la vaca
+cow	vaca
 quack	matasanos
 counterrevolutionaries	contrarrevolucionarios
 madman	loco
@@ -3264,9 +3267,9 @@ academia	academia
 exhortative	exhortativo
 academic	académico
 chloride	clorúro
-pipe	la pipa
-longitude	la longitud
-pigeon	la paloma
+pipe	pipa
+longitude	longitud
+pigeon	paloma
 abstractly	abstractamente
 actress	una actriz
 badgering	molestando
@@ -3284,7 +3287,7 @@ obeys	obedece
 oceanographic	oceanografico
 hazy	brumoso
 occurrent	ocurrente
-haze	la bruma
+haze	bruma
 salads	ensaladas
 exhorted	exhortado
 muscle	músculo
@@ -3295,14 +3298,14 @@ abacuses	ábacos
 cry	llorar
 totals	sumas
 charades	charadas
-pineapple	la ananá
+pineapple	ananá
 activities	las actividades
 chiropractic	quiropráctica
-abducted	separado de la línea media dcuerpo.
+abducted	separado de línea media dcuerpo.
 narcissism	narcisismo
 stubbly	lleno de rastrojo
 incident	incidente
-mayonnaise	la mayonesa
+mayonnaise	mayonesa
 weekends	fines de semana
 concert	concierto
 teleconferencing	teleconfiriendo
@@ -3323,7 +3326,7 @@ piss	mear
 chortle	reir(se)
 stereotype	esterotipo
 salesmen	dependientes
-cup	la taza
+cup	taza
 cut	cortar
 harass	molestar
 two	dos
@@ -3336,7 +3339,7 @@ calmly	calmadamente
 teas	tés
 skinny	flaco
 worried	preocupado
-kitchen	la cocina
+kitchen	cocina
 shout	gritar
 ankle	tobillo
 inclination	inclinación
@@ -3355,7 +3358,7 @@ speech	discurso
 watch	reloj
 purple	morado
 cabinet	gabinete
-thing	la cosa
+thing	cosa
 tooted	pitó
 actualize	actualizar
 thigh	muslo
@@ -3371,8 +3374,8 @@ glass	vidrio
 homebuilder	constructor
 campus	recinto
 anthropomorphism	antropomorfismo
-gooseberry	grossella espinosa
-jacket	la chaqueta
+gooseberry	grosselespinosa
+jacket	chaqueta
 weeper	llorona
 sabbatic	sabático
 incisor	incisor
@@ -3381,7 +3384,7 @@ technologies	tecnologías
 easiest	mas facil
 machining	maquinando
 alarmingly	alarmantemente
-memory	la memoria
+memory	memoria
 house	casa
 taverna	taberna
 disaster	desastre
@@ -3437,7 +3440,7 @@ waddle	nalguear
 acyclic	acíclico.
 motionless	estatico
 crutch	muleta
-wallet	la cartera
+wallet	cartera
 celebrates	festeja
 acrobats	acróbatas
 ante	apuesta(poker); ante...
@@ -3460,7 +3463,7 @@ day	día
 accustomed	acostumbrado
 quadruple	cuádruple
 lacerations	laceraciones
-island	la isla
+island	isla
 theological	teológico
 water	agua
 fried	frito
@@ -3505,12 +3508,13 @@ tramcar	tram
 gravitation	gravitacion
 wasps	avispas
 are	estar
+we're	estamos
 preacher	predicador
 preaches	predica
 abusing	abusando
 announcement	anuncio
 carefully	cuidadosamente
-going	i am going: voy  you are going: va  we are going: vamos  they are going: van
+going	yendo
 macrophage	macrófago
 pancake	panqueque
 buyer	comprador
@@ -3522,7 +3526,7 @@ treatment	tratamiento
 pluralism	pluralismo
 waited	perdado
 testaments	testamentos
-grass	la hierba
+grass	hierba
 weighty	ponderoso
 brag	bravata; jactarse & fanfarronear(v)
 bactericidally	bactericidamente
@@ -3576,9 +3580,9 @@ dactylic	dactílico
 finally	al fin
 calisthenic	calisténico
 thereafter	después
-grape	la uva
+grape	uva
 brown	pardo
-straw	la paja
+straw	paja
 feast	fiesta
 acceded	accedió
 acceptance	aceptación
@@ -3593,9 +3597,9 @@ guzzle	tragar; engullir
 training	training center
 machete	machete
 incestuously	incestuosamente
-pound	la libra
+pound	libra
 accusor	acusador/ra
-load	la carga
+load	carga
 censuses	apadronamientos
 ladylike	afeminado
 loaf	holgazanear
@@ -3622,22 +3626,22 @@ December	diciembre
 balance	balancear
 sadomasochistic	sadomasoquista
 iconoclast	iconoclasta
-lock	la esclusa
+lock	esclusa
 loch	lago
 text	texto
-kindness	la bondad
+kindness	bondad
 made	hecho
-statue	la estatua
+statue	estatua
 plethora	plétora
 timidly	tímidamente
 anion	anión
 lobe	lóbulo
-thumbtack	la chinche
-dog	la perra
+thumbtack	chinche
+dog	perra
 towing	remolcando
 steelwork	acería
 bags	bolsas
-magi	los reyes magos; sacredotes de la relig. zoroastrica
+magi	los reyes magos; sacredotes de relig. zoroastrica
 thief	ladrón
 chunks	trocítos
 calmed	calmado
@@ -3647,7 +3651,7 @@ government	gobierno
 known	conocido
 absinthe	absenta
 dirtying	ensuciando
-nurse	la enfermera
+nurse	enfermera
 accumulate	acumular(se)
 crime	crimen
 acquaintances	conocidos/das
@@ -3668,12 +3672,12 @@ sadness	tristeza
 bail	pelota
 magistrally	magistralmente
 logo	logotipo
-maid	la criada
+maid	criada
 cheerfully	alegremente
 macaque	macaco
 loft	desván
 motivated	motivado
-broom	la escoba
+broom	escoba
 dry	seco
 poisoned	envenenado
 weights	pesos
@@ -3682,15 +3686,15 @@ labelled	etiquetado
 tabernacles	tabernáculos
 poisoner	envenenador
 cantaloupe	melón
-fidelity	la fidelidad
+fidelity	fidelidad
 tachyons	taquión
 tilde	tilde
 negotiating	negociando
 activates	activa
-stain	la mancha
+stain	mancha
 absentees	ausentes
-ball	la pelota
-napkin	la servilleta
+ball	pelota
+napkin	servilleta
 bale	fardo
 bald	desgastado(a)
 threats	amenazas
@@ -3708,9 +3712,9 @@ adaptations	adaptaciones
 bytes	los bytes
 bake	hornear
 threat	amenaza 
-pumpkin	la calabaza
+pumpkin	calabaza
 activated	activado
-musicology	la musicología
+musicology	musicología
 friendships	amistades
 tabulators	tabuladores
 trees	arboles
@@ -3738,7 +3742,7 @@ oligarch	oligarca
 workers	trabajadores
 bother	molestar
 childhood	niñez
-star	la estrella
+star	estrella
 wolf	lobo
 quadripartitely	cuatripartitamente
 cardiovascular	cardiovascular
@@ -3750,7 +3754,7 @@ eyeglasses	eyeglasses
 gadgets	artilugio
 agent	agente -m
 treat	golosina ( sweets)
-wool	la lana
+wool	lana
 abortion	aborto (acción)
 macaronic	macarronico
 rapid	rápido
@@ -3760,10 +3764,10 @@ nakedness	desnudez
 specs	las gafas (de "spectacles")
 loom	telar
 barn	troje
-wood	la madera
+wood	madera
 abrogate	abrogar
 admitted	vt (pret & pp) - (to be admitted) internarse
-surprise	la sorpresa
+surprise	sorpresa
 seashells	conchas marinas
 sealed	sellado
 countdown	cuenta regresiva
@@ -3773,7 +3777,7 @@ therapeutist	terapeúta
 achieving	que logra
 disrupt	transtornar
 telecommunicate	telecomunicar
-scar	la cicatriz
+scar	cicatriz
 thyroid	tiroide
 abduced	abducido
 knock	tocar
@@ -3781,7 +3785,7 @@ plasmid	plásmido
 daybook	libro dia
 contemptible	vil
 censored	censurado
-speed	la velocidad
+speed	velocidad
 abysses	abismos
 apple	manzana
 admit	vt - (to the hospital) internar
@@ -3826,7 +3830,7 @@ tattoo	tatuáje
 tragedies	tragedias
 tinted	teñido
 activator	activador
-word	la palabra
+word	palabra
 theory	teoría
 inoffensive	inofensivo
 love	love
@@ -3834,7 +3838,7 @@ internetwork	connección interna de comunicación
 castanet	castañuela
 acropetal	acropetálico
 architect	arquitecto
-forehead	la frenta
+forehead	frenta
 secret	secreto
 across	a través
 antagonistic	antagonico
@@ -3856,7 +3860,7 @@ spell	hechizo
 backhand	reves
 aberration	desviación
 cavity	carie ( dentist)
-coffeepot	la cafetera
+coffeepot	cafetera
 flagellation	flagelacion
 combustion	combustión
 tombs	tumbas
@@ -3873,7 +3877,7 @@ accompaniment	acompañamiento
 February	febrero
 tenants	inquilinos
 grave	grave
-advantage	la ventaja
+advantage	ventaja
 telegram	telegrama
 cloudy	nublado
 accustoming	acostumbrando
@@ -3888,7 +3892,7 @@ egg	huevo
 transcendentalist	trascendentalista
 year	año
 yeah	si
-branch	la rama
+branch	rama
 acculturated	aculturado
 themes	temas
 calamint	ajedrea
@@ -3901,7 +3905,7 @@ near	cerca
 silence	silencio
 flagellant	flagelante
 transcendentalism	trascendentalismo
-fairy	la hada
+fairy	hada
 carbohydrates	carbohídratos
 ragged	desigual
 economy	econom'ia
@@ -3961,7 +3965,7 @@ e'er	contracción de "ever": siempre
 need	necesitar
 laicization	laicizacion
 catastrophes	catástrofes
-typewriter	la maquina de escribir
+typewriter	maquina de escribir
 brainless	estupido; insensato
 cephalic	cefálico
 obediences	obediencias
@@ -3985,7 +3989,7 @@ packed	guardado (that's just 1 meaning)
 lizard	lagarto
 magniloquently	magnilocuentemente
 forty	cuarenta
-cipher	la cifra
+cipher	cifra
 chased	persiguió 
 dammit	maldición
 plasmids	plasmidios
@@ -4014,12 +4018,12 @@ abrasive	brusco (manner)
 passively	pasivamente
 quadrature	cuadratura
 jackdaw	grajilla
-shape	la forma
+shape	forma
 seventy	setenta
 stealer	taker
 harassed	acosada
 gravel	grava
-giraffe	la jirafa
+giraffe	jirafa
 charming	encantador
 saffron	azafran
 singer	cantor
@@ -4035,7 +4039,7 @@ television	televisión
 chairman	presidente
 sharp	agudo
 temperament	genio
-spinach	la espinaca
+spinach	espinaca
 cent	centavo
 screen	pantalla
 transfusion	transfusión
@@ -4065,7 +4069,7 @@ abstracting	abstrayendo
 centric	céntrico
 xylophone	xilófono
 exigently	exigentemente
-ferocity	la ferocidad
+ferocity	ferocidad
 raced	él competió
 raining	lloviendo
 dreams	sueños
@@ -4075,7 +4079,7 @@ transcendentalize	trascender
 calcimine	encalar
 vodka	vodka
 chose	escojer
-France	la francia
+France	francia
 tergiversator	tergiversador
 rollers	rodillos
 announcers	anuciadors
@@ -4084,13 +4088,13 @@ obediently	obedientemente
 antelope	antilope
 tightwads	tacaños
 abstraction	abstracción
-drawer	la gaveta
+drawer	gaveta
 rabies	rabia
 adjacent	adyacente
 pencil	lapiz
-chore	la tarea
+chore	tarea
 appetite	apetito
-needle	la aguja
+needle	aguja
 strategy	estrategia
 teases	molesta
 caviar	caviár
@@ -4119,7 +4123,7 @@ tints	tintes
 comeback	regresar
 tastefully	gustosamente
 gray	gris
-waterfall	la catarata
+waterfall	catarata
 backbone	lomo
 stubbing	desarraigar
 laborsaving	que ahorra trabajo
@@ -4128,7 +4132,7 @@ magnesia	magnesio(a)
 cemetery	cementerio
 abominator	abominador
 black	negro
-liberation	la liberación
+liberation	liberación
 cantina	cantina
 nest	nido
 calcifuge	calcífugo
@@ -4137,7 +4141,7 @@ describe	describir
 sarcasm	sarcasmo
 suck	chupas
 campuses	recintos
-foam	la espuma
+foam	espuma
 polarizers	polarizadores
 administration	n  -  administracion -f  (accent over  o)
 internalized	internalizado
@@ -4145,7 +4149,7 @@ topographically	topográficamente
 acculturate	aculturar
 white	blanco
 counterpart	contraparte
-grapefruit	la toronja
+grapefruit	toronja
 internalizes	internaliza
 occupants	ocupantes
 lackluster	sin brillo
@@ -4159,7 +4163,7 @@ incaution	descuido
 harelipped	leporino (labio)
 acetaminophen	acetaminofén
 museum	museo
-clothing	la ropa
+clothing	ropa
 tachycardia	taquicardia
 tamarind	tamarindo ( the fruit)
 accomplice	cómplice
@@ -4182,11 +4186,11 @@ green	verde
 race	(ethnicity
 radiosensitivity	radiosensitividad
 was	fue 
-war	la guerra
-sculpture	la escultura
-way	la via
-wax	la cera
-window	la ventana
+war	guerra
+sculpture	escultura
+way	via
+wax	cera
+window	ventana
 daffodils	narcisos
 polarizables	polarizables
 play	tocar
@@ -4218,7 +4222,7 @@ applesauce	pure de manzana
 comfortable	cómodo
 tranquility	tranquilidad
 suit	traje
-necktie	la corbata
+necktie	corbata
 chocolate	chocolate
 tergiversation	tergiversión
 study	estudiar
@@ -4226,7 +4230,7 @@ fever	calentura
 symposia	simposio
 chocolaty	achocolatádo (a)
 machinelike	parecido a una máquina
-web	tejido tela telaraña enredo red trama
+web	tejido tetelaraña enredo red trama
 wed	casarse
 tragic	trágico
 older	mayor
@@ -4241,13 +4245,13 @@ hailstone	granizo
 climate	clima
 quadratic	cuadrático
 calenture	calentura
-ballistics	la balística
+ballistics	balística
 great	gran
 narcissus	narciso
 rags	los trapos
 macroprocessor	macroprocesador
 thenceforth	desde entonces
-circumference	la circunferencia
+circumference	circunferencia
 rage	rabia
 screws	tornillos
 statistics	estadística
@@ -4269,7 +4273,7 @@ tornadoes	tornados
 rail	(railroad) vía
 halfcircle	semicirculo
 tranquil	tranquilo
-tortilla	tortilla ( omelet )
+tortilla	tortil( omelet )
 choleric	colérico
 absenteeism	absentismo
 oiler	aceitera
@@ -4285,7 +4289,7 @@ raid	incursión
 overprice	sobreprecio
 game	juego
 pacemaker	marcapasos
-faith	la fe
+faith	fe
 why	por qué
 acclimates	aclimatar
 died	muerto
@@ -4372,19 +4376,19 @@ cacophonous	cacofónico
 laborists	los laboristas
 sexless	sin sexo
 breathe	respirar
-flu	la influenza
+flu	influenza
 food	comida
 fly	volar
 cholinergic	colinérgico (a)
 kilometer	kilómetro
 acquisitions	adquisiciones
-interview	la entrevista
+interview	entrevista
 testimonialize	dar testimonio
 naive	ingenuo
 bachelorhood	solteria
 traumas	traumas
 accomplisher	terminador
-scarf	la bufanda
+scarf	bufanda
 tearjerker	arrancalágrimas
 accomplishes	termina  terminó
 language	lenguaje
@@ -4404,13 +4408,13 @@ never	nunca
 terrorizers	terroristas
 taffy	caramelo (de az'ucar fundida)
 elephant	elefante
-fog	la neblina
+fog	neblina
 abeyance	iñ en desuso
 christening	bautízo
 tears	rasga
 for	por
 placentation	placentación
-loneliness	la soledad
+loneliness	soledad
 jackhammer	taladradora
 content	satisfecho
 fox	zorro
@@ -4433,7 +4437,7 @@ ha	ja
 zodiacal	zodiacal
 wrestling	lucha libre
 he	él
-feather	la pluma
+feather	pluma
 habilitated	habilitado
 placed	situado
 anthropophagous	antropofago
@@ -4474,7 +4478,7 @@ accrue	aumentarse
 eagerness	ansia
 occurrence	ocurrencia
 acetate	acetato
-literature	la literatura
+literature	literatura
 accomplices	cómplices
 ablate	extirpar
 ability	talento
@@ -4485,11 +4489,11 @@ plugged	enchufado
 knew	sabia
 ablaut	quesontes
 calculability	calculabilidad
-lantern	la lámpara
+lantern	lámpara
 paganism	paganismo
 pasteurize	pasteurizar
 cannibals	canibales
-knee	la rodilla
+knee	rodilla
 chronologically	cronologicaménte
 oceanographically	oceanograficamente
 calibrating	calibrando
@@ -4506,11 +4510,11 @@ locker	casillero
 laudable	digno de loor
 salve	ungu.ento
 second	segundo
-that	eso
+that	que
 tagalong	sucesi'on
 ma	mamá
 labradorite	labradorita
-skirt	la falda
+skirt	falda
 www	rim (red mundial interna)
 limit	límite
 enzymatically	enzimaticamente
@@ -4521,7 +4525,7 @@ thaw	descongelar ( to thaw)
 cabinets	gabinetes
 tolerance	tolerancia
 abstaining	abstinente
-plum	la ciruela
+plum	ciruela
 incertitude	incierto
 contest	concurso
 author	autor
@@ -4529,7 +4533,7 @@ greenhouse	invernáculo
 charms	amuletos ( noun)
 feeling	sentimiento
 plus	añadido
-license	la licencia
+license	licencia
 dish	plato
 dream	soñar
 preachers	predicadores
@@ -4548,7 +4552,7 @@ head	doument
 radiobroadcast	transmisión de radio
 imported	importado
 of	de
-living room	la sala
+living room	sala
 artfully	astutamente; ladinamente; artificiosamente; con artificio; con arte; diestramente
 capacities	capacidades
 incarcerating	encarcelando
@@ -4562,13 +4566,13 @@ cousin	primo
 occupies	ocupa
 intelligent	inteligente
 rabbi	rabino
-walnut	la nuez
+walnut	nuez
 incessantly	incesantemente
 kisses	besos
 easier	mas facil
 luxury	lujo
 macromolecule	macromolecula
-salad	la ensalada
+salad	ensalada
 catacomb	catacumba
 nation	nación
 meditations	meditaciones
@@ -4602,7 +4606,7 @@ chronically	cronicaménte
 waistcoat	chaleco
 bells	las campanas
 macaronically	macarronicamente
-seed	la semilla
+seed	semilla
 seashell	concha marina
 magisterially	magistralmente
 macadamized	alquitranado
@@ -4632,7 +4636,7 @@ cesarian	cesárea
 badminton	badminton
 closet	closet
 abstained	abstinente
-flower	la flor
+flower	flor
 single	solo
 cement	cemento
 teammate	compañero de equipo
@@ -4646,7 +4650,7 @@ laborites	laboristas
 chutzpah	personalidad
 abominably	abominablemente
 rules	reglas
-ruler	la regla
+ruler	regla
 biting	mordaz
 transmissions	transmisiones
 calculi	cálculos
@@ -4715,7 +4719,7 @@ fabric	fabrica
 calcification	calcificación
 adiabatic	adiabatica (curva)
 centigrade	centígrado
-circumcision	la circuncision
+circumcision	circuncision
 gravitate	gravitar
 south	sur
 north	norte
@@ -4744,7 +4748,7 @@ dress	vestido
 thru	atrávez
 addresses	direcciones
 earful	noticias
-onion	la cebolla
+onion	cebolla
 obliged	obligado
 harbor	puerto
 treasures	tesoros
@@ -4765,13 +4769,13 @@ castigators	castigadores
 stranded	desamparado
 earthquake	temblor
 d%27etre	de ser
-nightmare	la pesadilla
+nightmare	pesadilla
 addressed	dirigido
 addressee	destinatario
 techniques	técnicas
 treasured	atesorado
 send	mandar
-cauliflower	la coliflor
+cauliflower	coliflor
 shrimp	camarone
 challenges	desafíos
 regret	sentir
@@ -4779,7 +4783,7 @@ scale	escala
 thinkers	pensadores
 magnetically	magneticamente
 pacifistic	pacifista
-gin	la ginebra
+gin	ginebra
 challenged	desafió ( action verb)
 abstinence	abstinencia
 iceberg	iceberg
@@ -4800,12 +4804,12 @@ absorbingly	absorbentemente
 anthem	motete(eccl); himno nacional
 anther	antera
 accouter	equipar
-England	la inglaterra
+England	inglaterra
 without	sin
 youth	juventud
 abetting	instigando
 habitations	habitaciones
-mulberry	la mora
+mulberry	mora
 algebraically	algebraicamente
 zeros	los ceros
 seagulls	gaviotas
@@ -4819,7 +4823,7 @@ poise	aplomo
 abortionists	abortistas
 cerebellum	cerebellum
 weekly	semanal
-cider	la sidra
+cider	sidra
 grenades	granadas
 steelworker	acerero
 plateaus	plataformas
@@ -4832,7 +4836,7 @@ radiobroadcaster	transmitidor de radio
 exiguity	exigüedad
 wrap	envolver
 yours	tuyo
-novel	la novela
+novel	novela
 badness	maldad
 correct	correcto
 lade	cargar (to load in shipping)
@@ -4845,14 +4849,14 @@ callous	calloso
 torte	torta ( pie)
 telephotographic	telefotográficamente
 murder	asesinato
-lace	la cinta
+lace	cinta
 backgammon	chaquete
 calcaneal	calcañal
 internationally	internacionalmente
 xylophones	xilófonos
 lack	escasez
 lagoons	lagunas
-toast	la tostada
+toast	tostada
 tails	colas
 labs	los laboratorios
 plastidial	plastidial
@@ -4862,7 +4866,7 @@ sagaciously	sagazmente
 young	joven
 cabinetmakers	ebanister/ia
 facilitation	facilitacion
-gasoline	la gasolina
+gasoline	gasolina
 lubricated	lubricado
 lipid	lípido
 magnifically	magníficamente
@@ -4896,7 +4900,7 @@ channel	canal
 ladyfinger	lengua de gato (biscuit)
 changing	cambiando
 cascades	cascadas
-mule	la mula
+mule	mula
 tetanus	tétano
 camel	camello
 macerates	macera
@@ -4921,7 +4925,7 @@ wait	esperar
 circuit	circuito
 American	americano
 objurgated	reprendido
-queen	la reina
+queen	reina
 artefact	artefacto
 gut	intestino
 guy	tío (inf: hombre)
@@ -4934,7 +4938,7 @@ tempted	tentó
 accordingly	por consiguiente; en consecuencia
 laid	acostado
 gymnasiums	gimnasios
-lair	la guarida
+lair	guarida
 pacific	pacifico
 names	michael
 abominations	abominaciones
@@ -4981,7 +4985,7 @@ sacrificed	sacrificado
 ties	corbatas ( as in dress tie )
 catastrophe	catástrofe
 busy	ocupado
-land	la tierra
+land	tierra
 chronologize	cronologizár
 cholera	cólera ( disease)
 identic	idéntico
@@ -4990,7 +4994,7 @@ sacrifices	dewayne
 burn	quemar
 sacrificer	quien realiza sacrificios
 tithes	diezmos
-lamp	la lámpara
+lamp	lámpara
 backfire	petardeo
 idealizes	idealiza
 lamb	cordero
@@ -5018,7 +5022,7 @@ abundant	abundante
 centenarian	centenario
 earns	gana
 want	querir
-almond	la almendra
+almond	almendra
 forecast	pronosticar
 mute	mudo
 steaks	things
@@ -5027,7 +5031,7 @@ radiantly	brillantemente
 baffle	confundir
 backwoods	bosque
 circle	círculo
-bagpipe	la gaita
+bagpipe	gaita
 nystagmus	nova
 aluminum	aluminio
 chase	perseguir
@@ -5058,12 +5062,12 @@ sabotaging	saboteando
 wasp	avispa
 late	tarde
 ham	jamon
-school	la escuela
-locomotive	la locomotora
+school	escuela
+locomotive	locomotora
 ruinations	ruinaciones
 things	cosas
 tile	mosaico
-avenue	la avenida
+avenue	avenida
 hat	sombrero
 abounds	abunda
 champ	campéon
@@ -5076,9 +5080,9 @@ weighs	pondera
 yellowed	amarilló
 adapt	adaptar(se)
 headlights	linternas delanteras
-lass	la muchacha
+lass	muchacha
 wash	lavar
-weight	la pesa
+weight	pesa
 odors	olores
 warm	caliente
 transcendence	trascendencia
@@ -5094,7 +5098,7 @@ disrupted	transtornado
 impossible	imposible
 tins	latas
 tint	teñir ( to tint)
-wave	ola (de agua)
+wave	o(de agua)
 yesterday	ayer
 acquirement	adquisición
 ecology	ecologia
@@ -5116,7 +5120,7 @@ childless	sin descendéncia
 tediously	tediosamente
 raccoons	mapache
 cafeterias	cafeterías
-wager	la apuesta
+wager	apuesta
 wages	pagópagásueldo
 eatery	comedor
 laud	loor
@@ -5127,7 +5131,7 @@ happy	feliz
 macarize	macarron
 pneumatically	neumáticamente
 tips	propinas ( gratuities ) consejos ( advice)
-hen	la gallina
+hen	gallina
 racehorses	caballos de carreras
 abrogating	abrrogante
 carbon	carbón
@@ -5138,7 +5142,7 @@ zounds	cáspita
 torpedo	torpedo
 laws	las leyes
 labile	lábil
-lesson	la lección
+lesson	lección
 magnesium	magnesio
 bedrooms	dormitorios
 addictions	adicciones.
@@ -5166,7 +5170,7 @@ smash	golpear
 incidences	incidencias
 tire	llanta(car tire)cansar(to tire)
 ledger	travesaño
-chain	la cadena
+chain	cadena
 torso	torso
 chair	silla
 tennis	ténis
@@ -5188,8 +5192,8 @@ fiction	ficción
 torticollis	tortículis
 bead	perla
 perspire	sudar
-him	el
-hip	la cadera
+him	él
+hip	cadera
 temptations	tentaciones
 hit	pegar
 tetanic	tetánico(a)
@@ -5199,7 +5203,7 @@ bean	haba
 hagiographies	hagiografías
 incarnate	encarnar
 straighten	enderezarse [intransitive]
-history	la historia
+history	historia
 careless	sin cuidado
 square	plaza
 toothpick	modadiente 
@@ -5224,9 +5228,9 @@ chef	cocinero
 crowded	atestado
 alibi	coartada
 chickpea	garbanzo
-meal	la comida
+meal	comida
 calisthenics	calistenia
-meat	la carne
+meat	carne
 chew	masticar
 abrogation	abrogacíon
 attendance	asistencia
@@ -5240,8 +5244,8 @@ chic	chic
 appreciate	apreciar
 yon	ahí allí
 killer	asasino
-beer	la cerveza
-you	vosotros
+beer	cerveza
+you	tu
 limitations	las limitaciones
 chlorides	clorúros
 incant	encantar
@@ -5264,11 +5268,11 @@ calms	calma
 lubricate	lubricar
 lacerates	lacera
 calla	aro palustre
-chin	la barbilla
+chin	barbilla
 testosterone	testósterona
 cargoes	cargas
 accompanists	acompanistas
-answer	la respuesta
+answer	respuesta
 meet	ser presentado a
 calls	llamadas
 seashore	costa dmar
@@ -5283,7 +5287,7 @@ Monday	lunes
 inborn	innato(a)
 sometimes	a veces
 promise	prometer
-easter	la pasqua
+easter	pasqua
 dandelion	diente de leon
 reply	contestar
 lightening	relámpago
@@ -5321,7 +5325,7 @@ icicle	carámbano
 president	presidente
 aberrance	equivocación
 muscular	muscular
-basket	la cesta
+basket	cesta
 aberrational	aberrante; desviado
 envy	envidiar
 therein	adjunto
@@ -5335,7 +5339,7 @@ accompanies	acompaña
 macarizes	macarrona
 actualized	actualizado
 macarized	macarronismo
-bell	la campana
+bell	campana
 readouts	indicaciones
 accompanied	acompanado
 abecedarian	abecedario
@@ -5367,7 +5371,7 @@ banquet	banquete
 taskwork	quehaceres ( chores)
 cough	toser
 ballade	balada
-radio	la radio
+radio	radio
 exiguously	exiguamente
 chickpeas	garbanzos
 accelerate	acelerar
@@ -5386,7 +5390,7 @@ forget	olvidarse
 quadripartite	cuatripartita
 tardily	tardemente
 accolades	acoladas
-curtain	la cortina
+curtain	cortina
 enzymically	enzimaticamente
 trapezist	trapecista
 accommodations	alojamientos
@@ -5409,7 +5413,7 @@ ballerinas	bailarinas
 annoy	enojar
 charcuterie	cuchillería ( knives )
 tetanization	tetanización
-cover	la cubierta
+cover	cubierta
 traffickers	traficantes
 cheapie	tacaño
 thereat	allá
@@ -5418,7 +5422,7 @@ absenting	ausentando
 pointer	puntero
 backdrop	telon
 something	algo
-vitamin	la vitamina
+vitamin	vitamina
 incinerator	incinerador
 pointed	puntiagudo
 traitors	traidores
@@ -5429,11 +5433,11 @@ abstractionism	abstraccionismo
 understandable	comprensible
 celebrants	festejantes
 chickenhearted	cobárde
-shower	la ducha
+shower	ducha
 nevertheless	no obstante
 sabbath	sábado
 fact	realidad
-surfboard	tabla de surf
+surfboard	tabde surf
 racquet	raqueta
 temperature	temperatura
 rugs	tapetes
@@ -5443,7 +5447,7 @@ galaxy	galaxia
 babes	niños
 softwares	programas
 airplanes	los aviones
-raindrop	la gota de lluvia
+raindrop	gota de lluvia
 face	rostro
 abiogenesis	abiogénesis
 narcissistic	narcisista
@@ -5460,7 +5464,7 @@ playable	pagable
 whenever	cada vez que
 ruin	ruina; bancarrota
 commands	órdenes
-vanilla	la vainilla
+vanilla	vainilla
 keeper	guardián
 please	por favor
 abut	terminar
@@ -5470,7 +5474,7 @@ pluggable	enchufable
 disadvantageous	desventajado
 exhorts	exhortos
 macrostructural	macroestructural
-rule	la regla
+rule	regla
 amateur	novicio
 palazzos	palacios
 resentment	resentimiento
@@ -5486,7 +5490,7 @@ lucidity	lucidez
 certainty	certidumbre
 theology	teología
 icons	iconos
-guitar	la guitarra
+guitar	guitarra
 raindrops	las gotas de lluvia
 transcend	trascender
 ablating	extirpando
@@ -5507,7 +5511,7 @@ breakfast	desayuno
 steel	acero
 nipples	pezones
 seize	agarrar
-church	la iglesia
+church	iglesia
 fabulously	fabulosamente
 affectionate	carinoso
 foreign	extranjero
@@ -5523,7 +5527,7 @@ stereophony	estereofonia
 abstract	resumen
 cadaveric	cadavérico
 nice	amable
-gutter	cuneta (en la calle); canalón (tejado); gotera; arroyo
+gutter	cuneta (en calle); canalón (tejado); gotera; arroyo
 paints	pinturas
 interneuron	neuron interno
 fisherman	pescador
@@ -5537,7 +5541,7 @@ pole	polo
 seacoast	costa dmar
 mortally	mortalmente
 centavo	centavo
-frog	la rana
+frog	rana
 theater	teatro
 harmed	dañado
 nephew	sobrino
@@ -5554,11 +5558,11 @@ candelabra	candelabro
 doctorate	doctornado
 exhortatory	exhortatorio
 incalculably	incalculable
-fame	la fama
+fame	fama
 lackey	lacayo (sirviente)
 pond	estanque
 repair	reparar
-death	la muerte
+death	muerte
 steak	meat
 ashtray	cenicero
 steal	take
@@ -5576,16 +5580,16 @@ guts	intestinos
 tetanizes	tetaníza
 tetrafluoride	tetrafluóruro
 liberalism	liberalismo
-quantity	la cantidad
+quantity	cantidad
 obliquity	oblicuidad
 acolytes	acólitos
-ink	la tinta
+ink	tinta
 teaspoonsful	cucharaditas
 threaded	hilvanar
-carrot	la zanahoria
+carrot	zanahoria
 pope	papa
-bicycle	la bicicleta
-cicadas	la cigarra
+bicycle	bicicleta
+cicadas	cigarra
 objector	objetor
 objects	objetos
 plebiscitary	plebiscitario
@@ -5596,13 +5600,13 @@ calcination	calcinación
 acuity	n agudeza; visual _____ agudeza visual
 poop	caca
 poor	pobre
-farm	la hacienda
+farm	hacienda
 acetaldehyde	acetaldehido
 habitant	habitante
 tentacles	tentáculos
 lenses	lentes
 excellent	excelente
-pool	la piscina
+pool	piscina
 adapted	adaptado
 achievers	personas que logran sus metas
 acrobatics	acrobacias
@@ -5630,7 +5634,7 @@ accelerated	acelerado
 embarrassment	desconcierto
 oblige	obligar
 actresses	actrices
-handbag	la bolsa
+handbag	bolsa
 fast	(adv.) de prosa rápidamente
 trials	juicios
 magistrates	magistrados
@@ -5664,7 +5668,7 @@ abbreviator	abreviador
 adjustment	n -  ajuste -m; correccion -f  (accent over the  o); modificacion -f (accent over the o)
 ankles	los tobillos
 adjustable	adj - ajustable
-blackboard	la pizarra
+blackboard	pizarra
 jabber	algarabía
 smallest	menor
 fucker	chingador
@@ -5674,7 +5678,7 @@ cabbie	taxista
 jeans	vaqueros
 abusively	abusivamente
 ticklish	cosquilloso
-mixture	la mezcla
+mixture	mezcla
 butterfish	mariposa
 hares	liebres
 abstention	abstención
@@ -5710,13 +5714,13 @@ nothing	nada
 testing	probándo
 animation	animación
 yellows	amarillos
-silver	la plata
+silver	plata
 lukewarm	tibio
 mortgages	hipotecas
 mortgager	hipotecario
 tablespoonfuls	cucharadas
 chronometric	cronométrico (a)
-city	la ciudad
+city	ciudad
 obligational	obligatorio
 torments	tormentos
 local	local
@@ -5780,7 +5784,7 @@ hummingbird	colibrí
 kilometers	kilómetros
 acre	acre
 abbreviated	cortado
-zoology	la zoología
+zoology	zoología
 ferment	fermento
 acclimatizes	aclimatiza
 acclimatizer	climatizador
@@ -5792,7 +5796,7 @@ jag	raja
 cupulate	copular
 identification	identificación
 annual	anual
-jar	la jarra
+jar	jarra
 wails	lamento(a)
 testify	testificar
 get up	levantarse
@@ -5801,7 +5805,7 @@ tarnish	manchar ( to stain)
 mortals	mortales
 spheres	esferos
 turkey	pavo
-letter	(of the alphabet) la letra
+letter	(of the alphabet) letra
 telescope	telescopio
 anniversaries	aniversarios
 habituating	habituando
@@ -5833,8 +5837,8 @@ telephoto	telefoto
 lacking	faltar (something is lacking/algo falta)
 ablated	extirpado
 abattoir	matadero (gb)
-lakefront	en la orilla dlago
-wrinkle	la arruga
+lakefront	en orildlago
+wrinkle	arruga
 abrogated	abrrogado
 incautious	descuidado(a)
 calendars	calendarios
@@ -5853,14 +5857,14 @@ those	aquellos
 worry	preocuparse
 rafts	babas
 telephone	teléfono
-chessboard	tabla de ajedrez
+chessboard	tabde ajedrez
 bleed	sangrar
 delicious	delicioso
 worse	peor
 catalogue	catálogo
 difficulty	dificultad
 telephony	telefonía
-thunderstorm	la tronada
+thunderstorm	tronada
 boyish	muchachil
 boycotted	boicoteado
 calligraphy	caligrafía
@@ -5870,7 +5874,7 @@ abstain	absternerse
 show	mostrar
 arrive	llegar
 chimps	chimpancés
-street	la calle
+street	calle
 feverish	febríl
 plains	llanos
 diocese	diócesis
@@ -5893,7 +5897,7 @@ absorbing	absorbente
 abettor	instigador
 stranger	forastero
 acclimatization	aclimatación
-stairway	la escalera
+stairway	escalera
 tactless	torpe
 delicate	delicado
 aborted	abortado
@@ -5902,7 +5906,7 @@ tissue	tejido
 rent	alquiler
 carpenter	carpintero
 aborter	abortante
-frost	la escarcha
+frost	escarcha
 incline	inclinar
 feint	finta
 circuits	los circuitos
@@ -5920,7 +5924,7 @@ habilitate	habilitar
 calculably	calculablemente
 waist	cintura
 acyclically	acíclicamente
-cherry	la cereza
+cherry	cereza
 lagers	cervezas doradas
 bottles	las botellas
 lollipop	pirulí
@@ -5936,7 +5940,7 @@ chandelier	candelabro
 synagog	sinagoga
 polarizable	polarizable
 accessary	accesorio
-babushka	la babushka (sombrero ruso)
+babushka	babushka (sombrero ruso)
 headdress	tocado
 tribes	tribús
 acrobat	acróbata
@@ -5950,7 +5954,7 @@ luck	suerte
 cabstand	parada de taxis
 fielder	jardinero
 abatements	s. descuento
-cloud	la nube
+cloud	nube
 magnolia	magnolia
 amicably	amistablemente
 exigence	exigencia
@@ -5973,10 +5977,10 @@ eaten	comido
 job	trabajo
 daughter	nina
 omit	omitir
-cloth	la tela
+cloth	tela
 babbles	balbucea
 babbler	balbuceador
-limitation	la limitación
+limitation	limitación
 terrify	terroriza
 polemical	polémico
 preambles	preámbulos
@@ -5984,17 +5988,17 @@ captain	capitán
 footing	andar ( como deporte )
 tormenters	atormentadores
 adjective	adjetivo
-car window	la ventanilla
+car window	ventanilla
 translators	traductores
 babbled	balbuceado
 clown	payaso
 fugue	fuga
-sheep	la oveja
+sheep	oveja
 rest	descansar
 teleprompter	teleprómpter
 nectar	nectar
 kingdom	reino
-afternoon	la tarde
+afternoon	tarde
 front	frente
 flights	vuelos
 timothy	timoteo
@@ -6011,7 +6015,7 @@ pluripotent	pluripotente
 thawed	descongelado 
 campaigns	campañas
 abortively	abortivamente
-humidity	la humedad
+humidity	humedad
 thanklessly	malagradecidamnete
 accurately	precisión
 plastic	plático
@@ -6035,7 +6039,7 @@ lactase	lactasa
 laconisms	laconismos
 tackier	pegajoso
 sixty	sesenta
-medicine	la medicina
+medicine	medicina
 taffies	caramelos (de az'ucar fundida)
 applicant	solicitante
 abradable	abrasible
@@ -6060,13 +6064,13 @@ champions	campeones
 plasm	plasma
 daggerman	dagador
 bacilli	bacilos
-garbage	la basura
+garbage	basura
 achromatically	acromáticamente
 cereals	cereales
 adjust	vt - ajustar
 macroeconomic	macroeconomico
 macho	macho
-party	la tertulia
+party	tertulia
 accountants	contables
 cataloged	catalogado
 trained	adiestrado ( military)
@@ -6099,7 +6103,7 @@ torrential	torrencioso
 costume	disfrás
 placebo	placebo
 crown	corona
-sentence	la frase
+sentence	frase
 hallway	pasillo
 cabala	cábala
 accents	accentos
@@ -6136,7 +6140,7 @@ tabular	tabular
 radiography	radiografía
 comfort	comodidad
 dictatorship	dictadura
-joke	la broma
+joke	broma
 frequented	adj. asendereado
 bacon	tocino
 century	siglo
@@ -6159,7 +6163,7 @@ kneel	arrodillarse
 absurdities	disparates (plural)
 grenade	granada
 level	nivel
-Europe	la europa
+Europe	europa
 poker	hurgón
 chieftaincy	jefatúra
 magnanimous	magnánimo
@@ -6172,11 +6176,11 @@ obbligato	obligado
 taster	gustador
 candy	dulce
 ablutions	abluciones
-recipe	la receta
-drugstore	la farmacia
+recipe	receta
+drugstore	farmacia
 tasted	gustó
 total	suma
-niece	la sobrina
+niece	sobrina
 disrupting	transtornando
 canes	bastones
 zebra	cebra
@@ -6225,20 +6229,20 @@ tachygraphical	tquigráfica
 allspice	malagueta
 teens	adolescentes
 ragman	trapero
-bookstore	la tienda de libros
+bookstore	tienda de libros
 cactus	cacto
 plutocracy	plutocracia
 macarizing	macarronico
 key	llave
 surprised	sorprendido
-silk	la seda
+silk	seda
 addicted	(to become addicted) enviciarse volverse adicto
 acuminate	acuminado
 loads	las cargas
 abutilon	abutilon
-raisin	la pasa de uva
+raisin	pasa de uva
 flagellantism	flagelantismo
-hill	la loma
+hill	loma
 footballer	futbolista
 cricket	grillo
 tightly	apretadamente
@@ -6258,7 +6262,7 @@ rainstorm	tormento de lluvia
 thanklessness	malagradecimiento
 calibrator	calibrador
 accountancy	contabilidad
-carpet	la alfombra
+carpet	alfombra
 sing	cantar
 abscission	abscisión
 cabanas	cabañas
@@ -6288,10 +6292,10 @@ teeth	dientes
 tighten	apretar
 between	entre
 exhibited	exhibido
-raspberry	la frambuesa
+raspberry	frambuesa
 collar	cuello
 banker	banquero
-lettuce	la lechuga
+lettuce	lechuga
 lanterns	las lámparas
 topographic	topográfico
 dahlia	dalia
@@ -6317,7 +6321,7 @@ carefree	sin cuidado
 tired	cansado
 tremble	temblar
 aggression	agresión
-leaf	la hoja
+leaf	hoja
 lead	plomo
 balsamic	balsámico (a)
 pacification	pacificación
@@ -6342,7 +6346,7 @@ accepted	aceptado
 cadence	cadencia ( musical)
 informant	informante
 blueprint	anteproyecto
-person	la persona
+person	persona
 testimony	testimonio
 accepter	aceptor
 labiodental	labiodental
@@ -6371,7 +6375,7 @@ reads	lee
 accent	acento
 pacifies	pacifica
 ladles	cuchorones
-laundress	la lavadera
+laundress	lavadera
 calibrates	calibra
 tortoises	jicoteas
 prepare	preparar
@@ -6412,7 +6416,7 @@ example	ejemplo
 characters	carácteres
 ermine	armiño
 plasmolysis	plasmólisis
-multiplication	la multiplicación
+multiplication	multiplicación
 quiet	quieto
 raids	incursiones
 teaspoonfuls	cucharaditas
@@ -6484,20 +6488,20 @@ oaken	de roble
 pocketbooks	libros de bolsillo
 incensed	inciensado(a)
 rainy	lluvioso
-flour	la harina
+flour	harina
 fierce	feroz
 earflap	oreja
 dahlias	dalias
 flagpole	asta
 odorous	oloroso
-tangerine	la mandarina
+tangerine	mandarina
 byte	byte
 macintosh	macintosh
 rains	las lluvias
 destine	destinar
-mutation	la mutación
+mutation	mutación
 crazy	loco
-razor	la navaja
+razor	navaja
 managers	gerentes
 knockdown	tumbar
 tabloids	escenarios
@@ -6505,7 +6509,7 @@ fuck	chingar
 talcum	talco
 carousel	carusel
 tormenter	atormentador
-bandage	la venda
+bandage	venda
 rails	las vías
 noise	ruido
 contented	satisfecho
@@ -6517,11 +6521,11 @@ ballistic	balístico (a)
 cheap	barato
 dictators	dictadores
 thanksgiving	acción de gracias
-witch	la bruja
+witch	bruja
 tormented	atormentado
 incitations	incitaciones
 backslide	reincidir
-capital	la capital
+capital	capital
 traveler	viajante
 exhibiting	exhibiendo; exhibir
 fuel	combustible
@@ -6539,7 +6543,7 @@ lag	atrasarse
 contemptuous	desdeñoso
 towel	toalla
 raise	(a child or animal) criar
-spoon	la cuchara
+spoon	cuchara
 west	oeste
 lam	huida
 laborist	laborista
@@ -6547,7 +6551,7 @@ mademoiselle	señorita
 tomorrows	mañanas
 tower	torre
 traffic	tránsito
-law	la suegra
+law	suegra
 less	menos
 laborite	laborista
 traitoress	traidora
@@ -6559,13 +6563,13 @@ abdicate	renunciar a; abdicar
 seaports	puerto de mar
 calcine	calcinar
 lavatory	baño
-university	la universidad
+university	universidad
 technique	técnica
 abdominally	abdominalmente
 saleswomen	dependientas
 intimidate	intimidar
 teaches	enseña
-wound	la herida
+wound	herida
 teacher	maestro
 lamas	lamas 
 spuriously	espuriamente
@@ -6581,7 +6585,7 @@ saliva	saliva
 calibrations	calibraciones
 enzymatic	enzimático
 pacificist	pacifista
-pillow	la almohada
+pillow	almohada
 spoken	hablado
 accessorial	accesorio
 traveled	viajó
@@ -6595,7 +6599,7 @@ maceration	maceración
 absorb	absorber
 lee	sotavento
 circulate	circular
-leg	la pierna
+leg	pierna
 liable	responsable
 quagmire	pantano
 cargo	carga
@@ -6603,7 +6607,7 @@ dock	reducir
 macerating	macerando
 motivating	motivante
 neighborhoods	vecindades
-night	la noche
+night	noche
 pace	paso
 fiftieth	cincuentavo (part)
 ballet	ballet
@@ -6634,10 +6638,10 @@ heliogram	heliograma
 caballero	knight
 prayer	ruego
 laboring	laborando
-clam	la almeja
+clam	almeja
 circulates	circula
 darkroom	cuarto oscuro
-lid	la tapa
+lid	tapa
 megabyte	mega-byte
 lie	yacer
 calcite	calcita
@@ -6666,7 +6670,7 @@ tamed	domado
 aching	que duele
 page	página
 full	lleno
-pepper	la pimienta
+pepper	pimienta
 destiny	destino
 motivation	motivacion
 steels	aceros
@@ -6681,17 +6685,17 @@ pain	dolor
 calcium	calcio
 haberdasheries	mercerías
 center	centro
-purchase	la compra
+purchase	compra
 accidently	accidentalmente
 titles	títulos
-supper	la cena
+supper	cena
 pair	par
 toothbrushes	cepillos de diente
 tobacconist	tabaconero
 paid	pagado
 plugs	clavijas
 thereabout	alrededor
-cabbage	la col
+cabbage	col
 absurdism	absurdismo
 celebrities	célebres
 contemplating	meditando
@@ -6742,7 +6746,7 @@ fellow	socio (fellow of a society)
 macerations	maceraciones
 tackily	abandonado
 macropathology	macropatología
-door	la puerta
+door	puerta
 quick	pronto
 narcolepsy	narcolepsia
 husband	esposo
@@ -6788,7 +6792,7 @@ zoom	pasar zumbando
 absentee	ausente
 absented	ausentado
 tides	mareas ( as in weather)
-dope	la mota
+dope	mota
 capitol	capitolio
 ears	orejas
 economics	economica
@@ -6800,21 +6804,21 @@ iconographic	rhtrhyhgf
 terrors	terrores
 antenatal	prenatal; antenatal
 earl	conde
-lightbulb	la bombilla
+lightbulb	bombilla
 apartment	apartamento
 ladybugs	mariquitas
 gallantry	galantería
 machinate	maquinar
 fiery	ardiente
-path	la senda
+path	senda
 acoustics	acústica
 accepting	aceptando
 chromosomal	cromosomál
 pass	pasar
-mile	la mila
+mile	mila
 past	pasado
-milk	la leche
-dorm	la residencia universitaria
+milk	leche
+dorm	residencia universitaria
 tributary	tributo
 easy	fácil
 bucket	cubo
@@ -6836,7 +6840,7 @@ academician	académico
 October	octubre
 adoption	adopción
 harmonize	armonizar
-dove	la palomita
+dove	palomita
 chaotic	caótico
 chimpanzee	chimpanc/e
 thankfulness	agradecimiento
@@ -6852,7 +6856,7 @@ afterbirth	(fam) placenta; secundinas (fam)
 jackknife	navaja
 inch	pulgada
 branchial	branquial
-stocking	la media
+stocking	media
 down	abajo
 acceleration	aceleración
 bracken	helecho
@@ -6873,7 +6877,7 @@ tackle	equipo
 cahier	cuaderno
 brainwashing	lavado de cerebro
 macrofossil	macrofosil
-locust	la langosta
+locust	langosta
 rather	mejor que
 machinates	maquina
 machinated	maquinado
@@ -6882,7 +6886,7 @@ title	título
 whore	puta
 lackeys	lacayos (sirvientes)
 miss	extrañar
-undershirt	la camiseta
+undershirt	camiseta
 incentives	incentivos
 plantation	plantación
 bite	morder
@@ -6892,10 +6896,10 @@ locusts	las langostas
 abode	sin domicilio fijo
 permission	permiso
 travels	viajes
-beach	la playa
+beach	playa
 faction	faccion
 tenths	decimos
-blanket	la manta
+blanket	manta
 harmonium	armonio (inst.musical)
 abberations	desvío
 exhausted	agotado
@@ -6908,7 +6912,7 @@ acidimeters	medidores de acidez
 fear	temer
 incessant	incesante
 adoptive	adj  - adoptivo
-cookie	la galleta
+cookie	galleta
 garlics	ajos
 aberrate	desviar
 aerosolized	adj  - en aerosol
@@ -6924,12 +6928,12 @@ oceanographers	oceanografos
 terrorizes	aterrar
 goodbye	adios
 terrorizer	terrorista
-skin	la piel
+skin	piel
 seashores	costas dmar
 tailor	sastre ( noun)
 mad	enojado
 terrorized	aterrado
-laundry	(laundromat) la lavandería
+laundry	(laundromat) lavandería
 thunderbolts	relámpagos
 mal	bad
 quadratically	cuadráticamente
@@ -6965,7 +6969,7 @@ textbook	libro de texto
 ideal	ideal
 vagina	vagina
 abduction	secuestro
-comedy	la comedia
+comedy	comedia
 getup	levantarse
 ideas	ideas
 chlorate	cloráto
@@ -6983,18 +6987,18 @@ poetic	poético
 absorbs	absorbe
 octagonal	octagonal
 exactly	en punto
-orange	la naranja
+orange	naranja
 occiput	nuca
 backpack	mochila
-circulation	la circulacion
+circulation	circulacion
 abjectness	abyección
-lodge	la casa dguarda
+lodge	casa dguarda
 pluton	plutón
 rayon	rayón
 abducting	separando
 magniloquent	magnilocuente
 about	de
-weekday	día de la semana
+weekday	día de semana
 danger	peligro
 machinator	maquinador
 pluralized	pluralizado
@@ -7004,7 +7008,7 @@ abashment	vergüenza
 above	encima
 addendum	adenda
 tales	cuentos  ( stories)
-height	la altura
+height	altura
 linoleic	linoleico
 certificated	certificado
 tactlessness	torpeza
@@ -7015,7 +7019,7 @@ centerpieces	centros de mesa
 chaotically	caóticamente
 jackboot	bota de montar
 laboriously	laboriosamente
-quality	la calidad
+quality	calidad
 certificates	certificados
 databanks	banco de datos
 animal	animal
@@ -7035,7 +7039,7 @@ destruction	ruina
 occipital	occipital
 dirty	verde
 though	aunque
-blizzard	la ventisca
+blizzard	ventisca
 polis	polis
 swamp	pantano
 tolerantly	con tolerancia
@@ -7051,13 +7055,13 @@ incapacitated	incapacitado
 greedy	goloso
 tobacco	tabaco
 incapacitates	incapacíta
-sidewalk	la acera
+sidewalk	acera
 abound	abundar
 studying	estudiando
-suitcase	la maleta
+suitcase	maleta
 achromatism	acromatismo
-beard	la barba
-lobster	la langosta
+beard	barba
+lobster	langosta
 gardener	jardinero
 daemon	espiritu
 abort	aborto
@@ -7069,7 +7073,7 @@ alloy	aleación
 talkers	habladores
 castigate	castigar
 poisonous	venenoso
-vegetable	la legumbre
+vegetable	legumbre
 bitter	amargo
 abstractors	abstractores
 d'art	de arte
@@ -7094,7 +7098,7 @@ oceanology	oceanologia
 heiress	heredera
 madcap	calavera; botarate; temerario
 achievement	logro
-mafioso	niembre de la mafia
+mafioso	niembre de mafia
 adaxial	adaxial
 fingers	los dedos
 mop	gerga
@@ -7137,10 +7141,10 @@ destructive	destructivo
 adsorbent	adj  - adsorbente
 lefty	surdo
 thirdhand	terceramano
-sleeve	la manga
+sleeve	manga
 censor	censurador
 abduct	secuestrar
-voice	la voz
+voice	voz
 adaption	n - adaptacion (accent over  o)
 understandability	comprensibilidad
 barbarians	b/arbaros
@@ -7148,7 +7152,7 @@ float	flotar
 mediums	medios
 aboil	abolir
 transsexual	transexual
-olive	la aceituna
+olive	aceituna
 exiguous	exiguo
 caliginous	caliginoso
 cascade	cascada
@@ -7193,7 +7197,7 @@ theorems	teoremas
 deactivated	desactivado
 legalist	legalista
 magnanimously	magnanimosamente
-music	la música
+music	música
 torrid	tórrido
 tennist	tenista
 because	porque
@@ -7207,7 +7211,7 @@ upgrade	 mejoramiento
 charismatic	carismático
 overload	sobrecargar
 earliness	precocidad
-science	la ciencia
+science	ciencia
 aboard	a bordo de
 June	junio
 forest	bosque
@@ -7216,7 +7220,7 @@ certifies	acredita
 occupations	ocupaciones
 backwater	remanso
 sleep	dormir
-crumb	la miga
+crumb	miga
 refuse	rehusar
 calcic	cálcico
 certified	acreditado
@@ -7257,7 +7261,7 @@ jail	jaula
 touchable	tocable
 bored	aburrido
 thorny	espinoso
-chimney	la chimenea
+chimney	chimenea
 baggage	equipaje
 technical	técnico
 ytterbium	iterbio 
@@ -7266,17 +7270,17 @@ ride	montar
 occident	occidente
 chapels	iglesias
 pointillistic	puntillistico
-medal	la medalla
+medal	medalla
 capitalism	capitalismo
 legalize	legalizar
 photographer	photographer
 platina	platina
 capitalist	capitalista 
-mistake	la falta
+mistake	falta
 abridging	abreviando
 capabilities	capacidades
 abnegator	abnegador
-cockroach	la cucaracha
+cockroach	cucaracha
 achingly	dolorosamente
 toil	laborar ( as in to work)
 rich	rico
@@ -7289,7 +7293,7 @@ accuracies	precisiónes
 salesperson	dependiente
 acacia	acacia
 acetify	acetificar
-family	la familia
+family	familia
 abscissa	abscisa
 gift	regalo
 career	profesión
@@ -7303,8 +7307,8 @@ catechism	catecismo
 zealot	fanático
 wait for	esperar
 judge	juez
-darkness	la oscuridad
-nap	la siesta
+darkness	oscuridad
+nap	siesta
 reabsorb	reabsorber
 abominate	abominar
 similar	semejante
@@ -7322,7 +7326,7 @@ tone	tono
 aback	hacia atrás
 crude	basto
 acrylic	acrílico.
-potato	la patata
+potato	patata
 accreditation	acreditacion
 thereabouts	en los alrededores
 sabbatical	sabático
@@ -7330,15 +7334,15 @@ abrasiveness	abrasividad
 abstrict	cercenar
 liberator	libertador
 tome	libro ( book)
-grandmother	la abuela
+grandmother	abuela
 tomb	tumba
 backstitch	pespunte
 thyroids	tiroides
 polarize	polarizar
-logic	la lógica
+logic	lógica
 tiredly	cansadamente
 forgetful	olvidadizo
-artichoke	la alcachofa
+artichoke	alcachofa
 pointillist	puntillista
 acceptedly	aceptadamente
 whiter	más blanco
@@ -7346,7 +7350,7 @@ pager	mensáfono
 toot	pitar
 pointillism	puntillismo
 laggard	rezagado
-net	la red
+net	red
 cable	cable
 nasty	desagradable
 academicism	academicismo
@@ -7413,7 +7417,7 @@ recommend	recomendar
 helicopter	helicóptero
 advertisement	anuncio
 obeyed	obedecio
-aspirin	la aspirina
+aspirin	aspirina
 ripe	maduro
 affliction	mal. achaque
 poison	veneno
@@ -7436,7 +7440,7 @@ backhouse	letrina
 abridged	abreviado
 objections	objeciones
 zoologist	zoólogo
-landlady	la dueña
+landlady	dueña
 houses	casas
 branchiate	branquiado
 acetylene	acetileno
@@ -7446,7 +7450,7 @@ town	pueblo
 absorbtions	absorciones
 unmarried	soltero
 abscised	cortado por abscisión
-girl	la muchacha
+girl	muchacha
 whatever	lo que; qué
 abdominal	abdominal
 hackneyed	trillado
@@ -7470,15 +7474,15 @@ backstitches	pespuntes
 tastier	gustoso
 magnific	magnífico
 tablespoonsful	cucharada
-what	que
+what	qué
 tenaciousness	tenacidad
 risk	riesgo
-flame	la flama
+flame	flama
 rise	subir
 occupant	ocupante
 counterattack	contraataque
-eagre	creciente de la marea; ola que forma la subida de la marea
-innocence	la inocencia
+eagre	creciente de marea; oque forma subida de marea
+innocence	inocencia
 tastily	gustosamente
 nearby	cerca
 when	cuando
@@ -7499,7 +7503,7 @@ liver	hígados
 contention	disputa
 lofty	alto
 tribunals	tribunales
-veal	la ternera
+veal	ternera
 chickens	pollos
 abash	avergonzar 
 abase	humillar
@@ -7523,9 +7527,9 @@ comical	cómico
 barbarities	barbaridades
 acronym	acrónimo
 theologian	teólogo
-strawberry	la fresa
+strawberry	fresa
 dishes	los platos
-shirt	la camisa
+shirt	camisa
 stockings	las medias
 chronologic	cronológico (a)
 certain	cierto
@@ -7538,7 +7542,7 @@ applicants	applicante
 notification	notificación
 earned	ganado
 heiresses	herederas
-mustard	la mostaza
+mustard	mostaza
 threaten	amenazar
 radiometeorograph	radiometeografo
 televisor	televisor
@@ -7577,7 +7581,7 @@ camels	camellos
 thankless	malagradecido
 bring	traer
 magma	lava volcanica
-sauce	la salsa
+sauce	salsa
 hamburger	hamburgesa
 morphologic	morfológico
 carve	tallar
@@ -7609,7 +7613,7 @@ obligated	obligado
 actor	un actor
 ceramist	cerámico
 bafflers	deflectores
-lakeshore	la orilla dlago
+lakeshore	orildlago
 Thursday	jueves
 backache	dolor de espalda
 maestro	arista eminent en cualquiere de las bellas artes
@@ -7631,14 +7635,14 @@ cureless	incurable
 fourteen	catorce
 acolyte	acólito
 celebration	festividad
-knife	la navaja
+knife	navaja
 abstruseness	oscuridad
 temptation	tentación
 antennae	antena
 Italy	italia
 oceanological	oceanologico
 carry	llevar
-refrigerator	la nevera
+refrigerator	nevera
 lachrymose	lloroso
 terrazzo	terraza (terrazzo
 zucchini	calabacín
@@ -7647,10 +7651,10 @@ personality	personalidad
 oaf	palurdo
 teachers	maestros
 oak	roble
-class	la clase
+class	clase
 oar	remo
 oat	avena
-carte	carta ( as in a la carte )
+carte	carta ( as in a carte )
 chlorophyll	clorófilo
 counter	contador (de tiempo)
 camelia	camelia
@@ -7691,7 +7695,7 @@ May	mayo
 lacuna	laguna
 calumniation	calumnia
 galloping	galopando
-library	la biblioteca
+library	biblioteca
 sphere	esfero
 camera	camara
 sadly	tristemente
@@ -7706,7 +7710,7 @@ planimeters	planímetros
 pools	las piscinas
 edge	orilla
 ruling	reglando
-orchestra	la orquesta
+orchestra	orquesta
 calming	calmante
 torches	antorchas
 chronic	crónico (a)
@@ -7735,10 +7739,10 @@ dads	papas
 pretty	lindo
 homeless	desposeido
 aerobic	adj  - aerobico (accent over 1st  o)
-teaspoon	la cucharita
+teaspoon	cucharita
 madams	damas
 absorbent	absorbente[]
-painting	la pintura
+painting	pintura
 radiation	radiación
 harangued	arengado
 cock	pija
@@ -7796,7 +7800,7 @@ amazing	pasmoso
 abolishes	abole
 lick	lamer
 dale	valle
-aids	la sida
+aids	sida
 abiogenetical	abiogenético
 tactful	con diplomacia
 abolished	abolido
@@ -7817,10 +7821,10 @@ destination	destinación
 yoke	sojuzgar
 pure	puro
 damp	humedo
-life	la vida
+life	vida
 chloral	clorál
 alcoholism	alcoholismo
-honey	la miel
+honey	miel
 idealizations	idealizaciones
 tango	tango ( the dance)
 spells	los hechizos
@@ -7829,7 +7833,7 @@ enzymic	enzimático
 toothsome	dentudo
 aborally	de manera aboral
 anthropologist	antropologo
-location	la situación
+location	situación
 dame	mujer
 torment	tormento
 software	programa
@@ -7865,7 +7869,7 @@ ghost	fantasma
 tinware	latería
 daemons	demonios
 dark	oscuro
-copy	la copia
+copy	copia
 precise	preciso
 dare	cariño
 sensible	razonable
@@ -7885,7 +7889,7 @@ thespian	artista
 tomboy	marimacha
 owe	deber
 antediluvian	antediluviano
-date	la fecha
+date	fecha
 magic	mágico
 kilobit	kilobit
 academically	academicamente
@@ -7897,7 +7901,7 @@ chapeau	cabeza ( head )
 drum	tambor
 cork	corcho
 stucco	estuco
-drug	la droga
+drug	droga
 comedians	cómicos
 incarcerates	encarcéla
 rabbet	barbilla
@@ -7912,7 +7916,7 @@ pamper	chinear
 branches	ramas
 plutonium	plutonio
 activism	activismo
-icebox	la refrigeradora
+icebox	refrigeradora
 magistracy	jurisdiccion de magistrado
 quadrillion	cuatrillón
 accumulator	acumulador/ra
@@ -7928,7 +7932,7 @@ tempest	tempestad
 dicks	pollas (vulg)
 affairs	asuntos
 felon	delincuente
-nose	la nariz
+nose	nariz
 oats	avena
 cost	costar
 fishing	pesquero(a)
@@ -7966,7 +7970,7 @@ baker	panadero
 lion	león
 backslider	reincidente
 thoughtfully	atentamente
-wing	la ala
+wing	ala
 teleconferences	teleconferencias
 wine	vino
 wind	viento
@@ -8012,20 +8016,20 @@ acceptably	aceptable
 pal	amigo
 pan	sartén
 chanteuses	cantantes
-paw	la garra
+paw	garra
 pay	pagar
-list	la lista
+list	lista
 babyish	infantil
 strange	raro
 vaginal	vaginal
 candidates	candidatos
 vaginas	vaginas
 treasury	tesorería
-emerald	la esmeralda
+emerald	esmeralda
 child	niño
 medium	medio
 remove	remover
-pear	la pera
+pear	pera
 haberdashery	mercería
 fanatical	fanatico
 treasure	tesoro
@@ -8074,7 +8078,7 @@ cedarwood	cedro
 cabman	taxista
 caducous	caduco
 ceases	cesa
-granddaughter	la nieta
+granddaughter	nieta
 plenipotentiary	plenipotenciario
 hacker	pirata informático
 policemen	policía
@@ -8084,7 +8088,7 @@ earphones	audífonos
 charade	charada
 loiter	vagar
 pachyderm	paquidermo
-arrow	la flecha
+arrow	flecha
 chide	regañar
 overloaded	sobrecargado
 pie	pastel
@@ -8109,7 +8113,7 @@ snow	nevar
 cadmium	cadmio
 absolve	absolver
 locate	localizar
-fruit	la fruta
+fruit	fruta
 accost	abordar
 cause	causa
 lances	lanzas
@@ -8128,7 +8132,7 @@ obey	obedecer
 velvet	terciopelo
 tolerability	tolerancia
 look for	buscar
-cilia	la cilia
+cilia	cilia
 machines	máquinas[]
 accumulating	acumulando
 policeman	policía
@@ -8139,7 +8143,7 @@ centimeters	centímetros
 tigress	tigresa
 teenagers	adolescentes
 theocracy	teocracia
-liberty	la libertad
+liberty	libertad
 recycle	reciclar
 snug	acogedor
 meeting	reunión
@@ -8197,7 +8201,7 @@ realize	darse cuenta de
 accountable	responsable
 technicality	tecnicalidad
 totalization	total
-grocery store	la bodega
+grocery store	bodega
 guilty	culpable
 incise	inciso
 receipt	recibo
@@ -8233,10 +8237,10 @@ terrifies	terroriza
 tram	tram
 meets	encontra
 caves	cuevas
-ambulance	la ambulancia
-dandruff	la caspa
+ambulance	ambulancia
+dandruff	caspa
 earplug	tapon de oído
-light	la luz
+light	luz
 fabulist	fabulista
 valuable	valioso
 abolitionize	abolicionar
@@ -8265,7 +8269,7 @@ facility	facilidad
 incidence	incidencia
 baccarat	bacarr/a
 cucumber	pepino
-appointment	la cita
+appointment	cita
 stomach	estómago
 transitions	transiciones
 adductor	abductor
@@ -8291,9 +8295,9 @@ taco	mexican sandwich
 macroeconomics	macroeconomia
 absolutely	totalmente (totally); ¡por supuesto (que sí)! (certainly!)
 notebooks	cuadernos
-beachboy	chico de la playa
+beachboy	chico de playa
 chiropractors	médicos quiroprácticos
-altitude	la altitud
+altitude	altitud
 request	pedir
 yeomanry	burguesía
 capella	a capella
@@ -8335,7 +8339,7 @@ cancellation	cancelación
 appetizer	aperitivo
 negotiated	negociado
 comer	t.v.
-bottle	la botella
+bottle	botella
 brasserie	panaderia
 interweave	entretejer
 caliper	calibre
@@ -8344,7 +8348,7 @@ laicized	dio caracter laico
 spark	chisme
 comet	cometa
 negotiates	negocia
-wedding	la boda
+wedding	boda
 laicizes	da caracter laico
 takeoff	despegar ( aviation)
 tail	rabio
@@ -8354,7 +8358,7 @@ transition	transición
 traps	trampas
 caravel	caravela
 telly	televisión ( tv)
-purse	la bolsa
+purse	bolsa
 backtrack	retrotraer
 accountant	contador
 anthropomorphic	antropomorfico
@@ -8362,9 +8366,9 @@ talc	talco
 radishes	rabanos
 absurd	absurdo
 seals	focas; sellos
-rubber	la goma
+rubber	goma
 trait	característica
-underwear	la ropa interior
+underwear	ropa interior
 talk	hablar
 tall	alto
 vault	bóveda
@@ -8379,16 +8383,16 @@ curable	curable
 centigram	centígramo
 figs	higos
 thighs	muslos
-cinnamon	la canela
+cinnamon	canela
 landlord	dueño
 tactile	tactil
 factious	faccioso
 telecommunications	telécomunicaciones
 accretion	aumento
-backspace	tecla de retroceso
+backspace	tecde retroceso
 tank	tanque
 pluriaxial	pluriaxial
-midnight	la medianoche
+midnight	medianoche
 idiot	idiota
 screwdriver	destornillador
 home	hogar
@@ -8406,11 +8410,11 @@ soon	pronto
 sinew	tendón
 tablet	tabletilla
 tables	mesas
-tape	la cinta
+tape	cinta
 lacerate	lacerar
 cartographer	cartógrafo
 dowry	dote
-cream	la crema
+cream	crema
 heavy	pesado
 singe	chamuscar
 toupee	peluca ( wig)
@@ -8436,7 +8440,7 @@ cacti	cactus
 caravans	caravanas
 nourish	nutrir
 together	juntos
-grease	la grasa
+grease	grasa
 health	salud
 amber	ambre
 quadraphonic	cuadrafónico
@@ -8455,12 +8459,12 @@ accredited	autorizado
 serve	servir
 annoys	se burla
 pacificators	pacificadores
-smile	la sonrisa
+smile	sonrisa
 confused	confuso
 towels	toallas
 find	hallar
 backward	atrasado
-lapel	la solapa
+lapel	solapa
 cables	cables
 inchworms	gusanos medidores
 cablet	estacha
@@ -8468,7 +8472,7 @@ guzzled	tragado; engullido
 turtle	tortuga
 occur	ocurre
 cabriolet	cabriolet
-breeze	la brisa
+breeze	brisa
 fill	llenar
 omniscience	omnisciencia
 trash	basura
@@ -8481,9 +8485,9 @@ adolescent	adj & n  -  adolescente
 tactics	tácticas
 sore	dolorido
 exhume	exhumar
-laughter	la risa
+laughter	risa
 since	después de
-soup	la sopa
+soup	sopa
 caricaturist	caricurista
 soul	alma
 abundance	abundancia
@@ -8495,7 +8499,7 @@ accordant	concordante
 cartographic	cartográfico
 plumber	plomero
 aboveboard	legítimo
-hour	la hora
+hour	hora
 abbas	aint
 magazines	las revistas
 agitate	agitar; to become agitated agitarse
@@ -8511,14 +8515,14 @@ curiosities	curiosidades
 taut	tenso
 writer	escritor(a)
 writes	escribe
-fence	la cerca
+fence	cerca
 sabbat	sábado
-glue	la cola
+glue	cola
 scream	chillar
 accessing	accediendo
 yttrium	itrio
 oceanographical	oceanografico
-fire	la lumbre 
+fire	lumbre 
 calcitic	calcítico
 obfuscated	ofuscado
 transients	transeúntes
@@ -8534,7 +8538,7 @@ tardiness	tardía
 chastity	castidad
 odontologst	odontologo
 handbags	las bolsas
-jewel	la joya
+jewel	joya
 target_language	spanish[]
 bananas	platano
 trainers	adiestradores
@@ -8543,8 +8547,8 @@ gymnasts	gimnastas
 accordance	conforme
 adhesion	n - adherencia
 earmuff	orejera (protección contra frío)
-people	la gente
-democracy	la democracia
+people	gente
+democracy	democracia
 lagoon	laguna
 abandon	abandonar
 celebrations	festividades
@@ -8562,11 +8566,11 @@ branchless	sin ramas
 tranquilly	tranquilamente
 inside	dentro
 mainly	principalmente
-motorcycle	la motocicleta
+motorcycle	motocicleta
 graveyard	camposanto
 leaves	las hojas
 tavern	taberna
-adhesive	adj - adhesivo; ______ tape - tela or cinta adhesiva
+adhesive	adj - adhesivo; ______ tape - teor cinta adhesiva
 chestnuts	castañas
 five	cinco
 abstractable	abstraíble
@@ -8575,7 +8579,7 @@ celebrate	festejar
 castigator	castigador
 acidness	acidez
 coconut	coco
-hunger	la hambre
+hunger	hambre
 announced	anunciado
 plutonic	plutónico
 youthful	juvenil
@@ -8651,10 +8655,10 @@ ladybirds	mariquitas
 pneumaticity	neumaticidad
 agency	agencia
 railroad	ferrocarril
-multitude	la multitud
+multitude	multitud
 countermeasure	contramedida
 accenting	acentuando
-comma	la coma
+comma	coma
 damaged	dañado
 caddy	estuche
 abbot	abad
@@ -8728,7 +8732,7 @@ packaged	empaquetado
 rap	tocar
 teasingly	burlonmente
 internally	internamente
-rat	la rata
+rat	rata
 younger	menor
 raw	crudo
 adaptability	adaptabilidad
@@ -8745,7 +8749,7 @@ artful	diestro; habilidos; astuto; artificioso
 absoluteness	absoluto
 poster	cartel
 ringing	sonando
-throat	la garganta
+throat	garganta
 wintered	pasó invierno
 flagellants	flagelantes
 mopping	trapear
@@ -8790,7 +8794,7 @@ activation	activación
 nourishment	sustento
 puddle	charco
 magically	mágicamente
-omelette	la tortilla
+omelette	tortilla
 incendiary	incendiario(a)
 prevent	prevenir
 transcends	trasciende
@@ -8810,7 +8814,7 @@ aquarium	acuarium
 bagpiper	gaitero (a)
 bagpipes	gaitas
 terreplein	terraplén
-truth	la verdad
+truth	verdad
 feminism	feminismo
 theorize	teorizar
 age	edad -f;   middle age - edad madura or mediana; old age - vejez -f
@@ -8821,12 +8825,12 @@ lipids	lípidos
 smaller	menor
 dining room	comedor
 incantations	encantaciones
-movie	la película
+movie	película
 popcorn	las palomitas
 tendency	tendencia
 ago	hace; atrás (2 wks ago) hace dos semanas or dos semanas atrás
 yearn	desear
-rib	la costilla
+rib	costilla
 accessed	accedido
 chronicles	crónicas
 incinerations	incineraciones
@@ -8850,7 +8854,7 @@ whistle	silbar
 chamomile	manzanilla
 yeast	levadura
 economized	economisádo
-exit	la salida
+exit	salida
 octagonally	octagonalmente
 mailbox	buzón
 system	sistema
@@ -8894,13 +8898,13 @@ meatball	alb"ó"ndigas
 abided	moró
 calcified	calcificado
 glove	guante
-municipality	la municipalidad
+municipality	municipalidad
 dicotyledon	dicotiledon
 tolerable	tolerable
 body	cuerpo
 abashing	avergonzando
 brains	inteligencia; cabeza
-cage	la jaula
+cage	jaula
 acumination	acuminación
 insect	insecto
 spud	patata (slang)
@@ -8934,7 +8938,7 @@ chemist	químico
 maggot	cresa; gusano; larva
 abroad	en extranjero (to be); al extranjero (to go)
 chauvinistic	machista
-ant	la hormiga
+ant	hormiga
 brainy	muy inteligente; talentudo
 tacks	tachuelas
 macrocephalic	macroencefalico
@@ -8953,7 +8957,7 @@ benchmarking	evaluación comparativa (hacer una)
 thought	pensamiento 
 quadriplegic	paralítico
 dichotomy	dicotomía
-legend	la leyenda
+legend	leyenda
 taste	gusto
 treaties	pacto ( pact )
 medleys	mezcolanzas
@@ -9005,7 +9009,7 @@ acinus	ácino
 rut	rut
 mother	madre
 mouse	ratón
-view	la vista
+view	vista
 ate	comi
 yourself	tú mismo
 newest	mas nuevo
@@ -9024,7 +9028,7 @@ cane	bastón ( as in walking stick)
 neighborhood	vecindario
 abatement	descuento
 thematic	temática
-Christmas	la navidad
+Christmas	navidad
 mood	humor
 plurals	plurales
 abolish	suprimir
@@ -9045,7 +9049,7 @@ bone	hueso
 bracelet	pulsera
 radically	radicalmente
 laceration	laceracion
-mouth	la boca
+mouth	boca
 thirdly	tercera
 acrobatic	acrobático(a)
 labyrinth	laberinto
@@ -9059,7 +9063,7 @@ yard	yarda
 iced	escarchado (cake)
 negotiable	negociable
 cart	carretilla
-axe	la hacha
+axe	hacha
 looser	sueltos
 cast	arrojar
 greaten	mejorar
@@ -9074,9 +9078,9 @@ abutments	estribos
 accidentalism	accidentalismo
 cars	los coches
 chapelles	sombreros ( hats )
-moon	la luna
+moon	luna
 accidentalist	aacidentalista
-jungle	la selva
+jungle	selva
 card	tarjeta
 radiochemistry	radioquímica
 care	cuidado
@@ -9088,7 +9092,7 @@ feminine	femenino
 centesimo	centésimo
 fulfilled	cumplió
 tolerates	tolera
-fireplace	la chiminea
+fireplace	chiminea
 kilo	kilo
 transfers	transferencias ( noun)
 seldom	raramente
@@ -9100,7 +9104,7 @@ abjured	abjurado
 more	más
 cabotage	cabotaje
 kill	matar
-tablespoon	la cuchara grande
+tablespoon	cuchara grande
 abjures	abjura
 aggravate	agravar
 cats	los gatos
@@ -9126,8 +9130,8 @@ talent	talento
 tachometers	tacómetros
 balladist	baladista
 negotiate	negociar
-bedspread	la colcha
-cave	la cueva
+bedspread	colcha
+cave	cueva
 package	empaquetar
 habitualize	acostumbrar
 king	rey
@@ -9184,13 +9188,13 @@ aboveground	sobrenivel
 angry	enojado
 haggle	regatear
 incidentals	a music notacion symbol
-street corner	la esquina
+street corner	esquina
 canceled	canceló
 chemical	químico
 applause	aplauso
 greatly	grandemente
 dean	decano
-sponge	la esponja
+sponge	esponja
 bachelors	solteros
 deal	trato
 strong	fuerte
@@ -9225,9 +9229,9 @@ transmissible	transmisible
 fighter	luchador
 earnest	seriedad
 haggis	morcilla
-bed	la cama
-bee	la abeja
-beauty	la belleza
+bed	cama
+bee	abeja
+beauty	belleza
 circulatory	circulatorio (med)
 stroll	andar
 labored	trabajado
@@ -9258,7 +9262,7 @@ sit	sentarse
 ballot	encuesta
 naively	ingenuamente
 six	seis
-eyebrow	la ceja
+eyebrow	ceja
 oven	orno
 tabac	tabaco
 pneumatology	neumatología
@@ -9305,7 +9309,7 @@ cachalot	cachalote
 toothless	sin dientes
 doctrine	doctrina
 begin	empezar
-Germany	la alemania
+Germany	alemania
 gypsies	gitanos/as
 cableway	cablecarril
 abandonments	abandonos
@@ -9339,7 +9343,7 @@ polarimeter	polarímetro
 several	varios
 toothbrush	cepillo de dientes
 bragging	fanfarronadas
-office	la oficina
+office	oficina
 son	hijo
 adenoid	adenoide
 chancy	arriesgado
@@ -9355,9 +9359,9 @@ tense	tenso
 polarities	polaridades
 tenth	décimo
 accreditations	acreditaciones
-box	la caja
+box	caja
 boy	muchacho
-corduroy	la pana
+corduroy	pana
 racial	racial
 radiochlorine	radioclorina
 chaperone	chaperón
@@ -9368,7 +9372,7 @@ chance	oportunidad
 tearful	lloroso
 brahma	brahaman; bracman
 nature	naturaleza
-wheel	la rueda
+wheel	rueda
 carcinogen	carcinógeno
 cacciatore	hunter
 c'mon	vamos
@@ -9402,20 +9406,20 @@ detour	rodeo
 radiobiologically	radiobiologicamente
 autumn	otoño
 motor	motor
-dormitory	la residencia universitaria
+dormitory	residencia universitaria
 cargos	cargas
 comedienne	cómica
 sun	sol
 cabriole	cabriola
 ma'am	señora
 obligate	obligar
-secretary	la secretaria
+secretary	secretaria
 actively	activamente
 copper	cobre
 incense	incienso
 obdurately	tercamente
 knights	caballeros
-storm	la tormenta
+storm	tormenta
 manager	gerente
 bacchanal	jodienda
 cartoon	muñequitos
@@ -9423,7 +9427,7 @@ amid	entre
 anthologist	antologista
 threatened	amenazó
 tranquilizers	tranquilizantes
-store	la tienda
+store	tienda
 abusiveness	abusividad
 backwood	bosque
 centurion	centurión
@@ -9455,7 +9459,7 @@ taciturn	taciturno
 exhortation	exhortación
 hackle	pelo erizado
 chairmanship	presidencia
-ranch	la finca
+ranch	finca
 ocean	oceano
 desk	escritorio
 windscreen	parabrisa (se usa en australia)
@@ -9463,7 +9467,7 @@ triceps	triceps
 tableware	cubiertos
 macrocosm	macrocosmo
 abusable	abusable
-idea	la idea
+idea	idea
 overpopulated	superpoblado
 backing	apoyo
 tarot	tarot
@@ -9478,8 +9482,8 @@ passports	pasaportes
 backstitching	pespuntear
 telepathic	telepático
 hazel	avellanado
-stone	la piedra
-zest	la vivacidad
+stone	piedra
+zest	vivacidad
 baffling	confundiendo
 gynecologist	ginecólogóa
 sack	saco
@@ -9509,7 +9513,7 @@ totalitarianism	totalitarianismo
 necklaces	gargantillas
 laborious	tabajoso
 quadraphony	cuadrafonía
-flag	la bandera
+flag	bandera
 racing	carreras
 seasonal	estacional
 lacunar	lagunar
@@ -9522,7 +9526,7 @@ flat	plano
 lacunae	lagunas
 transcendentalists	trascendentalistas
 occupying	ocupando
-blouse	la blusa
+blouse	blusa
 gymnastics	gimnasia
 suggest	sugerir
 iconoclastic	iconoclástico
@@ -9536,10 +9540,10 @@ thespians	artistas
 argument	argumento
 cameraman	camarógrafo
 abrading	raspando
-dozen	la docena
+dozen	docena
 tremendous	tremendo
 televisors	televisores
-stoplight	la semáfora
+stoplight	semáfora
 oceanologic	oceanologico
 teammates	compañeros de equipo
 tab	teddy
@@ -9570,7 +9574,7 @@ cab	taxi
 balls	bolas
 seasoned	sazonado
 factional	faccioso
-flea	la pulga
+flea	pulga
 abjectly	abyectamente
 can	lata
 hair	pelo
@@ -9580,7 +9584,7 @@ car	coche
 cafes	cafés
 cat	gato
 limitless	sin límites
-stove	la estufa
+stove	estufa
 thematically	temáticamente
 alarm	alarma
 bafflement	confusión
@@ -9590,15 +9594,16 @@ cabins	cabinas
 smooth	liso
 ultimatum	ultimatum
 racism	racismo
-rainfall	la lluvia
+rainfall	lluvia
 overcoat	abrigo
 motion	movimiento
 pussycat	minino
 wastebasket	basurero
-abhorrer	la persona que odia
+abhorrer	persona que odia
 balmy	suave
 hail	alabar
-clothes	la ropa
+clothes	ropa
 poetical	poética
 abhorred	aborrecido
 racist	racista
+won't	no
