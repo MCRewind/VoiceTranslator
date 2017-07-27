@@ -3,6 +3,8 @@ import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.io.File;
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -11,13 +13,19 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 
+import javax.swing.AbstractButton;
+import javax.swing.BorderFactory;
+import javax.swing.ButtonModel;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 import com.darkprograms.speech.microphone.Microphone;
 import com.darkprograms.speech.recognizer.GoogleResponse;
@@ -50,22 +58,22 @@ public class Translator extends JFrame {
 			debugWindow.setVisible(true);
 		else
 			debugWindow.setVisible(false);
-		
+
 		//Spanish Dictionaries
 		reader.spanishCleaner("Eng to Spn New.txt", reader.engSpnMap);
 		reader.spnEngMap = reader.dictInverter(reader.engSpnMap);
-		
+
 		//French Dictionaries
 		reader.frenchCleaner("Eng to Frn.txt", reader.engFrnMap);
 		reader.frnEngMap = reader.dictInverter(reader.engFrnMap);
-		
+
 		//Non English Dictionaries
 		reader.frenchCleaner("Spn to Frn.txt", reader.spnFrnMap);
 		//reader.spnFrnMap = reader.dictMaker(reader.engSpnMap, reader.engFrnMap);
 		//reader.write("Spn to Frn.txt", reader.spnFrnMap);
 
 		reader.frnSpnMap = reader.dictInverter(reader.spnFrnMap);
-		
+
 		//Init window	 stuff
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setSize(500, 500);
@@ -104,19 +112,19 @@ public class Translator extends JFrame {
 		 */
 		try {
 			graphics.status.setText("Recording");
+			graphics.repaint();
 			System.out.println("Recording...");
-			repaint();
 			Thread.sleep(5000);//In our case, we'll just wait 5 seconds.
 			mic.close();
 		} catch (InterruptedException ex) {
-			// TODO Auto-generated catch block
+
 			ex.printStackTrace();
 		}
 
 		mic.close();//Ends recording and frees the resources
 		System.out.println("Recording stopped.");
 		graphics.status.setText("Translating");
-		repaint();
+		graphics.repaint();
 		if (google) {
 			Recognizer recognizer = new Recognizer(toLang(graphics.curInLang), "AIzaSyD2o9tVprWInnns4lJUaq0NW05EwBf25v8"); //Specify your language here.
 			//Although auto-detect is available, it is recommended you select your region for added accuracy.
@@ -126,7 +134,15 @@ public class Translator extends JFrame {
 				System.out.println("Google Response: " + response.getResponse());
 				graphics.inText.setText("Input: " + response.getResponse());
 				repaint();
-				graphics.outText.setText("Output: " + translate(response.getResponse().toLowerCase(), toISO(graphics.curOutLang)));
+				if (graphics.curInLang.equals(graphics.curOutLang))
+					graphics.outText.setText("Output: " + response.getResponse());
+				else
+					graphics.outText.setText("Output: " + translate(response.getResponse().toLowerCase(), toISO(graphics.curOutLang)));
+				graphics.no.setSelected(false);
+				graphics.yes.setSelected(false);
+				graphics.question.setVisible(true);
+				graphics.yes.setVisible(true);
+				graphics.no.setVisible(true);
 				System.out.println(translate(response.getResponse(), toISO(graphics.curOutLang)));
 				graphics.status.setText("Waiting");
 				repaint();
@@ -134,8 +150,7 @@ public class Translator extends JFrame {
 						+ " the reply");
 				System.out.println("Other Possible responses are: ");
 				for(String s: response.getOtherPossibleResponses()){
-					graphics.otherResponses.add(new JLabel(s));
-					graphics.addResponse();
+					graphics.addResponse(s);
 					graphics.repaint();
 					System.out.println("\t" + s);
 				}
@@ -263,36 +278,31 @@ public class Translator extends JFrame {
 
 		JComboBox<String> inLang = new JComboBox<String>(new String[]{"English", "Spanish", "French"});
 		JComboBox<String> outLang = new JComboBox<String>(new String[]{"Spanish", "English", "French"});
+		JComboBox<String> responses = new JComboBox<String>(new String[]{});
 		JButton record = new JButton("Record");
 		JButton play = new JButton("Play");
-		ArrayList<JLabel> otherResponses = new ArrayList<JLabel>();
 		JLabel to = new JLabel("to");
 		JLabel status = new JLabel("Waiting...");
 		JLabel inText = new JLabel("Input: ");
 		JLabel outText = new JLabel("Output: ");
+		JLabel question = new JLabel("Is this what you said?");
+		JLabel followup = new JLabel("Was it one of these?");
+		JCheckBox yes = new JCheckBox("yes");
+		JCheckBox no = new JCheckBox("no");
 
 		String curOutLang = "Spanish", curInLang = "English";
-		
-		public void addResponse() {
-			for (int i = 0; i < otherResponses.size(); i++) {
-				gbc.fill = GridBagConstraints.HORIZONTAL;
-				gbc.gridx = 0;
-				gbc.gridy = 6+i;
-				otherResponses.get(i).setSize(15, 15);
-				add(otherResponses.get(i), gbc);
-				System.out.println(otherResponses.get(i).getText());
-				otherResponses.get(i).setVisible(true);
-			}
+
+		public void addResponse(String s) {
+			responses.addItem(s);
 		}
-		
+
 		public Graphics() {
 			setLayout(new GridBagLayout());
 
+			this.setBorder(BorderFactory.createEmptyBorder());
+
 			inLang.setSelectedIndex(0);
 			outLang.setSelectedIndex(0);
-
-			otherResponses.add(new JLabel(" "));
-			otherResponses.add(new JLabel("Other Responses: "));
 			
 			inLang.addActionListener(new ActionListener() {
 
@@ -326,10 +336,71 @@ public class Translator extends JFrame {
 			play.addActionListener(new ActionListener() {
 
 				@Override
-				public void actionPerformed(ActionEvent arg0) {
+				public void actionPerformed(ActionEvent e) {
 
 				}
 
+			});
+
+			yes.addChangeListener(new ChangeListener() {
+
+				@Override
+				public void stateChanged(ChangeEvent e) {
+					AbstractButton ab = (AbstractButton) e.getSource();
+					ButtonModel bm = ab.getModel();
+					if (bm.isSelected()) {
+						no.setEnabled(false);
+						question.setVisible(false);
+						no.setVisible(false);
+						yes.setVisible(false);
+						
+					} else {
+						no.setEnabled(true);
+					}
+				}
+
+			});
+
+			no.addChangeListener(new ChangeListener() {
+
+				@Override
+				public void stateChanged(ChangeEvent e) {
+					AbstractButton ab = (AbstractButton) e.getSource();
+					ButtonModel bm = ab.getModel();
+					if (bm.isSelected()) {
+						yes.setEnabled(false);
+						followup.setVisible(true);
+						responses.setVisible(true);
+						responses.setEnabled(true);
+					} else {
+						yes.setEnabled(true);
+						followup.setVisible(false);
+						responses.setVisible(false);
+					}
+				}
+
+			});
+
+			responses.addItemListener(new ItemListener() {
+
+				@Override
+				public void itemStateChanged(ItemEvent e) {
+					if (e.getStateChange() == ItemEvent.SELECTED) {
+						no.setSelected(false);
+						yes.setSelected(false);
+						System.out.println("rlghsldfhgsldhgljhfglkjsdhfglksdhfgkljsdfhgkjdfh");
+						inText.setText("Input: " + responses.getItemAt(responses.getSelectedIndex()));
+						if (curInLang.equals(graphics.curOutLang))
+							outText.setText("Output: " + responses.getItemAt(responses.getSelectedIndex()));
+						else
+							graphics.outText.setText("Output: " + translate(responses.getItemAt(responses.getSelectedIndex()).toLowerCase(), toISO(graphics.curOutLang)));
+					}
+					/*question.setVisible(false);
+					followup.setVisible(false);
+					yes.setVisible(false);
+					no.setVisible(false);
+					responses.setVisible(false);*/
+				}	
 			});
 			
 			gbc.fill = GridBagConstraints.HORIZONTAL;
@@ -363,7 +434,23 @@ public class Translator extends JFrame {
 			gbc.fill = GridBagConstraints.HORIZONTAL;
 			gbc.gridx = 0;
 			gbc.gridy = 5;
-			//add(play, gbc);
+			add(question, gbc);
+			gbc.fill = GridBagConstraints.HORIZONTAL;
+			gbc.gridx = 1;
+			gbc.gridy = 5;
+			add(yes, gbc);
+			gbc.fill = GridBagConstraints.HORIZONTAL;
+			gbc.gridx = 2;
+			gbc.gridy = 5;
+			add(no, gbc);
+			gbc.fill = GridBagConstraints.HORIZONTAL;
+			gbc.gridx = 0;
+			gbc.gridy = 6;
+			add(followup, gbc);
+			gbc.fill = GridBagConstraints.HORIZONTAL;
+			gbc.gridx = 1;
+			gbc.gridy = 6;
+			add(responses, gbc);
 
 			inLang.setVisible(true);
 			outLang.setVisible(true);
@@ -371,7 +458,12 @@ public class Translator extends JFrame {
 			record.setVisible(true);
 			inText.setVisible(true);
 			outText.setVisible(true);
-			play.setVisible(true);
+			question.setVisible(false);
+			yes.setVisible(false);
+			no.setVisible(false);
+			responses.setVisible(false);
+			responses.setEnabled(false);
+			followup.setVisible(false);
 		}
 
 	}

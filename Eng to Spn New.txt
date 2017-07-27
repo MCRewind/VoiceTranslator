@@ -897,7 +897,8 @@ the	la
 of from	de		
 that which	que		
 and	y		
-to at	a 		
+to	a
+at	a 		
 in on	en		
 a	un
 an	un	
@@ -1642,7 +1643,7 @@ difficulty obstacle	dificultad
 to comment on	comentar		
 to publish	publicar		
 familiar of the family	familiar		
-will willpower intention	voluntad		
+desire	voluntad		
 meeting reunion	reunión		
 modpattern	modelo		
 to load(up) carry	cargar		
@@ -4411,7 +4412,7 @@ fog	neblina
 abeyance	iñ en desuso
 christening	bautízo
 tears	rasga
-for	por
+for	para
 placentation	placentación
 loneliness	soledad
 jackhammer	taladradora
@@ -4446,7 +4447,6 @@ capricious	caprichoso
 abhor	aborrecer
 habilitates	habilitar
 abscessed	abscesado
-four	fourty
 contemplate	proyectar
 easily	facilmente
 habitably	habilidad
@@ -4642,7 +4642,7 @@ teammate	compañero de equipo
 witches	las brujas
 abstainer	abstemio
 closed	cerrado
-to	para
+to	a
 censorship	censura
 exhibitioner	exhibicionista; expositor
 laborites	laboristas
@@ -5329,7 +5329,7 @@ aberrational	aberrante; desviado
 envy	envidiar
 therein	adjunto
 kitten	gatito
-alphabetic	english
+alphabetic	alphabético
 translations	traducciones
 actualizes	actualiza
 action	acción
@@ -9607,3 +9607,15 @@ abhorred	aborrecido
 racist	racista
 won't	no
 is	es
+1	1
+2	2
+3	3
+4	4
+5	5
+6	6
+7	7
+8	8
+9	9
+english	inglés
+okay	estábien
+ok	estábien
