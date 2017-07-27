@@ -9,6 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -56,6 +57,8 @@ public class Translator extends JFrame {
 		reader.frnSpnMap = reader.dictInverter(reader.spnFrnMap);
 		
 		//Init window stuff
+
+		//Init window	 stuff
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setSize(500, 500);
 		setLayout(new GridLayout(3, 1));
@@ -123,6 +126,9 @@ public class Translator extends JFrame {
 						+ " the reply");
 				System.out.println("Other Possible responses are: ");
 				for(String s: response.getOtherPossibleResponses()){
+					graphics.otherResponses.add(new JLabel(s));
+					graphics.addResponse();
+					graphics.repaint();
 					System.out.println("\t" + s);
 				}
 			} catch (Exception ex) {
@@ -139,7 +145,7 @@ public class Translator extends JFrame {
 	public void talk(String text){
 		//String language = "auto";//Uses language autodetection
 		//** While the API can detect language by itself, this is reliant on the Google Translate API which is prone to breaking. For maximum stability, please specify the language.**//
-		System.out.println(graphics.curOutLang);
+		//System.out.println(graphics.curOutLang);
 		String language = toISO(graphics.curOutLang);//English (US) language code	 //If you want to specify a language use the ISO code for your country. Ex: en-us
 		/*If you are unsure of this code, use the Translator class to automatically detect based off of
 		 * Either text from your language or your system settings.
@@ -251,19 +257,35 @@ public class Translator extends JFrame {
 		JComboBox<String> outLang = new JComboBox<String>(new String[]{"Spanish", "English", "French"});
 		JButton record = new JButton("Record");
 		JButton play = new JButton("Play");
+		ArrayList<JLabel> otherResponses = new ArrayList<JLabel>();
 		JLabel to = new JLabel("to");
 		JLabel status = new JLabel("Waiting...");
 		JLabel inText = new JLabel("Input: ");
 		JLabel outText = new JLabel("Output: ");
 
 		String curOutLang = "Spanish", curInLang = "English";
-
+		
+		public void addResponse() {
+			for (int i = 0; i < otherResponses.size(); i++) {
+				gbc.fill = GridBagConstraints.HORIZONTAL;
+				gbc.gridx = 0;
+				gbc.gridy = 6+i;
+				otherResponses.get(i).setSize(15, 15);
+				add(otherResponses.get(i), gbc);
+				System.out.println(otherResponses.get(i).getText());
+				otherResponses.get(i).setVisible(true);
+			}
+		}
+		
 		public Graphics() {
 			setLayout(new GridBagLayout());
 
 			inLang.setSelectedIndex(0);
 			outLang.setSelectedIndex(0);
 
+			otherResponses.add(new JLabel(" "));
+			otherResponses.add(new JLabel("Other Responses: "));
+			
 			inLang.addActionListener(new ActionListener() {
 
 				@Override
@@ -301,7 +323,7 @@ public class Translator extends JFrame {
 				}
 
 			});
-
+			
 			gbc.fill = GridBagConstraints.HORIZONTAL;
 			gbc.gridx = 0;
 			gbc.gridy = 0;
@@ -333,7 +355,7 @@ public class Translator extends JFrame {
 			gbc.fill = GridBagConstraints.HORIZONTAL;
 			gbc.gridx = 0;
 			gbc.gridy = 5;
-			add(play, gbc);
+			//add(play, gbc);
 
 			inLang.setVisible(true);
 			outLang.setVisible(true);
