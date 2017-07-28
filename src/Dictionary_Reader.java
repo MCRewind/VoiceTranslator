@@ -24,8 +24,7 @@ public class Dictionary_Reader {
 	public HashMap<String, String> spnFrnMap = new HashMap<String, String>();
 	public HashMap<String, String> frnEngMap = new HashMap<String, String>();
 	public HashMap<String, String> frnSpnMap = new HashMap<String, String>();
-
-
+	
 	public void spanishCleaner(String file, HashMap<String, String> map){
 		String line = null;
 
