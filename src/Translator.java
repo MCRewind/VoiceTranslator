@@ -199,11 +199,19 @@ public class Translator extends JFrame {
 			String[] newWords = new String[words.length];
 			if (graphics.curInLang == "Spanish"){
 				for(int i = 0; i < words.length; i++) {
-					newWords[i] = reader.spnEngMap.get(words[i]);
+					if (reader.spnEngMap.get(words[i]) == null){
+						newWords[i] = words[i];
+					} else {
+						newWords[i] = reader.spnEngMap.get(words[i]);
+					}
 				}
 			} else if (graphics.curInLang == "French"){
 				for(int i = 0; i < words.length; i++) {
-					newWords[i] = reader.frnEngMap.get(words[i]);
+					if (reader.frnEngMap.get(words[i]) == null){
+						newWords[i] = words[i];
+					} else { 
+						newWords[i] = reader.frnEngMap.get(words[i]);
+					}
 				}
 			}
 			String newSentence = "";
@@ -218,11 +226,19 @@ public class Translator extends JFrame {
 			String[] newWords = new String[words.length];
 			if (graphics.curInLang == "English"){
 				for(int i = 0; i < words.length; i++) {
-					newWords[i] = reader.engSpnMap.get(words[i]);
+					if (reader.engSpnMap.get(words[i]) == null){
+						newWords[i] = words[i];
+					} else {
+						newWords[i] = reader.engSpnMap.get(words[i]);
+					}
 				}
 			} else if (graphics.curInLang == "French"){
 				for(int i = 0; i < words.length; i++) {
-					newWords[i] = reader.frnSpnMap.get(words[i]);
+					if (reader.frnSpnMap.get(words[i]) == null){
+						newWords[i] = words[i];
+					} else {
+						newWords[i] = reader.frnSpnMap.get(words[i]);
+					}
 				}
 			}
 			String newSentence = "";
@@ -237,11 +253,19 @@ public class Translator extends JFrame {
 			String[] newWords = new String[words.length];
 			if (graphics.curInLang == "English"){
 				for(int i = 0; i < words.length; i++) {
-					newWords[i] = reader.engFrnMap.get(words[i]);
+					if (reader.engFrnMap.get(words[i]) == null){
+						newWords[i] = words[i];
+					} else {
+						newWords[i] = reader.engFrnMap.get(words[i]);
+					}
 				}
 			} else if (graphics.curInLang == "Spanish"){
 				for(int i = 0; i < words.length; i++) {
-					newWords[i] = reader.spnFrnMap.get(words[i]);
+					if (reader.spnFrnMap.get(words[i]) == null){
+						newWords[i] = words[i];
+					} else {
+						newWords[i] = reader.spnFrnMap.get(words[i]);
+					}
 				}
 			}
 			String newSentence = "";
