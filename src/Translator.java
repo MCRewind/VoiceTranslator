@@ -6,12 +6,16 @@ import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.Socket;
+import java.net.UnknownHostException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
-import java.util.ArrayList;
+import java.util.Scanner;
 
 import javax.swing.AbstractButton;
 import javax.swing.BorderFactory;
@@ -134,6 +138,7 @@ public class Translator extends JFrame {
 				System.out.println("Google Response: " + response.getResponse());
 				graphics.inText.setText("Input: " + response.getResponse());
 				repaint();
+				graphics.responses.removeAllItems();
 				if (graphics.curInLang.equals(graphics.curOutLang))
 					graphics.outText.setText("Output: " + response.getResponse());
 				else
@@ -149,7 +154,7 @@ public class Translator extends JFrame {
 				System.out.println("Google is " + Double.parseDouble(response.getConfidence())*100 + "% confident in"
 						+ " the reply");
 				System.out.println("Other Possible responses are: ");
-				for(String s: response.getOtherPossibleResponses()){
+				for(String s: response.getAllPossibleResponses()){
 					graphics.addResponse(s);
 					graphics.repaint();
 					System.out.println("\t" + s);
@@ -385,11 +390,13 @@ public class Translator extends JFrame {
 
 				@Override
 				public void itemStateChanged(ItemEvent e) {
+					System.out.println("state");
 					if (e.getStateChange() == ItemEvent.SELECTED) {
+						System.out.println("selected");
 						no.setSelected(false);
 						yes.setSelected(false);
-						System.out.println("rlghsldfhgsldhgljhfglkjsdhfglksdhfgkljsdfhgkjdfh");
 						inText.setText("Input: " + responses.getItemAt(responses.getSelectedIndex()));
+						//graphics.responses.removeAllItems();
 						if (curInLang.equals(graphics.curOutLang))
 							outText.setText("Output: " + responses.getItemAt(responses.getSelectedIndex()));
 						else

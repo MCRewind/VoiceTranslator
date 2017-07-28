@@ -5,11 +5,16 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.net.Socket;
+import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class Dictionary_Reader {
 
@@ -141,7 +146,8 @@ public class Dictionary_Reader {
 		}
 		catch(IOException ex) {
 			ex.printStackTrace();
-		} 
+		}
+		
 	}
 
 	public HashMap<String, String> dictInverter (HashMap<String, String> map){
@@ -152,6 +158,27 @@ public class Dictionary_Reader {
 		return invertedMap;
 	}
 
+	public void webRead(String funcName, String[] params, String[] values) {
+		 String host = "https://glosbe.com/gapi/translate?from=eng&dest=fra&format=json&phrase=cat&pretty=true";
+		    try {
+		        Socket soc = new Socket(host,2628);
+		        OutputStream out = soc.getOutputStream();
+		        String request = "DEFINE ! apple";
+		        out.write(request.getBytes());
+		        out.flush();
+		        soc.shutdownOutput();
+		        InputStream in = soc.getInputStream();
+		        Scanner s = new Scanner(in);
+		        while(s.hasNextLine())
+		            System.out.println(s.nextLine());
+		        soc.close();
+		    } catch (UnknownHostException e) {
+		        System.out.println("Cannot found the host at "+host);
+		    } catch (IOException e) {
+		        e.printStackTrace();
+		    }
+	}
+	
 	public void write(String fileName, HashMap<String, String> map) {
 		try {
 			BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fileName), "UTF-8"));

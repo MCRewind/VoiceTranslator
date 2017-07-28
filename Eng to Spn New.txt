@@ -942,7 +942,7 @@ without	sin
 time (specific occurrence)	vez		
 much many a lot (adv)	mucho		
 to know (a fact) to find out	saber		
-what? which? how (+adj)!	qué		
+what	qué		
 on top over about	sobre		
 my	mi		
 some someone (pron)	alguno		
@@ -2866,7 +2866,7 @@ thank you	gracias ; muchas gracias
 thank you very much	muchas gracias
 thanks	gracias
 that	ese , esa , esos (p), esas (f'p), eso (n) (near) ; aqu, aquel, aquellos (p), aquellas (f'p), aquello (n), (far)
-the	 ;  ; los  ; las  ; lo (n)
+the	el
 their	su ; sus
 there	allí ; ahí ; allá
 there is	hay 
