@@ -15,10 +15,6 @@ public class Word {
 		this.language = language;
 		this.gender = gender;
 	}
-	
-	public void setWord(String newWord){
-		word = newWord;
-	}
 
 	public int getID(){
 		return id;
