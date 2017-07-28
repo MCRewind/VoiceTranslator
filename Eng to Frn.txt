@@ -8823,3 +8823,9 @@ are	sont
 brother	frère
 possible	possible
 response	réponse
+what	quelle
+is	est
+your	votre
+the	le
+how	comment
+was	était

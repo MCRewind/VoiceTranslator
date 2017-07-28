@@ -57,6 +57,8 @@ public class Translator extends JFrame {
 	}
 
 	public Translator() {
+		reader.webRead("how", "en", "es");
+		
 		debugUpdate();
 		if(debug)
 			debugWindow.setVisible(true);
@@ -308,7 +310,7 @@ public class Translator extends JFrame {
 
 			inLang.setSelectedIndex(0);
 			outLang.setSelectedIndex(0);
-			
+
 			inLang.addActionListener(new ActionListener() {
 
 				@Override
@@ -358,7 +360,7 @@ public class Translator extends JFrame {
 						question.setVisible(false);
 						no.setVisible(false);
 						yes.setVisible(false);
-						
+
 					} else {
 						no.setEnabled(true);
 					}
@@ -409,7 +411,7 @@ public class Translator extends JFrame {
 					responses.setVisible(false);*/
 				}	
 			});
-			
+
 			gbc.fill = GridBagConstraints.HORIZONTAL;
 			gbc.gridx = 0;
 			gbc.gridy = 0;

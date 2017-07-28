@@ -3,18 +3,23 @@ import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
 import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.net.Socket;
-import java.net.UnknownHostException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonIOException;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import com.google.gson.JsonSyntaxException;
 
 public class Dictionary_Reader {
 
@@ -24,6 +29,10 @@ public class Dictionary_Reader {
 	public HashMap<String, String> spnFrnMap = new HashMap<String, String>();
 	public HashMap<String, String> frnEngMap = new HashMap<String, String>();
 	public HashMap<String, String> frnSpnMap = new HashMap<String, String>();
+
+	String APIKey = "dict.1.1.20170728T185107Z.90ec571409763166.f186d1665f258b67d120a45aa57e09747e0193a9";
+
+	Gson gson = new GsonBuilder().setPrettyPrinting().create();
 	
 	public void spanishCleaner(String file, HashMap<String, String> map){
 		String line = null;
@@ -146,7 +155,7 @@ public class Dictionary_Reader {
 		catch(IOException ex) {
 			ex.printStackTrace();
 		}
-		
+
 	}
 
 	public HashMap<String, String> dictInverter (HashMap<String, String> map){
@@ -157,27 +166,52 @@ public class Dictionary_Reader {
 		return invertedMap;
 	}
 
-	public void webRead(String funcName, String[] params, String[] values) {
-		 String host = "https://glosbe.com/gapi/translate?from=eng&dest=fra&format=json&phrase=cat&pretty=true";
-		    try {
-		        Socket soc = new Socket(host,2628);
-		        OutputStream out = soc.getOutputStream();
-		        String request = "DEFINE ! apple";
-		        out.write(request.getBytes());
-		        out.flush();
-		        soc.shutdownOutput();
-		        InputStream in = soc.getInputStream();
-		        Scanner s = new Scanner(in);
-		        while(s.hasNextLine())
-		            System.out.println(s.nextLine());
-		        soc.close();
-		    } catch (UnknownHostException e) {
-		        System.out.println("Cannot found the host at "+host);
-		    } catch (IOException e) {
-		        e.printStackTrace();
-		    }
+	/*language codes
+		en - english
+		es - spanish
+		fr - french
+	 */
+	public void webRead(String word, String inLang, String outLang) {
+		String sURL = "https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=" + APIKey + "&lang=" + inLang + "-" + outLang + "&text=" +  word;
+
+		// Connect to the URL using java's native library
+		URL url = null;
+		try {
+			url = new URL(sURL);
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+		HttpURLConnection request = null;
+		try {
+			request = (HttpURLConnection) url.openConnection();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		try {
+			request.connect();
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+
+		// Convert to a JSON object to print data
+		JsonParser jp = new JsonParser(); //from gson
+		JsonElement root = null;
+		try {
+			root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
+		} catch (JsonIOException | JsonSyntaxException | IOException e) {
+			e.printStackTrace();
+		} //Convert the input stream to a json element
+		JsonObject rootobj = root.getAsJsonObject(); //May be an array, may be an object. 
+		String outIn = ((JsonObject) rootobj.getAsJsonArray("def").get(0)).get("text").getAsString();
+		String outInPos = ((JsonObject) rootobj.getAsJsonArray("def").get(0)).get("pos").getAsString();
+		//System.out.println(gson.toJson(rootobj));
+		String outOut = ((JsonObject) rootobj.getAsJsonArray("def").get(0).getAsJsonObject().getAsJsonArray("tr").get(0)).get("text").getAsString();
+		String outOutPos = ((JsonObject) rootobj.getAsJsonArray("def").get(0).getAsJsonObject().getAsJsonArray("tr").get(0)).get("pos").getAsString();
+		
+		System.out.println(outIn + ", " + outInPos + ", " + outOut + ", " + outOutPos);
+		
 	}
-	
+
 	public void write(String fileName, HashMap<String, String> map) {
 		try {
 			BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fileName), "UTF-8"));
@@ -193,18 +227,18 @@ public class Dictionary_Reader {
 		catch (IOException ex){
 		}
 	}
-	
+
 	public HashMap<String,String> dictMaker (HashMap<String, String> first, HashMap<String, String> second){
 		HashMap<String, String> newDict = new HashMap<String, String>();
 		for (Map.Entry<String, String> entry : first.entrySet()){
 			String firstKey = entry.getKey();
 			String firstValue = entry.getValue();
-		//	System.out.println(firstKey + "First Map!");
+			//	System.out.println(firstKey + "First Map!");
 			int firstHash = System.identityHashCode(firstKey);
 			for (Map.Entry<String, String> entry2 : second.entrySet()){
 				String secondKey = entry2.getKey();
 				String secondValue = entry2.getValue();
-		//		System.out.println(secondKey);
+				//		System.out.println(secondKey);
 				int secondHash = System.identityHashCode(secondKey);
 				if (firstKey.equals(secondKey)){
 					newDict.put(firstValue, secondValue);
