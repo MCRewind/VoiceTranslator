@@ -57,7 +57,9 @@ public class Translator extends JFrame {
 	}
 
 	public Translator() {
-		reader.webRead("how", "en", "es");
+		reader.indexer();
+		//System.out.println(reader.webWordCheck("hello"));
+		//reader.webRead("how", "en", "es");
 		
 		debugUpdate();
 		if(debug)

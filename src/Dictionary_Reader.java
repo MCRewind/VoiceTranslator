@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -10,11 +11,13 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonObject;
@@ -33,7 +36,7 @@ public class Dictionary_Reader {
 	String APIKey = "dict.1.1.20170728T185107Z.90ec571409763166.f186d1665f258b67d120a45aa57e09747e0193a9";
 
 	Gson gson = new GsonBuilder().setPrettyPrinting().create();
-	
+
 	public void spanishCleaner(String file, HashMap<String, String> map){
 		String line = null;
 
@@ -158,12 +161,77 @@ public class Dictionary_Reader {
 
 	}
 
+	public void indexer() {
+		ArrayList<Word> words = new ArrayList<Word>();
+
+		int index = 0;
+		try{
+			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("english_words"), "UTF-8"));
+			String strLine;
+			while ((strLine = br.readLine()) != null) {
+				System.out.println(strLine);
+				if(webWordCheck(strLine)) {
+					words.add(new Word(index, strLine, "en"));
+					System.out.println(index);
+					index++;
+				}
+			}
+			//in.close();
+		}catch (Exception e){
+			System.err.println("Error: " + e.getMessage());
+		}
+	}
+
 	public HashMap<String, String> dictInverter (HashMap<String, String> map){
 		HashMap<String, String> invertedMap = new HashMap<String, String>();
 		map.forEach((key, value) -> {
 			invertedMap.put(value, key);
 		});
 		return invertedMap;
+	}
+
+	public boolean webWordCheck(String word) {
+		String inLang = "en";
+		String outLang = "es";
+		String sURL = "https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=" + APIKey + "&lang=" + inLang + "-" + outLang + "&text=" +  word;
+
+		// Connect to the URL using java's native library
+		URL url = null;
+		try {
+			url = new URL(sURL);
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+		HttpURLConnection request = null;
+		try {
+			request = (HttpURLConnection) url.openConnection();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		try {
+			request.connect();
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+
+		// Convert to a JSON object to print data
+		JsonParser jp = new JsonParser(); //from gson
+		JsonElement root = null;
+		try {
+			root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
+		} catch (JsonIOException | JsonSyntaxException | IOException e) {
+			e.printStackTrace();
+		} //Convert the input stream to a json element
+		JsonObject rootobj = root.getAsJsonObject(); //May be an array, may be an object. 
+		if(rootobj.getAsJsonArray("def").size() >= 1) {				
+			String outIn = ((JsonObject) rootobj.getAsJsonArray("def").get(0)).get("text").getAsString();
+		if (outIn.equals(word))
+			return true;
+		else
+			return false;
+		} else {
+			return false;
+		}
 	}
 
 	/*language codes
@@ -207,7 +275,7 @@ public class Dictionary_Reader {
 		//System.out.println(gson.toJson(rootobj));
 		String outOut = ((JsonObject) rootobj.getAsJsonArray("def").get(0).getAsJsonObject().getAsJsonArray("tr").get(0)).get("text").getAsString();
 		String outOutPos = ((JsonObject) rootobj.getAsJsonArray("def").get(0).getAsJsonObject().getAsJsonArray("tr").get(0)).get("pos").getAsString();
-		
+
 		System.out.println(outIn + ", " + outInPos + ", " + outOut + ", " + outOutPos);
 	}
 

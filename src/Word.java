@@ -8,7 +8,7 @@ public class Word {
 	boolean gender; //True is Male, False is Female	(Will be set to false if gender cannot be applied to word)
 	
 	
-	public Word(int id, String word, String plural, String language, boolean gender){
+	public Word(int id, String word, String language){
 		this.id = id;
 		this.word = word;
 		this.plural = plural;
