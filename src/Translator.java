@@ -5,17 +5,18 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.Socket;
-import java.net.UnknownHostException;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
-import java.util.Scanner;
 
 import javax.swing.AbstractButton;
 import javax.swing.BorderFactory;
@@ -35,6 +36,7 @@ import com.darkprograms.speech.microphone.Microphone;
 import com.darkprograms.speech.recognizer.GoogleResponse;
 import com.darkprograms.speech.recognizer.Recognizer;
 import com.darkprograms.speech.synthesiser.Synthesiser;
+import com.google.gson.Gson;
 
 import javaFlacEncoder.FLACFileWriter;
 
@@ -56,7 +58,22 @@ public class Translator extends JFrame {
 		new Translator();
 	}
 
-	public Translator() {
+	public Translator() {	
+		
+		Gson gson = new Gson();
+
+		try {
+			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("kek.json"), "UTF-8"));
+			for (int i = 0; i < 10000; i++) {
+				bw.write(gson.toJson(new Test(1, 2, 3)));
+			}
+			
+		} catch (UnsupportedEncodingException | FileNotFoundException e1) {
+			e1.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		reader.indexer();
 		//System.out.println(reader.webWordCheck("hello"));
 		//reader.webRead("how", "en", "es");

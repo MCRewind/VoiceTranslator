@@ -37,6 +37,8 @@ public class Dictionary_Reader {
 
 	Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
+	String pos = "";
+	
 	public void spanishCleaner(String file, HashMap<String, String> map){
 		String line = null;
 
@@ -176,7 +178,7 @@ public class Dictionary_Reader {
 			while ((strLine = br.readLine()) != null) {
 				System.out.println(strLine);
 				if(webWordCheck(strLine)) {
-					words.add(new Word(index, strLine, "en"));
+					words.add(new Word(index, strLine, "en", pos));
 					System.out.println(index);
 					bw.write(gson.toJson(words.get(index)));
 					bw.flush();
@@ -232,6 +234,7 @@ public class Dictionary_Reader {
 		JsonObject rootobj = root.getAsJsonObject(); //May be an array, may be an object. 
 		if(rootobj.getAsJsonArray("def").size() >= 1) {				
 			String outIn = ((JsonObject) rootobj.getAsJsonArray("def").get(0)).get("text").getAsString();
+			pos = ((JsonObject) rootobj.getAsJsonArray("def").get(0)).get("pos").getAsString();
 		if (outIn.equals(word))
 			return true;
 		else

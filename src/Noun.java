@@ -6,7 +6,7 @@ public class Noun extends Word{
 
 
 	public Noun(int id, String word, String language, String plural, boolean gender) {
-		super(id, word, language);
+		super(id, word, language, "noun");
 		this.plural = plural;
 		this.gender = gender;
 	}
