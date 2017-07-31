@@ -161,18 +161,25 @@ public class Dictionary_Reader {
 
 	}
 
+	public void wordMartial() {
+		
+	}
+	
 	public void indexer() {
 		ArrayList<Word> words = new ArrayList<Word>();
 
 		int index = 0;
 		try{
 			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("english_words"), "UTF-8"));
+			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("word.json"), "UTF-8"));
 			String strLine;
 			while ((strLine = br.readLine()) != null) {
 				System.out.println(strLine);
 				if(webWordCheck(strLine)) {
 					words.add(new Word(index, strLine, "en"));
 					System.out.println(index);
+					bw.write(gson.toJson(words.get(index)));
+					bw.flush();
 					index++;
 				}
 			}
