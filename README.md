@@ -15,3 +15,5 @@ Dictionary Files - French
 Dictionary API - Yandex
 * https://tech.yandex.com/dictionary/
 API Key - dict.1.1.20170728T185107Z.90ec571409763166.f186d1665f258b67d120a45aa57e09747e0193a9
+
+English Word List - https://github.com/dwyl/english-words
