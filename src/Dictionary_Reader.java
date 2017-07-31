@@ -209,7 +209,6 @@ public class Dictionary_Reader {
 		String outOutPos = ((JsonObject) rootobj.getAsJsonArray("def").get(0).getAsJsonObject().getAsJsonArray("tr").get(0)).get("pos").getAsString();
 		
 		System.out.println(outIn + ", " + outInPos + ", " + outOut + ", " + outOutPos);
-		
 	}
 
 	public void write(String fileName, HashMap<String, String> map) {
