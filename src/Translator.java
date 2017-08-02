@@ -6,15 +6,12 @@ import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.io.File;
-<<<<<<< HEAD
 import java.io.InputStream;
-=======
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
->>>>>>> f65630e06e365bad0234e74062db7b08fbd4be54
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -65,10 +62,7 @@ public class Translator extends JFrame {
 	public static void main(String[] args) {
 		new Translator();
 	}
-
-<<<<<<< HEAD
-	//achenes
-
+	
 	public Translator() {	
 
 		Format input1 = new AudioFormat(AudioFormat.MPEGLAYER3);
@@ -102,11 +96,6 @@ public class Translator extends JFrame {
 		reader.webRead("how", "en", "es");/*
 		 */
 
-=======
-	public Translator() {
-		reader.webRead("how", "en", "es");
-
->>>>>>> f65630e06e365bad0234e74062db7b08fbd4be54
 		debugUpdate();
 		if(debug)
 			debugWindow.setVisible(true);
