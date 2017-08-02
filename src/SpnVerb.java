@@ -13,6 +13,14 @@ public class SpnVerb extends Verb{
 		 * Known irregulars: 
 		 * Preterite Tense: Ser, Ver, Ir, Dar, Andar, Conducir, Decir, Estar, Hacer, Poner, Poder, Querer, Saber, Tener, Traer, Venir
 		 * Present Tense Yo Forms: Caer, Traer, Hacer, Poner, Saber, Salir, Valer, Ver, Conocer, Dar, Caber, Traducir
+		 * Still dont have stem changers or reflexives being taken into account here
+		 * Stem Changers (In Preterite Tense, only ir stem changers stem change. Never in Future, In Progressive, only ir):
+		 * 	Present:
+		 * 		e:ie - acertar, encender, advertir, entender, cerrar, fregar, comenzar, hervir, confesar, mentir, consentir, negar, converter, pensar, defender, perder, empezar, preferir
+		 * 		e:i - bendecir, impedir, colegir, maldecir, competir, medir, conseguir, pedir, corregir, perseguir, decir, reír, despedir, repetir, elegir, seguir, freír, servir, gemir, sonreír
+		 *		o:ue - almorzar, morir, aprobar, mostrar, colgar, mover, contar, probar, costar, recordar, devolver, resolver, vovler, rogar, dormir, sonar, encontrar, soñar, envolver, tostar, morder, volar
+		 *	Past:
+		 *		ir verbs - dormir, servir, preferir, seguir, sentir, pedir, convertir, morir, repetir
 		 * Present Tense All Forms: Ser, Estar, Ir, Haber
 		 * Present Tense Yo Special Rules: 
 		 * For every verb that ends in ir: 

@@ -6,11 +6,20 @@ import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.io.File;
+<<<<<<< HEAD
 import java.io.InputStream;
+=======
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.Socket;
+import java.net.UnknownHostException;
+>>>>>>> f65630e06e365bad0234e74062db7b08fbd4be54
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.util.Scanner;
 
 import javax.media.Format;
 import javax.media.Manager;
@@ -57,6 +66,7 @@ public class Translator extends JFrame {
 		new Translator();
 	}
 
+<<<<<<< HEAD
 	//achenes
 
 	public Translator() {	
@@ -92,6 +102,11 @@ public class Translator extends JFrame {
 		reader.webRead("how", "en", "es");/*
 		 */
 
+=======
+	public Translator() {
+		reader.webRead("how", "en", "es");
+
+>>>>>>> f65630e06e365bad0234e74062db7b08fbd4be54
 		debugUpdate();
 		if(debug)
 			debugWindow.setVisible(true);
@@ -289,6 +304,28 @@ public class Translator extends JFrame {
 				for(int i = 0; i < words.length; i++) {
 					if (reader.engFrnMap.get(words[i]) == null){
 						newWords[i] = words[i];
+					} else if (words[i].substring(words[i].length() - 2).equals("'s")){
+						String[] longWords = new String[words.length + 1];
+						for (int x = 0; x < longWords.length; x ++){
+							if (x == i){
+								longWords[x] = (words[i].subSequence(0, words[i].length() - 2)).toString();
+								longWords[x + 1] = "is";
+								x++;
+							}
+							longWords[x] = words[x];
+
+						}
+					} else if (words[i].substring(words[i].length() - 3).equals("'ve")){
+						String[] longWords = new String[words.length + 1];
+						for (int x = 0; x < longWords.length; x ++){
+							if (x == i){
+								longWords[x] = (words[i].subSequence(0, words[i].length() - 3)).toString();
+								longWords[x + 1] = "have";
+								x++;
+							}
+							longWords[x] = words[x];
+
+						}
 					} else {
 						newWords[i] = reader.engFrnMap.get(words[i]);
 					}
@@ -302,6 +339,7 @@ public class Translator extends JFrame {
 					}
 				}
 			}
+
 			String newSentence = "";
 			for(String word : newWords) {
 				newSentence += word + " ";

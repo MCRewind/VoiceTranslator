@@ -17,3 +17,9 @@ Dictionary API - Yandex
 API Key - dict.1.1.20170728T185107Z.90ec571409763166.f186d1665f258b67d120a45aa57e09747e0193a9
 
 English Word List - https://github.com/dwyl/english-words
+
+Dictionary Spreadsheet - 
+https://www.trueterm.com/multilingual-databases.html
+
+BabelNet Dictionary Citation - 
+R. Navigli and S. Ponzetto. BabelNet: The Automatic Construction, Evaluation and Application of a Wide-Coverage Multilingual Semantic Network. Artificial Intelligence, 193, Elsevier, 2012, pp. 217-250. 
