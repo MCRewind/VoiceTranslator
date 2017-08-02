@@ -23,6 +23,11 @@
 
 /.bin/
 
+word.json
+
+english_words
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 >>>>>>> 5cdd93de09ba78365045f53b86e84b04ed7be182
+JMdict

@@ -5,19 +5,19 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStreamWriter;
-import java.io.UnsupportedEncodingException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
+import javax.media.Format;
+import javax.media.Manager;
+import javax.media.MediaLocator;
+import javax.media.Player;
+import javax.media.PlugInManager;
+import javax.media.format.AudioFormat;
 import javax.swing.AbstractButton;
 import javax.swing.BorderFactory;
 import javax.swing.ButtonModel;
@@ -36,7 +36,6 @@ import com.darkprograms.speech.microphone.Microphone;
 import com.darkprograms.speech.recognizer.GoogleResponse;
 import com.darkprograms.speech.recognizer.Recognizer;
 import com.darkprograms.speech.synthesiser.Synthesiser;
-import com.google.gson.Gson;
 
 import javaFlacEncoder.FLACFileWriter;
 
@@ -47,19 +46,33 @@ import javaFlacEncoder.FLACFileWriter;
  *
  */
 public class Translator extends JFrame {
-
+	
 	Dictionary_Reader reader = new Dictionary_Reader();
 	Graphics graphics = new Graphics();
 	Debug debugWindow = new Debug();
 	boolean google = true, debug = false;
-
+	
 
 	public static void main(String[] args) {
 		new Translator();
 	}
 
+	//achenes
+
 	public Translator() {	
+
+		Format input1 = new AudioFormat(AudioFormat.MPEGLAYER3);
+	    Format input2 = new AudioFormat(AudioFormat.MPEG);
+	    Format output = new AudioFormat(AudioFormat.LINEAR);
+	    PlugInManager.addPlugIn(
+	        "com.sun.media.codec.audio.mp3.JavaDecoder",
+	        new Format[]{input1, input2},
+	        new Format[]{output},
+	        PlugInManager.CODEC
+	    );
 		
+		/*System.out.println("hello".subSequence(0, "hello".length()-2)+"test");
+
 		Gson gson = new Gson();
 
 		try {
@@ -67,17 +80,18 @@ public class Translator extends JFrame {
 			for (int i = 0; i < 10000; i++) {
 				bw.write(gson.toJson(new Test(1, 2, 3)));
 			}
-			
+
 		} catch (UnsupportedEncodingException | FileNotFoundException e1) {
 			e1.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			 TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		reader.indexer();
-		//System.out.println(reader.webWordCheck("hello"));
-		//reader.webRead("how", "en", "es");
-		
+		System.out.println(reader.webWordCheck("hello"));
+		reader.webRead("how", "en", "es");/*
+		 */
+
 		debugUpdate();
 		if(debug)
 			debugWindow.setVisible(true);
@@ -105,9 +119,7 @@ public class Translator extends JFrame {
 		setLayout(new GridLayout(3, 1));
 		this.setResizable(true);
 		this.add(graphics);
-		/*for (int i = 0; i < UIManager.getInstalledLookAndFeels().length; i++) {
-			System.out.println(UIManager.getInstalledLookAndFeels()[i]);
-		}*/
+
 		try {
 			UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 		} catch (ClassNotFoundException e) {
@@ -204,6 +216,9 @@ public class Translator extends JFrame {
 			InputStream is = synth.getMP3Data(text);
 			final Path destination = Paths.get("audio.mp3");
 			Files.copy(is, destination, StandardCopyOption.REPLACE_EXISTING);
+			Player p = Manager.createRealizedPlayer(new MediaLocator(new File("audio.mp3").toURI().toURL()));
+			p.start();
+			Thread.sleep((p.getMediaTime().getNanoseconds()/1000000));
 		} catch (Exception e) {
 			System.out.println("Error");
 			e.printStackTrace();

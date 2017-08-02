@@ -27,6 +27,7 @@ abandonment	abandonnement
 abandonments	abandons
 abandons	abandonnes
 abase	abaisser, humilier
+doing	faire
 abased	humilié
 abasement	abaissement, humiliation
 abasements	abaissement
