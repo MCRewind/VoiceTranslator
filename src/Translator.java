@@ -58,7 +58,7 @@ public class Translator extends JFrame {
 
 	public Translator() {
 		reader.webRead("how", "en", "es");
-		
+
 		debugUpdate();
 		if(debug)
 			debugWindow.setVisible(true);
@@ -255,8 +255,29 @@ public class Translator extends JFrame {
 				for(int i = 0; i < words.length; i++) {
 					if (reader.engFrnMap.get(words[i]) == null){
 						newWords[i] = words[i];
-					} else { 
-						  
+					} else if (words[i].substring(words[i].length() - 2).equals("'s")){
+						String[] longWords = new String[words.length + 1];
+						for (int x = 0; x < longWords.length; x ++){
+							if (x == i){
+								longWords[x] = (words[i].subSequence(0, words[i].length() - 2)).toString();
+								longWords[x + 1] = "is";
+								x++;
+							}
+							longWords[x] = words[x];
+
+						}
+					} else if (words[i].substring(words[i].length() - 3).equals("'ve")){
+						String[] longWords = new String[words.length + 1];
+						for (int x = 0; x < longWords.length; x ++){
+							if (x == i){
+								longWords[x] = (words[i].subSequence(0, words[i].length() - 3)).toString();
+								longWords[x + 1] = "have";
+								x++;
+							}
+							longWords[x] = words[x];
+
+						}
+					} else {
 						newWords[i] = reader.engFrnMap.get(words[i]);
 					}
 				}
@@ -269,7 +290,7 @@ public class Translator extends JFrame {
 					}
 				}
 			}
-			
+
 			String newSentence = "";
 			for(String word : newWords) {
 				newSentence += word + " ";
