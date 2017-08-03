@@ -196,9 +196,10 @@ public class Translator extends JFrame {
 		//output = english
 		if (lang == "en-us") {
 			String[] words = text.split(" ");
-			String[] newWords = new String[words.length];
+			String[] newWords = new String[words.length + 1];
 			if (graphics.curInLang == "Spanish"){
 				for(int i = 0; i < words.length; i++) {
+					/////NON EXISTING WORDS HANDLING
 					if (reader.spnEngMap.get(words[i]) == null){
 						newWords[i] = words[i];
 					} else {
@@ -207,6 +208,7 @@ public class Translator extends JFrame {
 				}
 			} else if (graphics.curInLang == "French"){
 				for(int i = 0; i < words.length; i++) {
+					/////NON EXISTING WORDS HANDLING
 					if (reader.frnEngMap.get(words[i]) == null){
 						newWords[i] = words[i];
 					} else { 
@@ -223,10 +225,66 @@ public class Translator extends JFrame {
 			//output = spanish
 		} else if (lang == "es-mx") {
 			String[] words = text.split(" ");
-			String[] newWords = new String[words.length];
+			String[] newWords = new String[words.length + 1];
 			if (graphics.curInLang == "English"){
 				for(int i = 0; i < words.length; i++) {
-					if (reader.engSpnMap.get(words[i]) == null){
+					///// 's HANDLING
+					if (words[i].substring(words[i].length() - 2).equals("'s")){
+						String[] longWords = new String[words.length + 1];
+						for (int x = 0; x < longWords.length; x ++){
+							if (x == i){
+								longWords[x] = (words[i].subSequence(0, words[i].length() - 2)).toString();
+								longWords[x + 1] = "is";
+								x++;
+							} if (x > i){
+								longWords[x] = words[x - 1];
+							} else {
+								longWords[x] = words[x];
+							}
+						}
+						newWords[i] = reader.engSpnMap.get(longWords[i]);
+						///// 've HANDLING
+					} else if (words[i].substring(words[i].length() - 3).equals("'ve")){
+						String[] longWords = new String[words.length + 1];
+						for (int x = 0; x < longWords.length; x ++){
+							if (x == i){
+								longWords[x] = (words[i].subSequence(0, words[i].length() - 3)).toString();
+								longWords[x + 1] = "have";
+								x++;
+							} if (x > i){
+								longWords[x] = words[x - 1];
+							} else {
+								longWords[x] = words[x];
+							}
+						}
+						newWords[i] = reader.engSpnMap.get(longWords[i]);
+						/////REFLEXIVE SPANISH VERBS HANDLING
+					} else if (reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4) == "arse" || reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4) == "irse" || reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4) == "erse"){
+						String[] longWords = new String[words.length + 1];
+						for (int x = 0; x < longWords.length; x ++){
+							if (x == i){
+								if (reader.engSpnMap.get(words[i - 1]) == "yo"){
+									longWords[x] = "me";
+								} else if (reader.engSpnMap.get(words[i - 1]) == "tu"){
+									longWords[x] = "te";
+								} else if (reader.engSpnMap.get(words[i - 1]) == "el" || reader.engSpnMap.get(words[i - 1]) == "ella" || reader.engSpnMap.get(words[i - 1]) == "usted"){
+									longWords[x] = "se";
+								} else if (reader.engSpnMap.get(words[i - 1]) == "nosotros"){
+									longWords[x] = "nos";
+								} else if (reader.engSpnMap.get(words[i - 1]) == "vosotros"){
+									longWords[x] = "os";
+								} else if (reader.engSpnMap.get(words[i - 1]) == "ellos" || reader.engSpnMap.get(words[i - 1]) == "ellas" || reader.engSpnMap.get(words[i - 1]) == "ustedes"){
+									longWords[x] = "se";
+								}	
+								longWords[x + 1] = reader.engSpnMap.get(words[i]).subSequence(0, words[i].length() - 4).toString();
+								x++;
+							} else {
+								longWords[x] = words[x];
+							}
+						}
+						newWords = longWords;
+						/////NON EXISTING WORDS HANDLING
+					} else if (reader.engSpnMap.get(words[i]) == null){
 						newWords[i] = words[i];
 					} else {
 						newWords[i] = reader.engSpnMap.get(words[i]);
@@ -234,7 +292,33 @@ public class Translator extends JFrame {
 				}
 			} else if (graphics.curInLang == "French"){
 				for(int i = 0; i < words.length; i++) {
-					if (reader.frnSpnMap.get(words[i]) == null){
+					/////REFLEXIVE SPANISH VERBS HANDLING
+					if (reader.frnSpnMap.get(words[i]).substring(reader.frnSpnMap.get(words[i]).length() - 4) == "arse" || reader.frnSpnMap.get(words[i]).substring(reader.frnSpnMap.get(words[i]).length() - 4) == "irse" || reader.frnSpnMap.get(words[i]).substring(reader.frnSpnMap.get(words[i]).length() - 4) == "erse"){
+						String[] longWords = new String[words.length + 1];
+						for (int x = 0; x < longWords.length; x ++){
+							if (x == i){
+								if (reader.frnSpnMap.get(words[i - 1]) == "yo"){
+									longWords[x] = "me";
+								} else if (reader.frnSpnMap.get(words[i - 1]) == "tu"){
+									longWords[x] = "te";
+								} else if (reader.frnSpnMap.get(words[i - 1]) == "el" || reader.engSpnMap.get(words[i - 1]) == "ella" || reader.engSpnMap.get(words[i - 1]) == "usted"){
+									longWords[x] = "se";
+								} else if (reader.frnSpnMap.get(words[i - 1]) == "nosotros"){
+									longWords[x] = "nos";
+								} else if (reader.frnSpnMap.get(words[i - 1]) == "vosotros"){
+									longWords[x] = "os";
+								} else if (reader.frnSpnMap.get(words[i - 1]) == "ellos" || reader.engSpnMap.get(words[i - 1]) == "ellas" || reader.engSpnMap.get(words[i - 1]) == "ustedes"){
+									longWords[x] = "se";
+								}	
+								longWords[x + 1] = reader.frnSpnMap.get(words[i]).subSequence(0, words[i].length() - 4).toString();
+								x++;
+							} else {
+								longWords[x] = words[x];
+							}
+						}
+						newWords = longWords;
+						/////NON EXISTING WORDS HANDLING
+					} else if (reader.frnSpnMap.get(words[i]) == null){
 						newWords[i] = words[i];
 					} else {
 						newWords[i] = reader.frnSpnMap.get(words[i]);
@@ -250,22 +334,25 @@ public class Translator extends JFrame {
 			//output = french
 		} else if (lang == "fr-fr") {
 			String[] words = text.split(" ");
-			String[] newWords = new String[words.length];
+			String[] newWords = new String[words.length + 1];
 			if (graphics.curInLang == "English"){
 				for(int i = 0; i < words.length; i++) {
-					if (reader.engFrnMap.get(words[i]) == null){
-						newWords[i] = words[i];
-					} else if (words[i].substring(words[i].length() - 2).equals("'s")){
+					///// 's HANDLING
+					if (words[i].substring(words[i].length() - 2).equals("'s")){
 						String[] longWords = new String[words.length + 1];
 						for (int x = 0; x < longWords.length; x ++){
 							if (x == i){
 								longWords[x] = (words[i].subSequence(0, words[i].length() - 2)).toString();
 								longWords[x + 1] = "is";
 								x++;
+							} if (x > i){
+								longWords[x] = words[x - 1];
+							} else {
+								longWords[x] = words[x];
 							}
-							longWords[x] = words[x];
-
 						}
+						newWords[i] = reader.engFrnMap.get(longWords[i]);
+						///// 've HANDLING
 					} else if (words[i].substring(words[i].length() - 3).equals("'ve")){
 						String[] longWords = new String[words.length + 1];
 						for (int x = 0; x < longWords.length; x ++){
@@ -273,16 +360,23 @@ public class Translator extends JFrame {
 								longWords[x] = (words[i].subSequence(0, words[i].length() - 3)).toString();
 								longWords[x + 1] = "have";
 								x++;
+							} if (x > i){
+								longWords[x] = words[x - 1];
+							} else {
+								longWords[x] = words[x];
 							}
-							longWords[x] = words[x];
-
 						}
+						newWords[i] = reader.engFrnMap.get(longWords[i]);
+						/////NON EXISTING WORDS HANDLING
+					} else if (reader.engFrnMap.get(words[i]) == null){
+						newWords[i] = words[i];
 					} else {
 						newWords[i] = reader.engFrnMap.get(words[i]);
 					}
 				}
 			} else if (graphics.curInLang == "Spanish"){
 				for(int i = 0; i < words.length; i++) {
+					/////NON EXISTING WORDS HANDLING
 					if (reader.spnFrnMap.get(words[i]) == null){
 						newWords[i] = words[i];
 					} else {

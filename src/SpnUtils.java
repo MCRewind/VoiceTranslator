@@ -57,7 +57,7 @@ public class SpnUtils {
 		}
 
 		//Conjugations for present tense in 'ir' 'ar' 'er' forms
-		if (tense == "present"){
+		else if (tense == "present"){
 			if (ending.equals("ir") && irregular == false){
 				if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 					conjVerb = word.subSequence(0, length - 2) + "o";
@@ -122,7 +122,7 @@ public class SpnUtils {
 		}
 
 		//Conjugations for future tense in 'ir' 'ar' 'er' forms
-		if (tense == "future"){
+		else if (tense == "future"){
 			if (irregular == false){
 				if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 					conjVerb = word.subSequence(0, length - 2) + "é";
@@ -143,7 +143,7 @@ public class SpnUtils {
 		}
 
 		//Conjugations for continuous tense in 'ir' 'ar' 'er' forms
-		if (tense == "continuous"){
+		else if (tense == "continuous"){
 			if (irregular == false){
 				if (ending.equals("ar")){
 					conjVerb = word.subSequence(0, length - 2) + "ando";
