@@ -3526,7 +3526,7 @@ Holland ; Kingdom of the Netherlands ; The Netherlands	Pays-Bas ; Royaume des Pa
 Honduras ; Republic of Honduras	Honduras ; République du Honduras
 Hungarian	hongrois
 Hungary ; Republic of Hungary	Hongrie
-I	j' ; je
+I	je
 IMCO code	codification OMCI
 IMF ; International Monetary Fund	Fonds monétaire international ; FMI
 ISO standard	norme ISO

@@ -196,7 +196,7 @@ public class Translator extends JFrame {
 		//output = english
 		if (lang == "en-us") {
 			String[] words = text.split(" ");
-			String[] newWords = new String[words.length + 1];
+			String[] newWords = new String[words.length];
 			if (graphics.curInLang == "Spanish"){
 				for(int i = 0; i < words.length; i++) {
 					/////NON EXISTING WORDS HANDLING
@@ -225,10 +225,11 @@ public class Translator extends JFrame {
 			//output = spanish
 		} else if (lang == "es-mx") {
 			String[] words = text.split(" ");
-			String[] newWords = new String[words.length + 1];
+			String[] newWords = new String[words.length];
 			if (graphics.curInLang == "English"){
 				for(int i = 0; i < words.length; i++) {
 					///// 's HANDLING
+					
 					if (words[i].substring(words[i].length() - 2).equals("'s")){
 						String[] longWords = new String[words.length + 1];
 						for (int x = 0; x < longWords.length; x ++){
@@ -236,15 +237,16 @@ public class Translator extends JFrame {
 								longWords[x] = (words[i].subSequence(0, words[i].length() - 2)).toString();
 								longWords[x + 1] = "is";
 								x++;
-							} if (x > i){
+							} else if (x > i){
 								longWords[x] = words[x - 1];
 							} else {
 								longWords[x] = words[x];
 							}
+							System.out.println(longWords[x]);
 						}
 						newWords[i] = reader.engSpnMap.get(longWords[i]);
 						///// 've HANDLING
-					} else if (words[i].substring(words[i].length() - 3).equals("'ve")){
+					} /* else if (words[i].substring(words[i].length() - 3).equals("'ve")){
 						String[] longWords = new String[words.length + 1];
 						for (int x = 0; x < longWords.length; x ++){
 							if (x == i){
@@ -284,7 +286,7 @@ public class Translator extends JFrame {
 						}
 						newWords = longWords;
 						/////NON EXISTING WORDS HANDLING
-					} else if (reader.engSpnMap.get(words[i]) == null){
+					} else */ else if (reader.engSpnMap.get(words[i]) == null){
 						newWords[i] = words[i];
 					} else {
 						newWords[i] = reader.engSpnMap.get(words[i]);
@@ -293,6 +295,7 @@ public class Translator extends JFrame {
 			} else if (graphics.curInLang == "French"){
 				for(int i = 0; i < words.length; i++) {
 					/////REFLEXIVE SPANISH VERBS HANDLING
+					/*
 					if (reader.frnSpnMap.get(words[i]).substring(reader.frnSpnMap.get(words[i]).length() - 4) == "arse" || reader.frnSpnMap.get(words[i]).substring(reader.frnSpnMap.get(words[i]).length() - 4) == "irse" || reader.frnSpnMap.get(words[i]).substring(reader.frnSpnMap.get(words[i]).length() - 4) == "erse"){
 						String[] longWords = new String[words.length + 1];
 						for (int x = 0; x < longWords.length; x ++){
@@ -318,7 +321,7 @@ public class Translator extends JFrame {
 						}
 						newWords = longWords;
 						/////NON EXISTING WORDS HANDLING
-					} else if (reader.frnSpnMap.get(words[i]) == null){
+					} else */ if (reader.frnSpnMap.get(words[i]) == null){
 						newWords[i] = words[i];
 					} else {
 						newWords[i] = reader.frnSpnMap.get(words[i]);
@@ -334,10 +337,11 @@ public class Translator extends JFrame {
 			//output = french
 		} else if (lang == "fr-fr") {
 			String[] words = text.split(" ");
-			String[] newWords = new String[words.length + 1];
+			String[] newWords = new String[words.length];
 			if (graphics.curInLang == "English"){
 				for(int i = 0; i < words.length; i++) {
 					///// 's HANDLING
+					/*
 					if (words[i].substring(words[i].length() - 2).equals("'s")){
 						String[] longWords = new String[words.length + 1];
 						for (int x = 0; x < longWords.length; x ++){
@@ -368,7 +372,7 @@ public class Translator extends JFrame {
 						}
 						newWords[i] = reader.engFrnMap.get(longWords[i]);
 						/////NON EXISTING WORDS HANDLING
-					} else if (reader.engFrnMap.get(words[i]) == null){
+					} else */  if (reader.engFrnMap.get(words[i]) == null){
 						newWords[i] = words[i];
 					} else {
 						newWords[i] = reader.engFrnMap.get(words[i]);

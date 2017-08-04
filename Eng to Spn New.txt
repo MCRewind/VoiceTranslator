@@ -899,7 +899,7 @@ that which	que
 and	y		
 to	a
 at	a 		
-in on	en		
+in	en		
 a	un
 an	un	
 to be	ser		
@@ -947,7 +947,7 @@ on top over about	sobre
 my	mi		
 some someone (pron)	alguno		
 same	mismo		
-i (subj)	yo		
+I	yo		
 also	también		
 untill up to even	hasta		
 year	año		
@@ -971,10 +971,11 @@ one	uno
 well	bien		
 little few a little big (adv)	poco		
 should ought to; to owe	deber		
-so then	entonces		
+then	entonces		
 to put(on) get(+adj)	poner		
 thing	cosa		
-so much so many	tanto		
+so much	tanto
+so many	tanto		
 man mankind husband	hombre		
 to seem look like	parecer		
 our	nuestro		
@@ -2428,7 +2429,6 @@ nonkilling	no-matar
 noon	mediodía 
 north	norte 
 nose	nariz 
-not	no
 notebook	cuaderno 
 nothing	nada
 noun	sustantivo  ; substantivo  ; nombre 
@@ -2451,7 +2451,8 @@ often	menudo ; frecuentemente
 oil	petróleo 
 old	anciano ; viejo
 olive	aceituna  ; oliva 
-on	en ; sobre
+in	en
+on	encima
 once upon a time	érase una vez, había una vez, era una vez
 one	uno
 onion	cebol
@@ -4621,7 +4622,7 @@ typhus	tifus
 planetarium	planetario
 chromatic	cromático (a)
 magnate	potentado
-so	de modo que
+so	asi que
 thanked	agradeció
 toaster	tostadora ( toaster for bread)
 accountability	responsabilidad
