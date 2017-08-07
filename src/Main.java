@@ -57,7 +57,8 @@ public class Main extends JFrame {
 			e1.printStackTrace();
 		}
 		try {
-			bw.write("hello");
+			bw.write(gson.toJson(new Test(1, 2, 3)));
+			bw.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -68,19 +69,18 @@ public class Main extends JFrame {
 
 		int index = 0;
 		try{
-			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("test.txt"), "UTF-8"));
+			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("Spn to Eng New.txt"), "UTF-8"));
 			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("word.json"), "UTF-8"));
 			String strLine;
 			while ((strLine = br.readLine()) != null) {
 				System.out.println(strLine);
 				if(webWordCheck(strLine)) {
 					words.add(new Word(index, strLine, "en", pos));
-					System.out.println(index);
-					bw.write(gson.toJson(words.get(index)));
-					//bw.flush();
 					index++;
 				}
 			}
+			bw.write(gson.toJson(words));
+			bw.close();
 			//in.close();
 		}catch (Exception e){
 			System.err.println("Error: " + e.getMessage());

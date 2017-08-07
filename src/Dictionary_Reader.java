@@ -176,6 +176,7 @@ public class Dictionary_Reader {
 			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("word.json"), "UTF-8"));
 			String strLine;
 			while ((strLine = br.readLine()) != null) {
+				System.out.println(strLine);
 				if(webWordCheck(strLine)) {
 					words.add(new Word(index, strLine, "en", pos));
 					index++;
@@ -183,7 +184,7 @@ public class Dictionary_Reader {
 				}
 			}
 			bw.write(gson.toJson(words));
-			bw.flush();
+			bw.close();
 			//in.close();
 		}catch (Exception e){
 			System.err.println("Error: " + e.getMessage());

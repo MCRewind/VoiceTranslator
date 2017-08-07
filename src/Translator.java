@@ -57,7 +57,7 @@ public class Translator extends JFrame {
 	}
 
 	public Translator() {
-		reader.webRead("how", "en", "es");
+		reader.indexer();
 
 		debugUpdate();
 		if(debug)
@@ -230,7 +230,7 @@ public class Translator extends JFrame {
 				for(int i = 0; i < words.length; i++) {
 					///// 's HANDLING
 
-					if (words[i].substring(words[i].length() - 2).equals("'s")){
+					if (words[i].length() >= 3 && words[i].substring(words[i].length() - 2).equals("'s")){
 						newWords = new String[words.length + 1];
 						for (int x = 0; x < newWords.length; x ++){
 							if (x == i){
@@ -243,19 +243,20 @@ public class Translator extends JFrame {
 								newWords[x] = words[x];
 							}
 						} ///// 've HANDLING
-					} else if (words[i].substring(words[i].length() - 3).equals("'ve")){
+					} else if (words[i].length() >= 3 && words[i].substring(words[i].length() - 3).equals("'ve")){
+						System.out.println(words[i]);
 						newWords = new String[words.length + 1];
 						for (int x = 0; x < newWords.length; x ++){
 							if (x == i){
+								System.out.println("have");
 								newWords[x] = (words[i].subSequence(0, words[i].length() - 3)).toString();
 								newWords[x + 1] = "have";
 								x++;
 							} else if (x > i){
 								newWords[x] = words[x - 1];
-							} else {
+							} else {	
 								newWords[x] = words[x];
 							}
-							System.out.println(newWords[x]);
 						}
 					}
 

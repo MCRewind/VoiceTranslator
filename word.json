@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "word": "hello",
+    "language": "en",
+    "pos": "noun"
+  },
+  {
+    "id": 1,
+    "word": "apple",
+    "language": "en",
+    "pos": "noun"
+  },
+  {
+    "id": 2,
+    "word": "he",
+    "language": "en",
+    "pos": "pronoun"
+  },
+  {
+    "id": 3,
+    "word": "she",
+    "language": "en",
+    "pos": "pronoun"
+  },
+  {
+    "id": 4,
+    "word": "no",
+    "language": "en",
+    "pos": "noun"
+  }
+]
