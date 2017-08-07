@@ -71,7 +71,6 @@ Bible	Biblia
 Black Sea	Mar Negro 
 Bolivia	Bolivia
 Bosnia	Bosnia
-Bosnia and Herzegovina	Bosnia y Hercegovina
 Bosphorus	Bósforo 
 Botswana	Botsuana 
 Brazil	Brasil 
@@ -179,7 +178,7 @@ Happy New Year	próspero año nuevo ; feliz año nuevo
 Hebrew	hebreo 
 Hezbollah	Hezbolá
 Hindi	hindi 
-Hokkaido	Hokkaido ; Hokkaidō
+Hokkaido	Hokkaidō
 Holland	Holanda  ; 
 Holocaust	Holocausto 
 Holy Spirit	Espíritu Santo 
@@ -263,7 +262,6 @@ Mauritius	Mauricio
 May	mayo 
 Mediterranean Sea	Mar Mediterráneo 
 Merry Christmas	feliz Navidad
-Merry Christmas and a Happy New Year	Feliz Navidad y próspero Año Nuevo
 Mexico	México  ; Méjico 
 Michael	Miguel, Máicol
 Middle East	Oriente Medio ; Medio Oriente 
@@ -288,9 +286,8 @@ Myanmar	Myanmar
 NATO	OTAN 
 Namibia	Namibia
 Naypyidaw	Naypyidaw
-Nepal	Nepal 
-Neptune	Neptuno 
-Netherlands	Países Bajos ; Holanda 
+Nepal	Nepal
+Neptune	Neptuno
 New Delhi	Nueva Delhi 
 New York City	Nueva York
 New Zealand	Nueva Zelanda  ; Nueva Zelandia 
@@ -393,8 +390,7 @@ Tehran	Teherán
 TAviv	TAviv 
 Ten Commandments	Diez Mandamientos  ; Diez Palabras  ; Decálogo 
 Thai	tailandés 
-Thailand	Tailandia 
-The Hague	La Haya 
+Thailand	Tailandia
 Thursday	jueves 
 Transnistria	Transnistria 
 Transylvania	Transilvania 
@@ -426,8 +422,7 @@ Wales	Gales ; País de Gales
 Warsaw	Varsovia 
 Wednesday	miércoles 
 Western Europe	Europa Occidental 
-Western Sahara	Sahara Occidental 
-White House	Casa Blanca 
+Western Sahara	Sahara Occidental
 White Sea	mar Blanco 
 Wikipedia	Wikipedia
 Wiktionary	Wikcionario 
