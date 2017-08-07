@@ -970,7 +970,8 @@ day	día
 one	uno		
 well	bien		
 little few a little big (adv)	poco		
-should ought to; to owe	deber		
+should ought to; to owe	deber
+should	debería
 then	entonces		
 to put(on) get(+adj)	poner		
 thing	cosa		
@@ -1886,7 +1887,8 @@ to interpret	interpretar
 soul	alma		
 to admit	admitir		
 to identify	identificar		
-would	madera		
+could	podría
+would	haría		
 party	fiesta		
 heat	calor		
 minimum	mínimo		
