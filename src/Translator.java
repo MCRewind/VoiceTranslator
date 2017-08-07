@@ -5,10 +5,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.nio.file.Files;
@@ -35,6 +40,7 @@ import com.darkprograms.speech.microphone.Microphone;
 import com.darkprograms.speech.recognizer.GoogleResponse;
 import com.darkprograms.speech.recognizer.Recognizer;
 import com.darkprograms.speech.synthesiser.Synthesiser;
+import com.google.gson.Gson;
 
 import javaFlacEncoder.FLACFileWriter;
 
@@ -50,15 +56,16 @@ public class Translator extends JFrame {
 	Graphics graphics = new Graphics();
 	Debug debugWindow = new Debug();
 	boolean google = true, debug = false;
-
+	Gson gson = new Gson();
 
 	public static void main(String[] args) {
 		new Translator();
 	}
 
 	public Translator() {
-		reader.webRead("how", "en", "es");
-
+		//reader.webRead("how", "en", "es");
+		//reader.indexer();
+		
 		debugUpdate();
 		if(debug)
 			debugWindow.setVisible(true);
@@ -229,8 +236,10 @@ public class Translator extends JFrame {
 			if (graphics.curInLang == "English"){
 				for(int i = 0; i < words.length; i++) {
 					///// 's HANDLING
+					
+					System.out.println(words[i]);
 
-					if (words[i].substring(words[i].length() - 2).equals("'s")){
+					if (words[i].length() >= 3 && words[i].substring(words[i].length() - 2).equals("'s")){
 						newWords = new String[words.length + 1];
 						for (int x = 0; x < newWords.length; x ++){
 							if (x == i){
@@ -243,10 +252,8 @@ public class Translator extends JFrame {
 								newWords[x] = words[x];
 							}
 						} 
-					///// 've HANDLING
-				} 
-					
-					/* else if (words[i].substring(words[i].length() - 3).equals("'ve")){
+						///// 've HANDLING
+					} else if (words[i].substring(words[i].length() - 3).equals("'ve")){
 						String[] longWords = new String[words.length + 1];
 						for (int x = 0; x < longWords.length; x ++){
 							if (x == i){
@@ -260,8 +267,9 @@ public class Translator extends JFrame {
 							}
 						}
 						newWords[i] = reader.engSpnMap.get(longWords[i]);
-						/////REFLEXIVE SPANISH VERBS HANDLING
-					} else if (reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4) == "arse" || reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4) == "irse" || reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4) == "erse"){
+					}
+					/////REFLEXIVE SPANISH VERBS HANDLING
+					/*} else if (reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4) == "arse" || reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4) == "irse" || reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4) == "erse"){
 						String[] longWords = new String[words.length + 1];
 						for (int x = 0; x < longWords.length; x ++){
 							if (x == i){
@@ -287,24 +295,24 @@ public class Translator extends JFrame {
 						newWords = longWords;
 						/////NON EXISTING WORDS HANDLING
 					} else */ 
-					
 
-					}
+
+				}
 				for (int x = 0; x < words.length + 1; x++){
 					newWords[x] = reader.engSpnMap.get(newWords[x]);
 					System.out.println(newWords[x]);
 				}
-					
-					/*if (reader.engSpnMap.get(words[i]) == null){
+
+				/*if (reader.engSpnMap.get(words[i]) == null){
 						newWords[i] = words[i];
 					} else {
 						newWords[i] = reader.engSpnMap.get(words[i]);
 					}*/     
-			
-		} else if (graphics.curInLang == "French"){
-			for(int i = 0; i < words.length; i++) {
-				/////REFLEXIVE SPANISH VERBS HANDLING
-				/*
+
+			} else if (graphics.curInLang == "French"){
+				for(int i = 0; i < words.length; i++) {
+					/////REFLEXIVE SPANISH VERBS HANDLING
+					/*
 					if (reader.frnSpnMap.get(words[i]).substring(reader.frnSpnMap.get(words[i]).length() - 4) == "arse" || reader.frnSpnMap.get(words[i]).substring(reader.frnSpnMap.get(words[i]).length() - 4) == "irse" || reader.frnSpnMap.get(words[i]).substring(reader.frnSpnMap.get(words[i]).length() - 4) == "erse"){
 						String[] longWords = new String[words.length + 1];
 						for (int x = 0; x < longWords.length; x ++){
@@ -330,27 +338,44 @@ public class Translator extends JFrame {
 						}
 						newWords = longWords;
 						/////NON EXISTING WORDS HANDLING
-					} else */ if (reader.frnSpnMap.get(words[i]) == null){
-						newWords[i] = words[i];
-					} else {
-						newWords[i] = reader.frnSpnMap.get(words[i]);
-					}
+//					} else */ if (reader.frnSpnMap.get(words[i]) == null){
+	newWords[i] = words[i];
+} else {
+	newWords[i] = reader.frnSpnMap.get(words[i]);
+}
+				}
 			}
-		}
-		String newSentence = "";
-		for(String word : newWords) {
-			newSentence += word + " ";
-		}
-		talk(newSentence);
-		return newSentence;
-		//output = french
-	} else if (lang == "fr-fr") {
-		String[] words = text.split(" ");
-		String[] newWords = new String[words.length];
-		if (graphics.curInLang == "English"){
-			for(int i = 0; i < words.length; i++) {
-				///// 's HANDLING
-				/*
+			String newSentence = "";
+			for(String word : newWords) {
+				newSentence += word + " ";
+			}
+			talk(newSentence);
+			return newSentence;
+			//output = french
+		} else if (lang == "fr-fr") {
+			String[] words = text.split(" ");
+			String[] newWords = null;
+			if (graphics.curInLang == "English"){
+				for(int i = 0; i < words.length; i++) {
+					if (words[i].substring(words[i].length() - 2).equals("'s")){
+						newWords = new String[words.length + 1];
+						for (int x = 0; x < newWords.length; x ++){
+							if (x == i){
+								newWords[x] = (words[i].subSequence(0, words[i].length() - 2)).toString();
+								newWords[x + 1] = "is";
+								x++;
+							} else if (x > i){
+								newWords[x] = words[x - 1];
+							} else {
+								newWords[x] = words[x];
+							}
+						} 
+						///// 've HANDLING
+					} 
+
+
+					///// 's HANDLING
+					/*
 					if (words[i].substring(words[i].length() - 2).equals("'s")){
 						String[] longWords = new String[words.length + 1];
 						for (int x = 0; x < longWords.length; x ++){
@@ -381,282 +406,282 @@ public class Translator extends JFrame {
 						}
 						newWords[i] = reader.engFrnMap.get(longWords[i]);
 						/////NON EXISTING WORDS HANDLING
-					} else */  if (reader.engFrnMap.get(words[i]) == null){
+					} else */ 
+				}
+				for (int x = 0; x < words.length + 1; x++){
+					newWords[x] = reader.engFrnMap.get(newWords[x]);
+					System.out.println(newWords[x]);
+				}
+			} else if (graphics.curInLang == "Spanish"){
+				for(int i = 0; i < words.length; i++) {
+					/////NON EXISTING WORDS HANDLING
+					if (reader.spnFrnMap.get(words[i]) == null){
 						newWords[i] = words[i];
 					} else {
-						newWords[i] = reader.engFrnMap.get(words[i]);
+						newWords[i] = reader.spnFrnMap.get(words[i]);
 					}
-			}
-		} else if (graphics.curInLang == "Spanish"){
-			for(int i = 0; i < words.length; i++) {
-				/////NON EXISTING WORDS HANDLING
-				if (reader.spnFrnMap.get(words[i]) == null){
-					newWords[i] = words[i];
-				} else {
-					newWords[i] = reader.spnFrnMap.get(words[i]);
 				}
 			}
+
+			String newSentence = "";
+			for(String word : newWords) {
+				newSentence += word + " ";
+			}
+			talk(newSentence);
+			return newSentence;
+		}
+		return text;
+	}
+
+	public String toISO(String lang) {
+		switch (lang) {
+		case "English":
+			return "en-us";
+		case "Spanish":
+			return "es-mx";
+		case "French":
+			return "fr-fr";
+		}
+		return lang;
+	}
+
+	public Recognizer.Languages toLang(String lang) {
+		switch(lang) {
+		case "English":
+			return Recognizer.Languages.ENGLISH_US;
+		case "Spanish":
+			return Recognizer.Languages.SPANISH_MEXICO;
+		case "French":
+			return Recognizer.Languages.FRENCH;
+		}
+		return null;
+
+	}
+
+	public class Graphics extends JPanel {
+
+		GridBagConstraints gbc = new GridBagConstraints();
+
+		JComboBox<String> inLang = new JComboBox<String>(new String[]{"English", "Spanish", "French"});
+		JComboBox<String> outLang = new JComboBox<String>(new String[]{"Spanish", "English", "French"});
+		JComboBox<String> responses = new JComboBox<String>(new String[]{});
+		JButton record = new JButton("Record");
+		JButton play = new JButton("Play");
+		JLabel to = new JLabel("to");
+		JLabel status = new JLabel("Waiting...");
+		JLabel inText = new JLabel("Input: ");
+		JLabel outText = new JLabel("Output: ");
+		JLabel question = new JLabel("Is this what you said?");
+		JLabel followup = new JLabel("Was it one of these?");
+		JCheckBox yes = new JCheckBox("yes");
+		JCheckBox no = new JCheckBox("no");
+
+		String curOutLang = "Spanish", curInLang = "English";
+
+		public void addResponse(String s) {
+			responses.addItem(s);
 		}
 
-		String newSentence = "";
-		for(String word : newWords) {
-			newSentence += word + " ";
-		}
-		talk(newSentence);
-		return newSentence;
-	}
-	return text;
-}
+		public Graphics() {
+			setLayout(new GridBagLayout());
 
-public String toISO(String lang) {
-	switch (lang) {
-	case "English":
-		return "en-us";
-	case "Spanish":
-		return "es-mx";
-	case "French":
-		return "fr-fr";
-	}
-	return lang;
-}
+			this.setBorder(BorderFactory.createEmptyBorder());
 
-public Recognizer.Languages toLang(String lang) {
-	switch(lang) {
-	case "English":
-		return Recognizer.Languages.ENGLISH_US;
-	case "Spanish":
-		return Recognizer.Languages.SPANISH_MEXICO;
-	case "French":
-		return Recognizer.Languages.FRENCH;
-	}
-	return null;
+			inLang.setSelectedIndex(0);
+			outLang.setSelectedIndex(0);
 
-}
+			inLang.addActionListener(new ActionListener() {
 
-public class Graphics extends JPanel {
-
-	GridBagConstraints gbc = new GridBagConstraints();
-
-	JComboBox<String> inLang = new JComboBox<String>(new String[]{"English", "Spanish", "French"});
-	JComboBox<String> outLang = new JComboBox<String>(new String[]{"Spanish", "English", "French"});
-	JComboBox<String> responses = new JComboBox<String>(new String[]{});
-	JButton record = new JButton("Record");
-	JButton play = new JButton("Play");
-	JLabel to = new JLabel("to");
-	JLabel status = new JLabel("Waiting...");
-	JLabel inText = new JLabel("Input: ");
-	JLabel outText = new JLabel("Output: ");
-	JLabel question = new JLabel("Is this what you said?");
-	JLabel followup = new JLabel("Was it one of these?");
-	JCheckBox yes = new JCheckBox("yes");
-	JCheckBox no = new JCheckBox("no");
-
-	String curOutLang = "Spanish", curInLang = "English";
-
-	public void addResponse(String s) {
-		responses.addItem(s);
-	}
-
-	public Graphics() {
-		setLayout(new GridBagLayout());
-
-		this.setBorder(BorderFactory.createEmptyBorder());
-
-		inLang.setSelectedIndex(0);
-		outLang.setSelectedIndex(0);
-
-		inLang.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				curInLang = inLang.getItemAt(inLang.getSelectedIndex());
-				debugUpdate();
-			}
-
-		});
-
-		outLang.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				curOutLang = outLang.getItemAt(outLang.getSelectedIndex());
-				debugUpdate();
-			}
-
-		});
-
-		record.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				record();
-			}
-
-		});
-
-		play.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-
-			}
-
-		});
-
-		yes.addChangeListener(new ChangeListener() {
-
-			@Override
-			public void stateChanged(ChangeEvent e) {
-				AbstractButton ab = (AbstractButton) e.getSource();
-				ButtonModel bm = ab.getModel();
-				if (bm.isSelected()) {
-					no.setEnabled(false);
-					question.setVisible(false);
-					no.setVisible(false);
-					yes.setVisible(false);
-
-				} else {
-					no.setEnabled(true);
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					curInLang = inLang.getItemAt(inLang.getSelectedIndex());
+					debugUpdate();
 				}
-			}
 
-		});
+			});
 
-		no.addChangeListener(new ChangeListener() {
+			outLang.addActionListener(new ActionListener() {
 
-			@Override
-			public void stateChanged(ChangeEvent e) {
-				AbstractButton ab = (AbstractButton) e.getSource();
-				ButtonModel bm = ab.getModel();
-				if (bm.isSelected()) {
-					yes.setEnabled(false);
-					followup.setVisible(true);
-					responses.setVisible(true);
-					responses.setEnabled(true);
-				} else {
-					yes.setEnabled(true);
-					followup.setVisible(false);
-					responses.setVisible(false);
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					curOutLang = outLang.getItemAt(outLang.getSelectedIndex());
+					debugUpdate();
 				}
-			}
 
-		});
+			});
 
-		responses.addItemListener(new ItemListener() {
+			record.addActionListener(new ActionListener() {
 
-			@Override
-			public void itemStateChanged(ItemEvent e) {
-				System.out.println("state");
-				if (e.getStateChange() == ItemEvent.SELECTED) {
-					System.out.println("selected");
-					no.setSelected(false);
-					yes.setSelected(false);
-					inText.setText("Input: " + responses.getItemAt(responses.getSelectedIndex()));
-					//graphics.responses.removeAllItems();
-					if (curInLang.equals(graphics.curOutLang))
-						outText.setText("Output: " + responses.getItemAt(responses.getSelectedIndex()));
-					else
-						graphics.outText.setText("Output: " + translate(responses.getItemAt(responses.getSelectedIndex()).toLowerCase(), toISO(graphics.curOutLang)));
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					record();
 				}
-				/*question.setVisible(false);
+
+			});
+
+			play.addActionListener(new ActionListener() {
+
+				@Override
+				public void actionPerformed(ActionEvent e) {
+
+				}
+
+			});
+
+			yes.addChangeListener(new ChangeListener() {
+
+				@Override
+				public void stateChanged(ChangeEvent e) {
+					AbstractButton ab = (AbstractButton) e.getSource();
+					ButtonModel bm = ab.getModel();
+					if (bm.isSelected()) {
+						no.setEnabled(false);
+						question.setVisible(false);
+						no.setVisible(false);
+						yes.setVisible(false);
+
+					} else {
+						no.setEnabled(true);
+					}
+				}
+
+			});
+
+			no.addChangeListener(new ChangeListener() {
+
+				@Override
+				public void stateChanged(ChangeEvent e) {
+					AbstractButton ab = (AbstractButton) e.getSource();
+					ButtonModel bm = ab.getModel();
+					if (bm.isSelected()) {
+						yes.setEnabled(false);
+						followup.setVisible(true);
+						responses.setVisible(true);
+						responses.setEnabled(true);
+					} else {
+						yes.setEnabled(true);
+						followup.setVisible(false);
+						responses.setVisible(false);
+					}
+				}
+
+			});
+
+			responses.addItemListener(new ItemListener() {
+
+				@Override
+				public void itemStateChanged(ItemEvent e) {
+					System.out.println("state");
+					if (e.getStateChange() == ItemEvent.SELECTED) {
+						System.out.println("selected");
+						no.setSelected(false);
+						yes.setSelected(false);
+						inText.setText("Input: " + responses.getItemAt(responses.getSelectedIndex()));
+						//graphics.responses.removeAllItems();
+						if (curInLang.equals(graphics.curOutLang))
+							outText.setText("Output: " + responses.getItemAt(responses.getSelectedIndex()));
+						else
+							graphics.outText.setText("Output: " + translate(responses.getItemAt(responses.getSelectedIndex()).toLowerCase(), toISO(graphics.curOutLang)));
+					}
+					/*question.setVisible(false);
 					followup.setVisible(false);
 					yes.setVisible(false);
 					no.setVisible(false);
 					responses.setVisible(false);*/
-			}	
-		});
+				}	
+			});
 
-		gbc.fill = GridBagConstraints.HORIZONTAL;
-		gbc.gridx = 0;
-		gbc.gridy = 0;
-		add(inLang, gbc);
-		gbc.fill = GridBagConstraints.CENTER;
-		gbc.gridx = 1;
-		gbc.gridy = 0;
-		add(to, gbc);
-		gbc.fill = GridBagConstraints.HORIZONTAL;
-		gbc.gridx = 2;
-		gbc.gridy = 0;
-		add(outLang, gbc);
-		gbc.fill = GridBagConstraints.HORIZONTAL;
-		gbc.gridx = 1;
-		gbc.gridy = 2;
-		add(status, gbc);
-		gbc.fill = GridBagConstraints.HORIZONTAL;
-		gbc.gridx = 1;
-		gbc.gridy = 1;
-		add(record, gbc);
-		gbc.fill = GridBagConstraints.HORIZONTAL;
-		gbc.gridx = 0;
-		gbc.gridy = 3;
-		add(inText, gbc);
-		gbc.fill = GridBagConstraints.HORIZONTAL;
-		gbc.gridx = 0;
-		gbc.gridy = 4;
-		add(outText, gbc);
-		gbc.fill = GridBagConstraints.HORIZONTAL;
-		gbc.gridx = 0;
-		gbc.gridy = 5;
-		add(question, gbc);
-		gbc.fill = GridBagConstraints.HORIZONTAL;
-		gbc.gridx = 1;
-		gbc.gridy = 5;
-		add(yes, gbc);
-		gbc.fill = GridBagConstraints.HORIZONTAL;
-		gbc.gridx = 2;
-		gbc.gridy = 5;
-		add(no, gbc);
-		gbc.fill = GridBagConstraints.HORIZONTAL;
-		gbc.gridx = 0;
-		gbc.gridy = 6;
-		add(followup, gbc);
-		gbc.fill = GridBagConstraints.HORIZONTAL;
-		gbc.gridx = 1;
-		gbc.gridy = 6;
-		add(responses, gbc);
+			gbc.fill = GridBagConstraints.HORIZONTAL;
+			gbc.gridx = 0;
+			gbc.gridy = 0;
+			add(inLang, gbc);
+			gbc.fill = GridBagConstraints.CENTER;
+			gbc.gridx = 1;
+			gbc.gridy = 0;
+			add(to, gbc);
+			gbc.fill = GridBagConstraints.HORIZONTAL;
+			gbc.gridx = 2;
+			gbc.gridy = 0;
+			add(outLang, gbc);
+			gbc.fill = GridBagConstraints.HORIZONTAL;
+			gbc.gridx = 1;
+			gbc.gridy = 2;
+			add(status, gbc);
+			gbc.fill = GridBagConstraints.HORIZONTAL;
+			gbc.gridx = 1;
+			gbc.gridy = 1;
+			add(record, gbc);
+			gbc.fill = GridBagConstraints.HORIZONTAL;
+			gbc.gridx = 0;
+			gbc.gridy = 3;
+			add(inText, gbc);
+			gbc.fill = GridBagConstraints.HORIZONTAL;
+			gbc.gridx = 0;
+			gbc.gridy = 4;
+			add(outText, gbc);
+			gbc.fill = GridBagConstraints.HORIZONTAL;
+			gbc.gridx = 0;
+			gbc.gridy = 5;
+			add(question, gbc);
+			gbc.fill = GridBagConstraints.HORIZONTAL;
+			gbc.gridx = 1;
+			gbc.gridy = 5;
+			add(yes, gbc);
+			gbc.fill = GridBagConstraints.HORIZONTAL;
+			gbc.gridx = 2;
+			gbc.gridy = 5;
+			add(no, gbc);
+			gbc.fill = GridBagConstraints.HORIZONTAL;
+			gbc.gridx = 0;
+			gbc.gridy = 6;
+			add(followup, gbc);
+			gbc.fill = GridBagConstraints.HORIZONTAL;
+			gbc.gridx = 1;
+			gbc.gridy = 6;
+			add(responses, gbc);
 
-		inLang.setVisible(true);
-		outLang.setVisible(true);
-		to.setVisible(true);
-		record.setVisible(true);
-		inText.setVisible(true);
-		outText.setVisible(true);
-		question.setVisible(false);
-		yes.setVisible(false);
-		no.setVisible(false);
-		responses.setVisible(false);
-		responses.setEnabled(false);
-		followup.setVisible(false);
-	}
-
-}
-
-public void debugUpdate() {
-	debugWindow.text(graphics.curInLang, graphics.curOutLang, toISO(graphics.curInLang), toISO(graphics.curInLang), toLang(graphics.curInLang).toString(), toLang(graphics.curOutLang).toString());
-	debugWindow.repaint();
-}
-
-public class Debug extends JFrame {
-
-	JPanel gfx = new JPanel();
-
-	public Debug() {
-		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setSize(200, 500);
-		setLayout(new GridLayout(10, 1));
-		setResizable(true);
-		add(gfx);
-		setVisible(true);
-	}
-
-	public void text(String... vars) {
-		for(int i = 0; i < vars.length; i++) {
-			JLabel text = new JLabel(vars[i]);
-			gfx.add(text);
-			text.setVisible(true);
+			inLang.setVisible(true);
+			outLang.setVisible(true);
+			to.setVisible(true);
+			record.setVisible(true);
+			inText.setVisible(true);
+			outText.setVisible(true);
+			question.setVisible(false);
+			yes.setVisible(false);
+			no.setVisible(false);
+			responses.setVisible(false);
+			responses.setEnabled(false);
+			followup.setVisible(false);
 		}
+
 	}
 
-}
+	public void debugUpdate() {
+		debugWindow.text(graphics.curInLang, graphics.curOutLang, toISO(graphics.curInLang), toISO(graphics.curInLang), toLang(graphics.curInLang).toString(), toLang(graphics.curOutLang).toString());
+		debugWindow.repaint();
+	}
+
+	public class Debug extends JFrame {
+
+		JPanel gfx = new JPanel();
+
+		public Debug() {
+			setDefaultCloseOperation(EXIT_ON_CLOSE);
+			setSize(200, 500);
+			setLayout(new GridLayout(10, 1));
+			setResizable(true);
+			add(gfx);
+			setVisible(true);
+		}
+
+		public void text(String... vars) {
+			for(int i = 0; i < vars.length; i++) {
+				JLabel text = new JLabel(vars[i]);
+				gfx.add(text);
+				text.setVisible(true);
+			}
+		}
+
+	}
 
 }

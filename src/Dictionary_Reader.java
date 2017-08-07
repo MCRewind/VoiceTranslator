@@ -172,19 +172,18 @@ public class Dictionary_Reader {
 
 		int index = 0;
 		try{
-			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("english_words"), "UTF-8"));
+			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("Eng to Spn New.txt"), "UTF-8"));
 			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("word.json"), "UTF-8"));
 			String strLine;
 			while ((strLine = br.readLine()) != null) {
-				System.out.println(strLine);
 				if(webWordCheck(strLine)) {
 					words.add(new Word(index, strLine, "en", pos));
-					System.out.println(index);
-					bw.write(gson.toJson(words.get(index)));
-					bw.flush();
 					index++;
+					System.out.println(index);
 				}
 			}
+			bw.write(gson.toJson(words));
+			bw.flush();
 			//in.close();
 		}catch (Exception e){
 			System.err.println("Error: " + e.getMessage());
