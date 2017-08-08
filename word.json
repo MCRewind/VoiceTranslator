@@ -1,32 +1,5236 @@
-[
-  {
-    "id": 0,
-    "word": "hello",
-    "language": "en",
-    "pos": "noun"
-  },
-  {
-    "id": 1,
-    "word": "apple",
-    "language": "en",
-    "pos": "noun"
-  },
-  {
-    "id": 2,
-    "word": "he",
-    "language": "en",
-    "pos": "pronoun"
-  },
-  {
-    "id": 3,
-    "word": "she",
-    "language": "en",
-    "pos": "pronoun"
-  },
-  {
-    "id": 4,
-    "word": "no",
-    "language": "en",
-    "pos": "noun"
-  }
-]
+{
+  "id": 0,
+  "word": "AIDS",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1,
+  "word": "Abkhaz",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 2,
+  "word": "Abraham",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 3,
+  "word": "Afghanistan",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 4,
+  "word": "Africa",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 5,
+  "word": "Alaska",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 6,
+  "word": "Alexander",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 7,
+  "word": "Algeria",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 8,
+  "word": "America",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 9,
+  "word": "American",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 10,
+  "word": "Amsterdam",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 11,
+  "word": "Andrew",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 12,
+  "word": "Antarctica",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 13,
+  "word": "April",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 14,
+  "word": "Arabic",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 15,
+  "word": "Argentina",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 16,
+  "word": "Armenia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 17,
+  "word": "Armenian",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 18,
+  "word": "Asia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 19,
+  "word": "Athens",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 20,
+  "word": "August",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 21,
+  "word": "Australia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 22,
+  "word": "Austria",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 23,
+  "word": "Azerbaijan",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 24,
+  "word": "Bahamas",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 25,
+  "word": "Bangkok",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 26,
+  "word": "Bangladesh",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 27,
+  "word": "Beijing",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 28,
+  "word": "Belarus",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 29,
+  "word": "Belarusian",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 30,
+  "word": "Belgium",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 31,
+  "word": "Berlin",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 32,
+  "word": "Bermuda",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 33,
+  "word": "Bible",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 34,
+  "word": "Bolivia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 35,
+  "word": "Brazil",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 36,
+  "word": "Brussels",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 37,
+  "word": "Buddha",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 38,
+  "word": "Buddhism",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 39,
+  "word": "Bulgaria",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 40,
+  "word": "Bulgarian",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 41,
+  "word": "Cambodia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 42,
+  "word": "Canada",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 43,
+  "word": "Carthage",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 44,
+  "word": "Catalan",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 45,
+  "word": "Caucasus",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 46,
+  "word": "Chicago",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 47,
+  "word": "Chile",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 48,
+  "word": "China",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 49,
+  "word": "Chinese",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 50,
+  "word": "Christ",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 51,
+  "word": "Christian",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 52,
+  "word": "Christianity",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 53,
+  "word": "Christmas",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 54,
+  "word": "Coca",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 55,
+  "word": "Colombia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 56,
+  "word": "Constantinople",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 57,
+  "word": "Croatia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 58,
+  "word": "Croatian",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 59,
+  "word": "Cuba",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 60,
+  "word": "Cyprus",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 61,
+  "word": "Cyrillic",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 62,
+  "word": "Czech",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 63,
+  "word": "Damascus",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 64,
+  "word": "Danube",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 65,
+  "word": "Denmark",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 66,
+  "word": "Dominican Republic",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 67,
+  "word": "Dutch",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 68,
+  "word": "Easter",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 69,
+  "word": "Egypt",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 70,
+  "word": "England",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 71,
+  "word": "English",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 72,
+  "word": "Esperanto",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 73,
+  "word": "Estonia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 74,
+  "word": "Ethiopia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 75,
+  "word": "Eurasia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 76,
+  "word": "Europe",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 77,
+  "word": "February",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 78,
+  "word": "Fiji",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 79,
+  "word": "Finland",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 80,
+  "word": "France",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 81,
+  "word": "French",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 82,
+  "word": "Friday",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 83,
+  "word": "GDP",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 84,
+  "word": "Geneva",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 85,
+  "word": "George",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 86,
+  "word": "Georgia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 87,
+  "word": "Georgian",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 88,
+  "word": "German",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 89,
+  "word": "Germany",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 90,
+  "word": "Gibraltar",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 91,
+  "word": "Greek",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 92,
+  "word": "Greenland",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 93,
+  "word": "Guinea",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 94,
+  "word": "Guyana",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 95,
+  "word": "Haiti",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 96,
+  "word": "Hebrew",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 97,
+  "word": "Hezbollah",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 98,
+  "word": "Hokkaido",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 99,
+  "word": "Holland",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 100,
+  "word": "Holocaust",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 101,
+  "word": "I",
+  "language": "en",
+  "pos": "pronoun"
+}{
+  "id": 102,
+  "word": "Iceland",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 103,
+  "word": "India",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 104,
+  "word": "Indonesia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 105,
+  "word": "Internet",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 106,
+  "word": "Iran",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 107,
+  "word": "Iraq",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 108,
+  "word": "Ireland",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 109,
+  "word": "Islam",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 110,
+  "word": "Israel",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 111,
+  "word": "Italian",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 112,
+  "word": "Jamaica",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 113,
+  "word": "Japan",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 114,
+  "word": "Jerusalem",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 115,
+  "word": "Jesus",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 116,
+  "word": "Jesus Christ",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 117,
+  "word": "Jew",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 118,
+  "word": "Jewish",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 119,
+  "word": "John",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 120,
+  "word": "Jordan",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 121,
+  "word": "Joseph",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 122,
+  "word": "July",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 123,
+  "word": "June",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 124,
+  "word": "Karnataka",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 125,
+  "word": "Kazakhstan",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 126,
+  "word": "Khmer",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 127,
+  "word": "Kiev",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 128,
+  "word": "Korea",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 129,
+  "word": "Korean",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 130,
+  "word": "Kyrgyzstan",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 131,
+  "word": "Latin",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 132,
+  "word": "Latvia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 133,
+  "word": "Liechtenstein",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 134,
+  "word": "Lisbon",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 135,
+  "word": "Lithuania",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 136,
+  "word": "London",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 137,
+  "word": "Luxembourg",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 138,
+  "word": "Lyons",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 139,
+  "word": "Macedonia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 140,
+  "word": "Maldives",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 141,
+  "word": "Malta",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 142,
+  "word": "March",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 143,
+  "word": "Mars",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 144,
+  "word": "Mary",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 145,
+  "word": "Matthew",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 146,
+  "word": "Mauritius",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 147,
+  "word": "Mexico",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 148,
+  "word": "Michael",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 149,
+  "word": "Moldova",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 150,
+  "word": "Monday",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 151,
+  "word": "Montenegro",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 152,
+  "word": "Moscow",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 153,
+  "word": "Moses",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 154,
+  "word": "Mrs",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 155,
+  "word": "Muhammad",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 156,
+  "word": "Muslim",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 157,
+  "word": "Myanmar",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 158,
+  "word": "Nepal",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 159,
+  "word": "Nicaragua",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 160,
+  "word": "Nicholas",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 161,
+  "word": "Nigeria",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 162,
+  "word": "North America",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 163,
+  "word": "North Korea",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 164,
+  "word": "Norway",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 165,
+  "word": "October",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 166,
+  "word": "Pakistan",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 167,
+  "word": "Paris",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 168,
+  "word": "Paul",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 169,
+  "word": "Persian",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 170,
+  "word": "Peru",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 171,
+  "word": "Poland",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 172,
+  "word": "Polish",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 173,
+  "word": "Portugal",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 174,
+  "word": "Portuguese",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 175,
+  "word": "Prague",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 176,
+  "word": "Roman",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 177,
+  "word": "Romania",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 178,
+  "word": "Rome",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 179,
+  "word": "Russia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 180,
+  "word": "Russian",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 181,
+  "word": "Satan",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 182,
+  "word": "Saturday",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 183,
+  "word": "Serb",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 184,
+  "word": "Serbian",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 185,
+  "word": "Shanghai",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 186,
+  "word": "Sicily",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 187,
+  "word": "Singapore",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 188,
+  "word": "Slovakia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 189,
+  "word": "Slovenia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 190,
+  "word": "Sofia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 191,
+  "word": "South Africa",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 192,
+  "word": "Spain",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 193,
+  "word": "Spanish",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 194,
+  "word": "Stalin",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 195,
+  "word": "Sudan",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 196,
+  "word": "Sunday",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 197,
+  "word": "Sweden",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 198,
+  "word": "Swedish",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 199,
+  "word": "Switzerland",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 200,
+  "word": "Syria",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 201,
+  "word": "Taipei",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 202,
+  "word": "Taiwan",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 203,
+  "word": "Tallinn",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 204,
+  "word": "Tanzania",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 205,
+  "word": "Thai",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 206,
+  "word": "Thailand",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 207,
+  "word": "Thursday",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 208,
+  "word": "Tuesday",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 209,
+  "word": "Turkey",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 210,
+  "word": "Turkish",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 211,
+  "word": "Turkmenistan",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 212,
+  "word": "USSR",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 213,
+  "word": "Ukraine",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 214,
+  "word": "Ukrainian",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 215,
+  "word": "Venezuela",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 216,
+  "word": "Venus",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 217,
+  "word": "Vienna",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 218,
+  "word": "Vietnam",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 219,
+  "word": "Wales",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 220,
+  "word": "William",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 221,
+  "word": "Yemen",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 222,
+  "word": "abandon",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 223,
+  "word": "abbot",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 224,
+  "word": "abdomen",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 225,
+  "word": "acorn",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 226,
+  "word": "actor",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 227,
+  "word": "address",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 228,
+  "word": "advertisement",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 229,
+  "word": "after",
+  "language": "en",
+  "pos": "preposition"
+}{
+  "id": 230,
+  "word": "afternoon",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 231,
+  "word": "again",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 232,
+  "word": "age",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 233,
+  "word": "aggressive",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 234,
+  "word": "agriculture",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 235,
+  "word": "air",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 236,
+  "word": "aircraft",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 237,
+  "word": "airplane",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 238,
+  "word": "airport",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 239,
+  "word": "alcohol",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 240,
+  "word": "algorithm",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 241,
+  "word": "alive",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 242,
+  "word": "all",
+  "language": "en",
+  "pos": "determiner / pronoun"
+}{
+  "id": 243,
+  "word": "alligator",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 244,
+  "word": "almond",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 245,
+  "word": "almost",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 246,
+  "word": "alphabet",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 247,
+  "word": "also",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 248,
+  "word": "aluminium",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 249,
+  "word": "always",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 250,
+  "word": "amber",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 251,
+  "word": "ambulance",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 252,
+  "word": "an",
+  "language": "en",
+  "pos": "determiner"
+}{
+  "id": 253,
+  "word": "anchor",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 254,
+  "word": "and",
+  "language": "en",
+  "pos": "conjunction"
+}{
+  "id": 255,
+  "word": "angel",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 256,
+  "word": "anger",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 257,
+  "word": "angry",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 258,
+  "word": "animal",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 259,
+  "word": "ankle",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 260,
+  "word": "answer",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 261,
+  "word": "ant",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 262,
+  "word": "apple",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 263,
+  "word": "apricot",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 264,
+  "word": "architect",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 265,
+  "word": "architecture",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 266,
+  "word": "arm",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 267,
+  "word": "army",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 268,
+  "word": "arrow",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 269,
+  "word": "article",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 270,
+  "word": "ash",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 271,
+  "word": "ask",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 272,
+  "word": "ass",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 273,
+  "word": "at",
+  "language": "en",
+  "pos": "preposition"
+}{
+  "id": 274,
+  "word": "autumn",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 275,
+  "word": "avalanche",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 276,
+  "word": "axe",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 277,
+  "word": "axis",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 278,
+  "word": "baby",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 279,
+  "word": "babysitter",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 280,
+  "word": "back",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 281,
+  "word": "bad",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 282,
+  "word": "bag",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 283,
+  "word": "bakery",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 284,
+  "word": "balcony",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 285,
+  "word": "bald",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 286,
+  "word": "balloon",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 287,
+  "word": "banana",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 288,
+  "word": "bank",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 289,
+  "word": "bark",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 290,
+  "word": "barley",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 291,
+  "word": "basalt",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 292,
+  "word": "basket",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 293,
+  "word": "basketball",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 294,
+  "word": "bat",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 295,
+  "word": "bathroom",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 296,
+  "word": "battery",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 297,
+  "word": "battle",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 298,
+  "word": "bay",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 299,
+  "word": "be",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 300,
+  "word": "beach",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 301,
+  "word": "beak",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 302,
+  "word": "bean",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 303,
+  "word": "bear",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 304,
+  "word": "beard",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 305,
+  "word": "beautiful",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 306,
+  "word": "beauty",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 307,
+  "word": "beaver",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 308,
+  "word": "because",
+  "language": "en",
+  "pos": "conjunction"
+}{
+  "id": 309,
+  "word": "bed",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 310,
+  "word": "bedroom",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 311,
+  "word": "bee",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 312,
+  "word": "beech",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 313,
+  "word": "beef",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 314,
+  "word": "beer",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 315,
+  "word": "beetle",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 316,
+  "word": "before",
+  "language": "en",
+  "pos": "preposition"
+}{
+  "id": 317,
+  "word": "begin",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 318,
+  "word": "behind",
+  "language": "en",
+  "pos": "preposition"
+}{
+  "id": 319,
+  "word": "bell",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 320,
+  "word": "belly",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 321,
+  "word": "belt",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 322,
+  "word": "berry",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 323,
+  "word": "better",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 324,
+  "word": "bicycle",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 325,
+  "word": "big",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 326,
+  "word": "bill",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 327,
+  "word": "birch",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 328,
+  "word": "bird",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 329,
+  "word": "birth",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 330,
+  "word": "birthday",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 331,
+  "word": "biscuit",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 332,
+  "word": "bishop",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 333,
+  "word": "bitch",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 334,
+  "word": "bite",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 335,
+  "word": "bitter",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 336,
+  "word": "black",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 337,
+  "word": "blackbird",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 338,
+  "word": "blanket",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 339,
+  "word": "bleed",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 340,
+  "word": "blind",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 341,
+  "word": "blog",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 342,
+  "word": "blood",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 343,
+  "word": "blue",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 344,
+  "word": "boar",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 345,
+  "word": "boat",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 346,
+  "word": "body",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 347,
+  "word": "bomb",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 348,
+  "word": "bone",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 349,
+  "word": "book",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 350,
+  "word": "boot",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 351,
+  "word": "boron",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 352,
+  "word": "bottle",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 353,
+  "word": "bow",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 354,
+  "word": "box",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 355,
+  "word": "boy",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 356,
+  "word": "bra",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 357,
+  "word": "brain",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 358,
+  "word": "branch",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 359,
+  "word": "brave",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 360,
+  "word": "bread",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 361,
+  "word": "break",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 362,
+  "word": "breakfast",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 363,
+  "word": "breast",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 364,
+  "word": "breathe",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 365,
+  "word": "brick",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 366,
+  "word": "bride",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 367,
+  "word": "bridge",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 368,
+  "word": "broom",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 369,
+  "word": "brother",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 370,
+  "word": "brown",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 371,
+  "word": "brush",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 372,
+  "word": "bucket",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 373,
+  "word": "building",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 374,
+  "word": "bull",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 375,
+  "word": "bullet",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 376,
+  "word": "burn",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 377,
+  "word": "bus",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 378,
+  "word": "busy",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 379,
+  "word": "but",
+  "language": "en",
+  "pos": "conjunction"
+}{
+  "id": 380,
+  "word": "butter",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 381,
+  "word": "buy",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 382,
+  "word": "cabbage",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 383,
+  "word": "cake",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 384,
+  "word": "calcium",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 385,
+  "word": "calf",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 386,
+  "word": "can",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 387,
+  "word": "canal",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 388,
+  "word": "cancer",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 389,
+  "word": "candle",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 390,
+  "word": "canyon",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 391,
+  "word": "capital",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 392,
+  "word": "car",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 393,
+  "word": "carbon",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 394,
+  "word": "carpenter",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 395,
+  "word": "carpet",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 396,
+  "word": "carrot",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 397,
+  "word": "carry",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 398,
+  "word": "castle",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 399,
+  "word": "cat",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 400,
+  "word": "caterpillar",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 401,
+  "word": "cave",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 402,
+  "word": "cedar",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 403,
+  "word": "ceiling",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 404,
+  "word": "cell",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 405,
+  "word": "center",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 406,
+  "word": "century",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 407,
+  "word": "chain",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 408,
+  "word": "chair",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 409,
+  "word": "chamois",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 410,
+  "word": "change",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 411,
+  "word": "chaos",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 412,
+  "word": "chapter",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 413,
+  "word": "chase",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 414,
+  "word": "cheap",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 415,
+  "word": "cheek",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 416,
+  "word": "cheers",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 417,
+  "word": "cheese",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 418,
+  "word": "cheque",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 419,
+  "word": "cherry",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 420,
+  "word": "chess",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 421,
+  "word": "chest",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 422,
+  "word": "chestnut",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 423,
+  "word": "chew",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 424,
+  "word": "chicken",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 425,
+  "word": "child",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 426,
+  "word": "chin",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 427,
+  "word": "chlorine",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 428,
+  "word": "chocolate",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 429,
+  "word": "choice",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 430,
+  "word": "choir",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 431,
+  "word": "choose",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 432,
+  "word": "chromium",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 433,
+  "word": "church",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 434,
+  "word": "cigarette",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 435,
+  "word": "cinema",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 436,
+  "word": "circle",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 437,
+  "word": "city",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 438,
+  "word": "clay",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 439,
+  "word": "clean",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 440,
+  "word": "clock",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 441,
+  "word": "close",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 442,
+  "word": "clothes",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 443,
+  "word": "cloud",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 444,
+  "word": "coast",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 445,
+  "word": "cock",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 446,
+  "word": "cockroach",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 447,
+  "word": "coconut",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 448,
+  "word": "coffee",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 449,
+  "word": "coffin",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 450,
+  "word": "coin",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 451,
+  "word": "cold",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 452,
+  "word": "color",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 453,
+  "word": "comb",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 454,
+  "word": "come",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 455,
+  "word": "communism",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 456,
+  "word": "computer",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 457,
+  "word": "comrade",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 458,
+  "word": "concrete",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 459,
+  "word": "conjunction",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 460,
+  "word": "conscience",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 461,
+  "word": "continent",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 462,
+  "word": "conversation",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 463,
+  "word": "copper",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 464,
+  "word": "corn",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 465,
+  "word": "corridor",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 466,
+  "word": "cotton",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 467,
+  "word": "cough",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 468,
+  "word": "count",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 469,
+  "word": "country",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 470,
+  "word": "courage",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 471,
+  "word": "cow",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 472,
+  "word": "crab",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 473,
+  "word": "cream",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 474,
+  "word": "cricket",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 475,
+  "word": "crime",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 476,
+  "word": "crocodile",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 477,
+  "word": "cross",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 478,
+  "word": "crow",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 479,
+  "word": "cruel",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 480,
+  "word": "cry",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 481,
+  "word": "crystal",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 482,
+  "word": "cube",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 483,
+  "word": "cucumber",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 484,
+  "word": "culture",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 485,
+  "word": "cup",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 486,
+  "word": "current",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 487,
+  "word": "curse",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 488,
+  "word": "dance",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 489,
+  "word": "dangerous",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 490,
+  "word": "dark",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 491,
+  "word": "darkness",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 492,
+  "word": "data",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 493,
+  "word": "date",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 494,
+  "word": "daughter",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 495,
+  "word": "day",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 496,
+  "word": "dead",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 497,
+  "word": "dear",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 498,
+  "word": "death",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 499,
+  "word": "deer",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 500,
+  "word": "delicious",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 501,
+  "word": "democracy",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 502,
+  "word": "demon",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 503,
+  "word": "dentist",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 504,
+  "word": "desert",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 505,
+  "word": "devil",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 506,
+  "word": "dialect",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 507,
+  "word": "diary",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 508,
+  "word": "dick",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 509,
+  "word": "dictionary",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 510,
+  "word": "die",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 511,
+  "word": "difficult",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 512,
+  "word": "dig",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 513,
+  "word": "dinosaur",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 514,
+  "word": "dirty",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 515,
+  "word": "discussion",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 516,
+  "word": "disease",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 517,
+  "word": "do",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 518,
+  "word": "doctor",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 519,
+  "word": "documentation",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 520,
+  "word": "dog",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 521,
+  "word": "doll",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 522,
+  "word": "donation",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 523,
+  "word": "donkey",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 524,
+  "word": "door",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 525,
+  "word": "doubt",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 526,
+  "word": "dove",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 527,
+  "word": "dozen",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 528,
+  "word": "dream",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 529,
+  "word": "dress",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 530,
+  "word": "drink",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 531,
+  "word": "drop",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 532,
+  "word": "drum",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 533,
+  "word": "drunk",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 534,
+  "word": "dry",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 535,
+  "word": "duck",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 536,
+  "word": "dust",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 537,
+  "word": "duty",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 538,
+  "word": "each",
+  "language": "en",
+  "pos": "determiner / pronoun"
+}{
+  "id": 539,
+  "word": "ear",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 540,
+  "word": "early",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 541,
+  "word": "earth",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 542,
+  "word": "earthquake",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 543,
+  "word": "earthworm",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 544,
+  "word": "easy",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 545,
+  "word": "eat",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 546,
+  "word": "the",
+  "language": "en",
+  "pos": "determiner"
+}{
+  "id": 547,
+  "word": "and",
+  "language": "en",
+  "pos": "conjunction"
+}{
+  "id": 548,
+  "word": "to",
+  "language": "en",
+  "pos": "preposition"
+}{
+  "id": 549,
+  "word": "at",
+  "language": "en",
+  "pos": "preposition"
+}{
+  "id": 550,
+  "word": "in",
+  "language": "en",
+  "pos": "preposition"
+}{
+  "id": 551,
+  "word": "a",
+  "language": "en",
+  "pos": "determiner"
+}{
+  "id": 552,
+  "word": "an",
+  "language": "en",
+  "pos": "determiner"
+}{
+  "id": 553,
+  "word": "no",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 554,
+  "word": "with",
+  "language": "en",
+  "pos": "preposition"
+}{
+  "id": 555,
+  "word": "more",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 556,
+  "word": "or",
+  "language": "en",
+  "pos": "conjunction"
+}{
+  "id": 557,
+  "word": "because",
+  "language": "en",
+  "pos": "conjunction"
+}{
+  "id": 558,
+  "word": "when",
+  "language": "en",
+  "pos": "conjunction"
+}{
+  "id": 559,
+  "word": "without",
+  "language": "en",
+  "pos": "preposition"
+}{
+  "id": 560,
+  "word": "what",
+  "language": "en",
+  "pos": "determiner / pronoun"
+}{
+  "id": 561,
+  "word": "my",
+  "language": "en",
+  "pos": "determiner"
+}{
+  "id": 562,
+  "word": "I",
+  "language": "en",
+  "pos": "pronoun"
+}{
+  "id": 563,
+  "word": "also",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 564,
+  "word": "year",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 565,
+  "word": "first",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 566,
+  "word": "day",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 567,
+  "word": "one",
+  "language": "en",
+  "pos": "determiner / pronoun"
+}{
+  "id": 568,
+  "word": "well",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 569,
+  "word": "should",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 570,
+  "word": "then",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 571,
+  "word": "thing",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 572,
+  "word": "our",
+  "language": "en",
+  "pos": "determiner"
+}{
+  "id": 573,
+  "word": "where",
+  "language": "en",
+  "pos": "conjunction"
+}{
+  "id": 574,
+  "word": "now",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 575,
+  "word": "after",
+  "language": "en",
+  "pos": "preposition"
+}{
+  "id": 576,
+  "word": "life",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 577,
+  "word": "before",
+  "language": "en",
+  "pos": "preposition"
+}{
+  "id": 578,
+  "word": "good",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 579,
+  "word": "house",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 580,
+  "word": "world",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 581,
+  "word": "here",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 582,
+  "word": "country",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 583,
+  "word": "you",
+  "language": "en",
+  "pos": "pronoun"
+}{
+  "id": 584,
+  "word": "person",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 585,
+  "word": "almost",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 586,
+  "word": "during",
+  "language": "en",
+  "pos": "preposition"
+}{
+  "id": 587,
+  "word": "hand",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 588,
+  "word": "end",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 589,
+  "word": "people",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 590,
+  "word": "example",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 591,
+  "word": "side",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 592,
+  "word": "there",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 593,
+  "word": "problem",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 594,
+  "word": "inside",
+  "language": "en",
+  "pos": "preposition"
+}{
+  "id": 595,
+  "word": "long",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 596,
+  "word": "word",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 597,
+  "word": "father",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 598,
+  "word": "change",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 599,
+  "word": "there",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 600,
+  "word": "idea",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 601,
+  "word": "water",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 602,
+  "word": "city",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 603,
+  "word": "name",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 604,
+  "word": "family",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 605,
+  "word": "month",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 606,
+  "word": "group",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 607,
+  "word": "human",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 608,
+  "word": "possible",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 609,
+  "word": "general",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 610,
+  "word": "body",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 611,
+  "word": "second",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 612,
+  "word": "eye",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 613,
+  "word": "street",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 614,
+  "word": "white",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 615,
+  "word": "echo",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 616,
+  "word": "book",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 617,
+  "word": "light",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 618,
+  "word": "clear",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 619,
+  "word": "friend",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 620,
+  "word": "whose",
+  "language": "en",
+  "pos": "determiner"
+}{
+  "id": 621,
+  "word": "situation",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 622,
+  "word": "bad",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 623,
+  "word": "mother",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 624,
+  "word": "social",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 625,
+  "word": "political",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 626,
+  "word": "money",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 627,
+  "word": "hundred",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 628,
+  "word": "badly",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 629,
+  "word": "week",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 630,
+  "word": "interest",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 631,
+  "word": "number",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 632,
+  "word": "black",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 633,
+  "word": "voice",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 634,
+  "word": "necessary",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 635,
+  "word": "only",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 636,
+  "word": "well",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 637,
+  "word": "condition",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 638,
+  "word": "your",
+  "language": "en",
+  "pos": "determiner"
+}{
+  "id": 639,
+  "word": "age",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 640,
+  "word": "door",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 641,
+  "word": "color",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 642,
+  "word": "experience",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 643,
+  "word": "movement",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 644,
+  "word": "special",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 645,
+  "word": "possibility",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 646,
+  "word": "game",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 647,
+  "word": "play",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 648,
+  "word": "sport",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 649,
+  "word": "poor",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 650,
+  "word": "third",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 651,
+  "word": "doubt",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 652,
+  "word": "difference",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 653,
+  "word": "society",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 654,
+  "word": "natural",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 655,
+  "word": "effect",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 656,
+  "word": "where",
+  "language": "en",
+  "pos": "conjunction"
+}{
+  "id": 657,
+  "word": "love",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 658,
+  "word": "death",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 659,
+  "word": "economic",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 660,
+  "word": "power",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 661,
+  "word": "importance",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 662,
+  "word": "system",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 663,
+  "word": "knowledge",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 664,
+  "word": "common",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 665,
+  "word": "next",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 666,
+  "word": "attention",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 667,
+  "word": "young",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 668,
+  "word": "fear",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 669,
+  "word": "complete",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 670,
+  "word": "minute",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 671,
+  "word": "public",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 672,
+  "word": "level",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 673,
+  "word": "government",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 674,
+  "word": "figure",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 675,
+  "word": "both",
+  "language": "en",
+  "pos": "determiner / pronoun"
+}{
+  "id": 676,
+  "word": "animal",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 677,
+  "word": "position",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 678,
+  "word": "national",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 679,
+  "word": "easy",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 680,
+  "word": "culture",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 681,
+  "word": "series",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 682,
+  "word": "majority",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 683,
+  "word": "school",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 684,
+  "word": "reed",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 685,
+  "word": "serious",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 686,
+  "word": "cause",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 687,
+  "word": "decision",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 688,
+  "word": "music",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 689,
+  "word": "expression",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 690,
+  "word": "river",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 691,
+  "word": "doctor",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 692,
+  "word": "consequence",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 693,
+  "word": "absolute",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 694,
+  "word": "second",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 695,
+  "word": "precisely",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 696,
+  "word": "property",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 697,
+  "word": "product",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 698,
+  "word": "personal",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 699,
+  "word": "plan",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 700,
+  "word": "memory",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 701,
+  "word": "element",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 702,
+  "word": "English",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 703,
+  "word": "market",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 704,
+  "word": "course",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 705,
+  "word": "blood",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 706,
+  "word": "interior",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 707,
+  "word": "hard",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 708,
+  "word": "use",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 709,
+  "word": "arm",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 710,
+  "word": "professor",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 711,
+  "word": "future",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 712,
+  "word": "opportunity",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 713,
+  "word": "half",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 714,
+  "word": "memory",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 715,
+  "word": "opinion",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 716,
+  "word": "mouth",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 717,
+  "word": "direction",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 718,
+  "word": "piece",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 719,
+  "word": "professional",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 720,
+  "word": "physical",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 721,
+  "word": "attitude",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 722,
+  "word": "sea",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 723,
+  "word": "French",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 724,
+  "word": "entrance",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 725,
+  "word": "contact",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 726,
+  "word": "heart",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 727,
+  "word": "capital",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 728,
+  "word": "title",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 729,
+  "word": "room",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 730,
+  "word": "material",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 731,
+  "word": "hit",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 732,
+  "word": "communication",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 733,
+  "word": "illness",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 734,
+  "word": "goods",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 735,
+  "word": "matter",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 736,
+  "word": "modern",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 737,
+  "word": "place",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 738,
+  "word": "nature",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 739,
+  "word": "capacity",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 740,
+  "word": "current",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 741,
+  "word": "distance",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 742,
+  "word": "closed",
+  "language": "en",
+  "pos": "participle"
+}{
+  "id": 743,
+  "word": "information",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 744,
+  "word": "environment",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 745,
+  "word": "especially",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 746,
+  "word": "development",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 747,
+  "word": "sun",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 748,
+  "word": "dead",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 749,
+  "word": "companion",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 750,
+  "word": "exit",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 751,
+  "word": "conscience",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 752,
+  "word": "habit",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 753,
+  "word": "behind",
+  "language": "en",
+  "pos": "preposition"
+}{
+  "id": 754,
+  "word": "peace",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 755,
+  "word": "news",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 756,
+  "word": "circumstance",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 757,
+  "word": "pain",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 758,
+  "word": "private",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 759,
+  "word": "style",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 760,
+  "word": "price",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 761,
+  "word": "popular",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 762,
+  "word": "character",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 763,
+  "word": "success",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 764,
+  "word": "daughter",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 765,
+  "word": "building",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 766,
+  "word": "authority",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 767,
+  "word": "stone",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 768,
+  "word": "immediate",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 769,
+  "word": "together",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 770,
+  "word": "desire",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 771,
+  "word": "interesting",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 772,
+  "word": "final",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 773,
+  "word": "quality",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 774,
+  "word": "civil",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 775,
+  "word": "doctor",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 776,
+  "word": "horse",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 777,
+  "word": "responsibility",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 778,
+  "word": "internal",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 779,
+  "word": "detail",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 780,
+  "word": "never",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 781,
+  "word": "construction",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 782,
+  "word": "judgment",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 783,
+  "word": "company",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 784,
+  "word": "text",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 785,
+  "word": "present",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 786,
+  "word": "hope",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 787,
+  "word": "machine",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 788,
+  "word": "phrase",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 789,
+  "word": "perfect",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 790,
+  "word": "instrument",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 791,
+  "word": "explanation",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 792,
+  "word": "twelve",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 793,
+  "word": "weapon",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 794,
+  "word": "tree",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 795,
+  "word": "similar",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 796,
+  "word": "reading",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 797,
+  "word": "education",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 798,
+  "word": "operation",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 799,
+  "word": "perfectly",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 800,
+  "word": "military",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 801,
+  "word": "worse",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 802,
+  "word": "completely",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 803,
+  "word": "mine",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 804,
+  "word": "intention",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 805,
+  "word": "rhythm",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 806,
+  "word": "green",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 807,
+  "word": "exact",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 808,
+  "word": "immediately",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 809,
+  "word": "religious",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 810,
+  "word": "dark",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 811,
+  "word": "control",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 812,
+  "word": "conversation",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 813,
+  "word": "summer",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 814,
+  "word": "by means of",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 815,
+  "word": "fourth",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 816,
+  "word": "tradition",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 817,
+  "word": "population",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 818,
+  "word": "past",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 819,
+  "word": "newspaper",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 820,
+  "word": "blue",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 821,
+  "word": "generation",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 822,
+  "word": "cold",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 823,
+  "word": "vision",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 824,
+  "word": "concrete",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 825,
+  "word": "right",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 826,
+  "word": "danger",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 827,
+  "word": "gold",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 828,
+  "word": "just",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 829,
+  "word": "wine",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 830,
+  "word": "simple",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 831,
+  "word": "silence",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 832,
+  "word": "determined",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 833,
+  "word": "artist",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 834,
+  "word": "labor",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 835,
+  "word": "lost",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 836,
+  "word": "sky",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 837,
+  "word": "practice",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 838,
+  "word": "limit",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 839,
+  "word": "dog",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 840,
+  "word": "left",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 841,
+  "word": "near",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 842,
+  "word": "energy",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 843,
+  "word": "adequate",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 844,
+  "word": "flower",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 845,
+  "word": "wife",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 846,
+  "word": "responsible",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 847,
+  "word": "happy",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 848,
+  "word": "revolution",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 849,
+  "word": "teachers",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 850,
+  "word": "German",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 851,
+  "word": "phenomenon",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 852,
+  "word": "pressure",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 853,
+  "word": "given",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 854,
+  "word": "probably",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 855,
+  "word": "tone",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 856,
+  "word": "health",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 857,
+  "word": "exactly",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 858,
+  "word": "daily",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 859,
+  "word": "historical",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 860,
+  "word": "due",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 861,
+  "word": "by means",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 862,
+  "word": "soul",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 863,
+  "word": "could",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 864,
+  "word": "would",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 865,
+  "word": "party",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 866,
+  "word": "heat",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 867,
+  "word": "minimum",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 868,
+  "word": "mind",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 869,
+  "word": "concept",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 870,
+  "word": "telephone",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 871,
+  "word": "sheet",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 872,
+  "word": "eco",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 873,
+  "word": "ecology",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 874,
+  "word": "education",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 875,
+  "word": "egg",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 876,
+  "word": "ejaculation",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 877,
+  "word": "elbow",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 878,
+  "word": "electricity",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 879,
+  "word": "electronics",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 880,
+  "word": "elephant",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 881,
+  "word": "elf",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 882,
+  "word": "embassy",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 883,
+  "word": "emperor",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 884,
+  "word": "empty",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 885,
+  "word": "end",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 886,
+  "word": "enemy",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 887,
+  "word": "energy",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 888,
+  "word": "enter",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 889,
+  "word": "equation",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 890,
+  "word": "euro",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 891,
+  "word": "euthanasia",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 892,
+  "word": "evening",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 893,
+  "word": "every",
+  "language": "en",
+  "pos": "determiner"
+}{
+  "id": 894,
+  "word": "everyone",
+  "language": "en",
+  "pos": "pronoun"
+}{
+  "id": 895,
+  "word": "everything",
+  "language": "en",
+  "pos": "pronoun"
+}{
+  "id": 896,
+  "word": "evil",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 897,
+  "word": "expensive",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 898,
+  "word": "expression",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 899,
+  "word": "eye",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 900,
+  "word": "eyebrow",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 901,
+  "word": "face",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 902,
+  "word": "fall",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 903,
+  "word": "family",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 904,
+  "word": "fan",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 905,
+  "word": "far",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 906,
+  "word": "farm",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 907,
+  "word": "farmer",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 908,
+  "word": "fast",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 909,
+  "word": "father",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 910,
+  "word": "fear",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 911,
+  "word": "feather",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 912,
+  "word": "female",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 913,
+  "word": "ferry",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 914,
+  "word": "fever",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 915,
+  "word": "fifth",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 916,
+  "word": "fight",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 917,
+  "word": "film",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 918,
+  "word": "finger",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 919,
+  "word": "fir",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 920,
+  "word": "fire",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 921,
+  "word": "first",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 922,
+  "word": "fish",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 923,
+  "word": "fist",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 924,
+  "word": "flag",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 925,
+  "word": "flame",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 926,
+  "word": "flea",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 927,
+  "word": "floor",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 928,
+  "word": "flour",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 929,
+  "word": "flower",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 930,
+  "word": "flute",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 931,
+  "word": "fly",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 932,
+  "word": "fog",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 933,
+  "word": "food",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 934,
+  "word": "fool",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 935,
+  "word": "foot",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 936,
+  "word": "football",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 937,
+  "word": "forehead",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 938,
+  "word": "foreign",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 939,
+  "word": "foreigner",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 940,
+  "word": "forest",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 941,
+  "word": "forget",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 942,
+  "word": "fork",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 943,
+  "word": "fortress",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 944,
+  "word": "fourth",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 945,
+  "word": "fox",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 946,
+  "word": "free",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 947,
+  "word": "freedom",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 948,
+  "word": "friend",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 949,
+  "word": "friendship",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 950,
+  "word": "frog",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 951,
+  "word": "from",
+  "language": "en",
+  "pos": "preposition"
+}{
+  "id": 952,
+  "word": "fruit",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 953,
+  "word": "fuck",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 954,
+  "word": "full",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 955,
+  "word": "fungus",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 956,
+  "word": "future",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 957,
+  "word": "galaxy",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 958,
+  "word": "game",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 959,
+  "word": "garbage",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 960,
+  "word": "garden",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 961,
+  "word": "garlic",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 962,
+  "word": "gas",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 963,
+  "word": "gasoline",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 964,
+  "word": "geography",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 965,
+  "word": "geometry",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 966,
+  "word": "ghost",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 967,
+  "word": "giant",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 968,
+  "word": "gift",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 969,
+  "word": "ginger",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 970,
+  "word": "giraffe",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 971,
+  "word": "girl",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 972,
+  "word": "give",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 973,
+  "word": "glass",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 974,
+  "word": "glove",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 975,
+  "word": "glue",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 976,
+  "word": "go",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 977,
+  "word": "goat",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 978,
+  "word": "gold",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 979,
+  "word": "golf",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 980,
+  "word": "good",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 981,
+  "word": "goodbye",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 982,
+  "word": "goose",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 983,
+  "word": "government",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 984,
+  "word": "grammar",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 985,
+  "word": "grandfather",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 986,
+  "word": "grandmother",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 987,
+  "word": "grape",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 988,
+  "word": "grass",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 989,
+  "word": "graveyard",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 990,
+  "word": "green",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 991,
+  "word": "grey",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 992,
+  "word": "guest",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 993,
+  "word": "guilt",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 994,
+  "word": "guitar",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 995,
+  "word": "gull",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 996,
+  "word": "hail",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 997,
+  "word": "hair",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 998,
+  "word": "half",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 999,
+  "word": "hammer",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1000,
+  "word": "hand",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1001,
+  "word": "happen",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 1002,
+  "word": "happiness",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1003,
+  "word": "happy",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 1004,
+  "word": "hard drive",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1005,
+  "word": "hare",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1006,
+  "word": "hat",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1007,
+  "word": "hate",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 1008,
+  "word": "hatred",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1009,
+  "word": "have",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 1010,
+  "word": "hawk",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1011,
+  "word": "hay",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1012,
+  "word": "he",
+  "language": "en",
+  "pos": "pronoun"
+}{
+  "id": 1013,
+  "word": "head",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1014,
+  "word": "health",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1015,
+  "word": "hear",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 1016,
+  "word": "heart",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1017,
+  "word": "heaven",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1018,
+  "word": "heavy",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1019,
+  "word": "hedgehog",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1020,
+  "word": "helium",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1021,
+  "word": "hell",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1022,
+  "word": "hello",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1023,
+  "word": "help",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 1024,
+  "word": "hemp",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1025,
+  "word": "hen",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1026,
+  "word": "here",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 1027,
+  "word": "hero",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1028,
+  "word": "heron",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1029,
+  "word": "hill",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1030,
+  "word": "his",
+  "language": "en",
+  "pos": "determiner / pronoun"
+}{
+  "id": 1031,
+  "word": "history",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1032,
+  "word": "home",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1033,
+  "word": "homosexuality",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1034,
+  "word": "honey",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1035,
+  "word": "hope",
+  "language": "en",
+  "pos": "verb"
+}{
+  "id": 1036,
+  "word": "horn",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1037,
+  "word": "horse",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1038,
+  "word": "hospital",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1039,
+  "word": "hot",
+  "language": "en",
+  "pos": "adjective"
+}{
+  "id": 1040,
+  "word": "hotel",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1041,
+  "word": "hour",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1042,
+  "word": "house",
+  "language": "en",
+  "pos": "noun"
+}{
+  "id": 1043,
+  "word": "how",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 1044,
+  "word": "how many",
+  "language": "en",
+  "pos": "determiner / pronoun"
+}{
+  "id": 1045,
+  "word": "how much",
+  "language": "en",
+  "pos": "adverb"
+}{
+  "id": 1046,
+  "word": "hug",
+  "language": "en",
+  "pos": "noun"
+}

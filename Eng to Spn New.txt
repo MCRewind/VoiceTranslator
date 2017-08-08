@@ -108,7 +108,7 @@ Coca	Coca-Co
 Colombia	Colombia 
 Constantinople	Constantinop
 Costa Rica	Costa Rica 
-Croatia	Croacia 
+Croatia	Croacia
 Croatian	croata 
 Cuba	Cuba 
 Cyprus	Chipre 
@@ -3163,7 +3163,7 @@ aboriginal	aborigen
 abstracted	abstracto
 polemist	polemizador
 fulfillments	obligaciones
-flannel	franela
+flannel	franelahello
 thieves	ladrones
 abater	rebajador
 abates	satélites

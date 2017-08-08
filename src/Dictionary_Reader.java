@@ -179,11 +179,12 @@ public class Dictionary_Reader {
 				System.out.println(strLine);
 				if(webWordCheck(strLine)) {
 					words.add(new Word(index, strLine, "en", pos));
+					bw.write(gson.toJson(strLine));
 					index++;
 					System.out.println(index);
 				}
 			}
-			bw.write(gson.toJson(words));
+			
 			bw.close();
 			//in.close();
 		}catch (Exception e){
