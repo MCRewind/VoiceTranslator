@@ -36,6 +36,13 @@ import com.darkprograms.speech.recognizer.GoogleResponse;
 import com.darkprograms.speech.recognizer.Recognizer;
 import com.darkprograms.speech.synthesiser.Synthesiser;
 
+import javafx.application.Application;
+import javafx.event.EventHandler;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+
 import javaFlacEncoder.FLACFileWriter;
 
 
@@ -57,7 +64,7 @@ public class Translator extends JFrame {
 	}
 
 	public Translator() {
-		reader.indexer();
+	//	reader.indexer();
 
 		debugUpdate();
 		if(debug)
@@ -228,6 +235,10 @@ public class Translator extends JFrame {
 			String[] newWords = null;
 			if (graphics.curInLang == "English"){
 				for(int i = 0; i < words.length; i++) {
+					if (words[i].equals("does") || words[i].equals("don't") || words[i].equals("do") || words[i].equals("doing") || words[i].equals("done") || words[i].equals("did") || words[i].equals("didn't") || words[i].equals("doesn't")){
+						newWords[i] = "";
+					}
+					
 					///// 's HANDLING
 
 					if (words[i].length() >= 3 && words[i].substring(words[i].length() - 2).equals("'s")){
@@ -434,6 +445,7 @@ public class Translator extends JFrame {
 
 	}
 
+	
 	public class Graphics extends JPanel {
 
 		GridBagConstraints gbc = new GridBagConstraints();

@@ -2972,7 +2972,7 @@ volt	voltio
 vulture	buitre 
 wait	esperar ; aguardar
 waiter	camarero  (especially Spain), garzón  (Chile), mesero  (Caribbean Islands'Colombia'Central America'Ecuador'Mexico), mesonero  (Venezuela), mozo  (Argentina'Bolivia'Chile'Paraguay'Peru'Uruguay)
-wake up	despertarse
+wake	despertarse
 walk	caminar ; andar
 wall	muro  ; mural
 walrus	morsa 
