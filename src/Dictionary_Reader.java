@@ -167,7 +167,7 @@ public class Dictionary_Reader {
 		
 	}
 	
-	public void indexer() {
+	public void serializer() {
 		ArrayList<Word> words = new ArrayList<Word>();
 
 		int index = 0;
@@ -175,23 +175,27 @@ public class Dictionary_Reader {
 			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("Eng to Spn New.txt"), "UTF-8"));
 			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("word.json"), "UTF-8"));
 			String strLine;
+			String[] strWords;
 			while ((strLine = br.readLine()) != null) {
-				System.out.println(strLine);
-				if(webWordCheck(strLine)) {
-					words.add(new Word(index, strLine, "en", pos));
-					bw.write(gson.toJson(strLine));
+				strWords = strLine.split("	");
+				System.out.println(strWords[0]);
+				if(webWordCheck(strWords[0])) {
+					words.add(new Word(index, strWords[0], "en", pos));
+					bw.write(gson.toJson(words.get(index)));
+					bw.flush();
 					index++;
-					System.out.println(index);
 				}
 			}
-			
 			bw.close();
-			//in.close();
 		}catch (Exception e){
 			System.err.println("Error: " + e.getMessage());
 		}
 	}
 
+	public void deserializer() {
+		
+	}
+	
 	public HashMap<String, String> dictInverter (HashMap<String, String> map){
 		HashMap<String, String> invertedMap = new HashMap<String, String>();
 		map.forEach((key, value) -> {
