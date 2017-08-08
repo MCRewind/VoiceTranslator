@@ -64,7 +64,7 @@ public class Translator extends JFrame {
 	}
 
 	public Translator() {
-	//	reader.indexer();
+		//	reader.indexer();
 
 		debugUpdate();
 		if(debug)
@@ -200,6 +200,7 @@ public class Translator extends JFrame {
 	}
 
 	public String translate(String text, String lang) {
+		int size = 0;
 		//output = english
 		if (lang == "en-us") {
 			String[] words = text.split(" ");
@@ -232,17 +233,27 @@ public class Translator extends JFrame {
 			//output = spanish
 		} else if (lang == "es-mx") {
 			String[] words = text.split(" ");
-			String[] newWords = null;
+			String[] newWords = new String[words.length + size];
+			boolean specialCase = false;
 			if (graphics.curInLang == "English"){
 				for(int i = 0; i < words.length; i++) {
 					if (words[i].equals("does") || words[i].equals("don't") || words[i].equals("do") || words[i].equals("doing") || words[i].equals("done") || words[i].equals("did") || words[i].equals("didn't") || words[i].equals("doesn't")){
+						size ++;
 						newWords[i] = "";
+						specialCase = true;
 					}
-					
+
 					///// 's HANDLING
 
-					if (words[i].length() >= 3 && words[i].substring(words[i].length() - 2).equals("'s")){
-						newWords = new String[words.length + 1];
+					else if (words[i].length() >= 3 && words[i].substring(words[i].length() - 2).equals("'s")){
+						size ++;
+						String[] tempWords = newWords;
+						newWords = new String[words.length + size];
+						for (int x = 0; x < tempWords.length; x ++){
+							newWords[x] = tempWords[x];
+						}
+						
+						specialCase = true;
 						for (int x = 0; x < newWords.length; x ++){
 							if (x == i){
 								newWords[x] = (words[i].subSequence(0, words[i].length() - 2)).toString();
@@ -255,8 +266,14 @@ public class Translator extends JFrame {
 							}
 						} ///// 've HANDLING
 					} else if (words[i].length() >= 3 && words[i].substring(words[i].length() - 3).equals("'ve")){
+						size ++;
+						String[] tempWords = newWords;
+						newWords = new String[words.length + size];
+						for (int x = 0; x < tempWords.length; x ++){
+							newWords[x] = tempWords[x];
+						}
 						System.out.println(words[i]);
-						newWords = new String[words.length + 1];
+						specialCase = true;
 						for (int x = 0; x < newWords.length; x ++){
 							if (x == i){
 								System.out.println("have");
@@ -299,19 +316,24 @@ public class Translator extends JFrame {
 						newWords = longWords;
 						/////NON EXISTING WORDS HANDLING
 					} else */ 
+					if (specialCase == false){
+						newWords = new String[words.length];
+						words[i] = reader.engSpnMap.get(words[i]);
+						System.out.println(newWords[i]);
 
-
+						System.out.println(newWords[i]);
+					} 
+					System.out.println(size);
+					System.out.println(newWords.length);
+				} 
+				if (specialCase == true){
+					for (int x = 0; x < words.length + 1; x++){
+						newWords[x] = reader.engSpnMap.get(newWords[x]);
+						System.out.println(newWords[x]);
+					}
 				}
-				for (int x = 0; x < words.length + 1; x++){
-					newWords[x] = reader.engSpnMap.get(newWords[x]);
-					System.out.println(newWords[x]);
-				}
 
-				/*if (reader.engSpnMap.get(words[i]) == null){
-						newWords[i] = words[i];
-					} else {
-						newWords[i] = reader.engSpnMap.get(words[i]);
-					}*/     
+
 
 			} else if (graphics.curInLang == "French"){
 				for(int i = 0; i < words.length; i++) {
@@ -350,8 +372,16 @@ public class Translator extends JFrame {
 				}
 			}
 			String newSentence = "";
-			for(String word : newWords) {
-				newSentence += word + " ";
+			if (specialCase == true){
+				for(String word : newWords) {
+					System.out.println(word);
+					newSentence += word + " ";
+				}
+			} else {
+				for(String word : words) {
+					System.out.println(word);
+					newSentence += word + " ";
+				}
 			}
 			talk(newSentence);
 			return newSentence;
@@ -445,7 +475,7 @@ public class Translator extends JFrame {
 
 	}
 
-	
+
 	public class Graphics extends JPanel {
 
 		GridBagConstraints gbc = new GridBagConstraints();
