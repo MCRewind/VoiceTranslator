@@ -6,16 +6,13 @@ import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.io.File;
-import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.Socket;
-import java.net.UnknownHostException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import javax.swing.AbstractButton;
 import javax.swing.BorderFactory;
@@ -35,13 +32,6 @@ import com.darkprograms.speech.microphone.Microphone;
 import com.darkprograms.speech.recognizer.GoogleResponse;
 import com.darkprograms.speech.recognizer.Recognizer;
 import com.darkprograms.speech.synthesiser.Synthesiser;
-
-import javafx.application.Application;
-import javafx.event.EventHandler;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
-import javafx.stage.Stage;
 
 import javaFlacEncoder.FLACFileWriter;
 
@@ -144,6 +134,7 @@ public class Translator extends JFrame {
 			try {
 				int maxNumOfResponses = 4;
 				GoogleResponse response = recognizer.getRecognizedDataForFlac(file, maxNumOfResponses, (int)mic.getAudioFormat().getSampleRate());
+
 				System.out.println("Google Response: " + response.getResponse());
 				graphics.inText.setText("Input: " + response.getResponse());
 				repaint();
@@ -204,23 +195,23 @@ public class Translator extends JFrame {
 		//output = english
 		if (lang == "en-us") {
 			String[] words = text.split(" ");
-			String[] newWords = new String[words.length];
+			ArrayList<String> newWords = new ArrayList<String>(words.length);
 			if (graphics.curInLang == "Spanish"){
 				for(int i = 0; i < words.length; i++) {
 					/////NON EXISTING WORDS HANDLING
 					if (reader.spnEngMap.get(words[i]) == null){
-						newWords[i] = words[i];
+						newWords.set(i, words[i]);
 					} else {
-						newWords[i] = reader.spnEngMap.get(words[i]);
+						newWords.set(i,  reader.spnEngMap.get(words[i]));
 					}
 				}
 			} else if (graphics.curInLang == "French"){
 				for(int i = 0; i < words.length; i++) {
 					/////NON EXISTING WORDS HANDLING
 					if (reader.frnEngMap.get(words[i]) == null){
-						newWords[i] = words[i];
+						newWords.set(i, words[i]);
 					} else { 
-						newWords[i] = reader.frnEngMap.get(words[i]);
+						newWords.set(i,  reader.spnEngMap.get(words[i]));
 					}
 				}
 			}
@@ -233,103 +224,64 @@ public class Translator extends JFrame {
 			//output = spanish
 		} else if (lang == "es-mx") {
 			String[] words = text.split(" ");
-			String[] newWords = new String[words.length + size];
+			ArrayList<String> newWords = new ArrayList<String>(words.length);
+			for (int i = 0; i < words.length; i++) {
+				newWords.add(i, words[i]);
+			}
 			boolean specialCase = false;
 			if (graphics.curInLang == "English"){
-				for(int i = 0; i < words.length; i++) {
-					if (words[i].equals("does") || words[i].equals("don't") || words[i].equals("do") || words[i].equals("doing") || words[i].equals("done") || words[i].equals("did") || words[i].equals("didn't") || words[i].equals("doesn't")){
-						size ++;
-						newWords[i] = "";
+				int tempLength = words.length;
+				for(int i = 0; i < tempLength; i++) {
+					specialCase = false;
+					if (newWords.get(i).equals("does") || newWords.get(i).equals("don't") || newWords.get(i).equals("do") || newWords.get(i).equals("doing") || newWords.get(i).equals("done") || newWords.get(i).equals("did") || newWords.get(i).equals("didn't") || newWords.get(i).equals("doesn't")){
+						newWords.remove(i);
+						specialCase = true;	
+						///// 's HANDLING
+					} else if (newWords.get(i).length() >= 3 && newWords.get(i).substring(newWords.get(i).length() - 2).equals("'s")){
 						specialCase = true;
-					}
-
-					///// 's HANDLING
-
-					else if (words[i].length() >= 3 && words[i].substring(words[i].length() - 2).equals("'s")){
-						size ++;
-						String[] tempWords = newWords;
-						newWords = new String[words.length + size];
-						for (int x = 0; x < tempWords.length; x ++){
-							newWords[x] = tempWords[x];
-						}
-						
+						newWords.set(i, (newWords.get(i).subSequence(0, newWords.get(i).length() - 2)).toString());
+						newWords.add(i + 1, "is");
+						i++;
+						tempLength++;
+						///// 've HANDLING
+					} else if (newWords.get(i).length() >= 3 && newWords.get(i).substring(newWords.get(i).length() - 3).equals("'ve")){
 						specialCase = true;
-						for (int x = 0; x < newWords.length; x ++){
-							if (x == i){
-								newWords[x] = (words[i].subSequence(0, words[i].length() - 2)).toString();
-								newWords[x + 1] = "is";
-								x++;
-							} else if (x > i){
-								newWords[x] = words[x - 1];
-							} else {
-								newWords[x] = words[x];
-							}
-						} ///// 've HANDLING
-					} else if (words[i].length() >= 3 && words[i].substring(words[i].length() - 3).equals("'ve")){
-						size ++;
-						String[] tempWords = newWords;
-						newWords = new String[words.length + size];
-						for (int x = 0; x < tempWords.length; x ++){
-							newWords[x] = tempWords[x];
-						}
-						System.out.println(words[i]);
-						specialCase = true;
-						for (int x = 0; x < newWords.length; x ++){
-							if (x == i){
-								System.out.println("have");
-								newWords[x] = (words[i].subSequence(0, words[i].length() - 3)).toString();
-								newWords[x + 1] = "have";
-								x++;
-							} else if (x > i){
-								newWords[x] = words[x - 1];
-							} else {	
-								newWords[x] = words[x];
-							}
-						}
-					}
-
-					/*
+						newWords.set(i,	(newWords.get(i).subSequence(0, newWords.get(i).length() - 3)).toString());
+						newWords.add(i + 1, "have");
+						i++;
+						tempLength ++;
+						System.out.println(i);
 						/////REFLEXIVE SPANISH VERBS HANDLING
-					} else if (reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4) == "arse" || reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4) == "irse" || reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4) == "erse"){
-						String[] longWords = new String[words.length + 1];
-						for (int x = 0; x < longWords.length; x ++){
-							if (x == i){
+					} else if (reader.engSpnMap.get(words[i]).length() > 5 && ((reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4).equals("arse") || reader.engSpnMap.get(words[i])
+											   .substring(reader.engSpnMap.get(words[i]).length() - 4).equals("irse") || reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4).equals("erse")))){
+						System.out.println("in there");
+						specialCase = true;
 								if (reader.engSpnMap.get(words[i - 1]) == "yo"){
-									longWords[x] = "me";
+									newWords.add(i - 1, "meR");
 								} else if (reader.engSpnMap.get(words[i - 1]) == "tu"){
-									longWords[x] = "te";
+									newWords.add(i - 1, "teR");
 								} else if (reader.engSpnMap.get(words[i - 1]) == "el" || reader.engSpnMap.get(words[i - 1]) == "ella" || reader.engSpnMap.get(words[i - 1]) == "usted"){
-									longWords[x] = "se";
+									newWords.add(i - 1, "seR");
 								} else if (reader.engSpnMap.get(words[i - 1]) == "nosotros"){
-									longWords[x] = "nos";
+									newWords.add(i - 1, "nosR");
 								} else if (reader.engSpnMap.get(words[i - 1]) == "vosotros"){
-									longWords[x] = "os";
+									newWords.add(i - 1, "osR");
 								} else if (reader.engSpnMap.get(words[i - 1]) == "ellos" || reader.engSpnMap.get(words[i - 1]) == "ellas" || reader.engSpnMap.get(words[i - 1]) == "ustedes"){
-									longWords[x] = "se";
+									newWords.add(i - 1, "seR");
 								}	
-								longWords[x + 1] = reader.engSpnMap.get(words[i]).subSequence(0, words[i].length() - 4).toString();
-								x++;
-							} else {
-								longWords[x] = words[x];
-							}
-						}
-						newWords = longWords;
+								newWords.set(i, reader.engSpnMap.get(words[i]).subSequence(0, words[i].length() - 4).toString());
+							System.out.println(newWords.get(i));
+						
 						/////NON EXISTING WORDS HANDLING
-					} else */ 
-					if (specialCase == false){
-						newWords = new String[words.length];
-						words[i] = reader.engSpnMap.get(words[i]);
-						System.out.println(newWords[i]);
-
-						System.out.println(newWords[i]);
-					} 
-					System.out.println(size);
-					System.out.println(newWords.length);
+					} else
+						if (specialCase == false){
+							//newWords = new ArrayList<String>(words.length);
+							words[i] = reader.engSpnMap.get(words[i]);
+						}
 				} 
 				if (specialCase == true){
-					for (int x = 0; x < words.length + 1; x++){
-						newWords[x] = reader.engSpnMap.get(newWords[x]);
-						System.out.println(newWords[x]);
+					for (int x = 0; x < newWords.size(); x++){
+						newWords.set(x, reader.engSpnMap.get(newWords.get(x)));
 					}
 				}
 
@@ -365,21 +317,21 @@ public class Translator extends JFrame {
 						newWords = longWords;
 						/////NON EXISTING WORDS HANDLING
 					} else */ if (reader.frnSpnMap.get(words[i]) == null){
-						newWords[i] = words[i];
+						newWords.set(i, words[i]);
 					} else {
-						newWords[i] = reader.frnSpnMap.get(words[i]);
+						newWords.set(i, reader.frnSpnMap.get(words[i]));
 					}
 				}
 			}
 			String newSentence = "";
 			if (specialCase == true){
 				for(String word : newWords) {
-					System.out.println(word);
+					//		System.out.println(word);
 					newSentence += word + " ";
 				}
 			} else {
 				for(String word : words) {
-					System.out.println(word);
+					//	System.out.println(word);
 					newSentence += word + " ";
 				}
 			}

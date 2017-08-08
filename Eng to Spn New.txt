@@ -5350,7 +5350,8 @@ zephyr	céfiro
 barbecue	barbacoa
 overpriced	sobrevalorado
 accredit	acreditar
-can't	no puede
+can't	no
+don't	no
 faucet	grifo
 abstracts	abstractos
 topics	temas
@@ -9604,6 +9605,7 @@ poetical	poética
 abhorred	aborrecido
 racist	racista
 won't	no
+shan't	no
 is	es
 1	1
 2	2
@@ -9614,6 +9616,11 @@ is	es
 7	7
 8	8
 9	9
+meR	me
+teR	te
+seR	se
+nosR	nos
+osR	os
 english	inglés
 okay	estábien
 ok	estábien
