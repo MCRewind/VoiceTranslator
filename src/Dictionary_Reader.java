@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.lang.reflect.Type;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -18,9 +19,12 @@ import java.util.Map;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParseException;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
 
@@ -167,8 +171,7 @@ public class Dictionary_Reader {
 		
 	}
 	
-	public void serializer() {
-		ArrayList<Word> words = new ArrayList<Word>();
+	public void serializer() { 
 
 		int index = 0;
 		try{
@@ -180,8 +183,7 @@ public class Dictionary_Reader {
 				strWords = strLine.split("	");
 				System.out.println(strWords[0]);
 				if(webWordCheck(strWords[0])) {
-					words.add(new Word(index, strWords[0], "en", pos));
-					bw.write(gson.toJson(words.get(index)));
+					bw.write(gson.toJson(new Word(index, strWords[0], "en", pos)));
 					bw.flush();
 					index++;
 				}
@@ -193,6 +195,34 @@ public class Dictionary_Reader {
 	}
 
 	public void deserializer() {
+		ArrayList<Word> words = new ArrayList<Word>();
+
+		int index = 0;
+		try{
+			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("words.json"), "UTF-8"));
+			String strLine;
+			String[] strWords;
+			while ((strLine = br.readLine()) != null) {
+				strWords = strLine.split("	");
+				System.out.println(strWords[0]);
+				if(webWordCheck(strWords[0])) {
+					words.add(new Word(index, strWords[0], "en", pos));
+					index++;
+				}
+			}
+		} catch (Exception e){
+			System.err.println("Error: " + e.getMessage());
+		}
+	}
+	
+	public class WordDeserializer implements JsonDeserializer {
+
+		@Override
+		public Word deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context)
+				throws JsonParseException {
+			
+			return null;
+		}
 		
 	}
 	
