@@ -284,20 +284,19 @@ public class Translator extends JFrame {
 
 								/////NON EXISTING WORDS HANDLING
 
-							}
-						} else
-							if (specialCase == false){
+
+							} else if (specialCase == false){
 								//newWords = new ArrayList<String>(words.length);
 								newWords.set(i, reader.engSpnMap.get(words[i]));
 							}	
+						}
 					}
 				} 
 				if (specialCase == true){
 					for (int x = 0; x < newWords.size(); x++){
-						//if (!(reader.engSpnMap.containsValue(newWords.get(x)))) {
+						if (!(reader.engSpnMap.containsValue(newWords.get(x)))) {
 							newWords.set(x, reader.engSpnMap.get(newWords.get(x)));
-
-						//}
+						}
 					}
 				}
 
