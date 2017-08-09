@@ -6,5 +6,9 @@ public class Verb extends Word{
 		super(id, word, language, "verb");
 		this.tense = tense;
 	}
+	
+	public void setTense(String tense){
+		this.tense = tense;
+	}
 
 }

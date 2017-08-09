@@ -5,11 +5,12 @@ public class SpnUtils {
 
 	public static String conjugator(String word, String tense, String ending, String conjugation, boolean irregular, int length){
 		String conjVerb = "";
+		length = word.length();
 		ending = word.substring(length - 2); //This is what the ending is but I dont know if we want to set it here?
 
 		//Conjugations for past tense (preterite) in 'ir' 'ar' 'er' forms
-		if (tense == "past"){
-			if ((ending.equals("ir") || (ending.equals("er"))) && irregular == false){
+		if (tense.equals("past")){
+			if ((ending.equals("ir")) || (ending.equals("er")) && irregular == false){
 				if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 					conjVerb = word.subSequence(0, length - 2) + "í";
 				} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -57,7 +58,7 @@ public class SpnUtils {
 		}
 
 		//Conjugations for present tense in 'ir' 'ar' 'er' forms
-		else if (tense == "present"){
+		else if (tense.equals("present")){
 			if (ending.equals("ir") && irregular == false){
 				if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 					conjVerb = word.subSequence(0, length - 2) + "o";
@@ -122,7 +123,7 @@ public class SpnUtils {
 		}
 
 		//Conjugations for future tense in 'ir' 'ar' 'er' forms
-		else if (tense == "future"){
+		else if (tense.equals("future")){
 			if (irregular == false){
 				if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 					conjVerb = word.subSequence(0, length - 2) + "é";
@@ -143,12 +144,12 @@ public class SpnUtils {
 		}
 
 		//Conjugations for continuous tense in 'ir' 'ar' 'er' forms
-		else if (tense == "continuous"){
+		else if (tense.equals("continuous")){
 			if (irregular == false){
 				if (ending.equals("ar")){
 					conjVerb = word.subSequence(0, length - 2) + "ando";
 				}
-				if ((ending.equals("ir") || (ending.equals("er")))){
+				if ((ending.equals("ir")) || (ending.equals("er"))){
 					conjVerb = word.subSequence(0, length - 2) + "iendo";
 				}
 			} else {
@@ -166,7 +167,7 @@ public class SpnUtils {
 	static String pretIrregularChecker(String word, String conjugation, int length){
 		String conjVerb = "";
 
-		if (word == "ser" || word == "ir"){
+		if (word.equals("ser") || word.equals("ir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "fui";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -180,7 +181,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "fueron";
 			}
-		} else if (word == "dar"){
+		} else if (word.equals("dar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "di";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -194,7 +195,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "dieron";
 			}
-		} else if (word == "ver"){
+		} else if (word.equals("ver")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "vi";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -208,7 +209,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "vieron";
 			}
-		} else if (word == "estar" || word == "andar" || word == "tener"){
+		} else if (word.equals("estar") || word.equals("andar") || word.equals("tener")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = word.subSequence(0, length - 2) + "uve";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -222,7 +223,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = word.subSequence(0, length - 2) + "uvieron";
 			}
-		} else if (word == "hacer"){
+		} else if (word.equals("hacer")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "hice";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -236,7 +237,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "hicieron";
 			}
-		} else if (word == "conducir"){
+		} else if (word.equals("conducir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "conduje";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -250,7 +251,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "condujeron";
 			}
-		} else if (word == "decir"){
+		} else if (word.equals("decir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "dije";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -264,7 +265,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "dijeron";
 			}
-		} else if (word == "poner"){
+		} else if (word.equals("poner")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "puse";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -278,7 +279,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "pusieron";
 			}
-		} else if (word == "poder"){
+		} else if (word.equals("poder")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "pude";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -292,7 +293,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "pudieron";
 			}
-		} else if (word == "querer"){
+		} else if (word.equals("querer")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "quise";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -306,7 +307,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "quisieron";
 			}
-		} else if (word == "saber"){
+		} else if (word.equals("saber")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "supe";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -320,7 +321,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "supieron";
 			}
-		} else if (word == "traer"){
+		} else if (word.equals("traer")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "traje";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -334,7 +335,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "trajeron";
 			}
-		} else if (word == "venir"){
+		} else if (word.equals("venir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "vine";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -348,7 +349,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "vinieron";
 			}
-		} else if (word == "haber"){
+		} else if (word.equals("haber")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "hube";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -362,7 +363,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "hubieron";
 			}
-		} else if (word == "producir"){
+		} else if (word.equals("producir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "produje";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -376,7 +377,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "produjeron";
 			}
-		} else if (word == "servir"){
+		} else if (word.equals("servir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "serví";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -390,7 +391,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "sirvieron";
 			}
-		} else if (word == "dormir"){
+		} else if (word.equals("dormir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "dormí";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -404,7 +405,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "durmieron";
 			}
-		} else if (word == "preferir"){
+		} else if (word.equals("preferir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "preferí";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -418,7 +419,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "prefirieron";
 			}
-		} else if (word == "seguir"){
+		} else if (word.equals("seguir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "serguí";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -432,7 +433,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "siguieron";
 			}
-		} else if (word == "sentir"){
+		} else if (word.equals("sentir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "sentí";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -446,7 +447,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "sintieron";
 			}
-		} else if (word == "pedir"){
+		} else if (word.equals("pedir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "pedí";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -460,7 +461,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "pidieron";
 			}
-		} else if (word == "convertir"){
+		} else if (word.equals("convertir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "convertí";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -474,7 +475,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "convirtieron";
 			}
-		} else if (word == "morir"){
+		} else if (word.equals("morir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "morí";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -488,7 +489,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "murieron";
 			}
-		} else if (word == "repetir"){
+		} else if (word.equals("repetir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "repetí";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -507,55 +508,55 @@ public class SpnUtils {
 	}
 	static String presentIrregularChecker(String word, String conjugation, int length){
 		String conjVerb = "";
-		if (word == "caber"){
+		if (word.equals("caber")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "quepo";
 			}
-		} else if (word == "caer"){
+		} else if (word.equals("caer")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "caigo";
 			}
-		} else if (word == "conocer"){
+		} else if (word.equals("conocer")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "conozco";
 			}
-		} else if (word == "dar"){
+		} else if (word.equals("dar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "doy";
 			}
-		} else if (word == "hacer"){
+		} else if (word.equals("hacer")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "hago";
 			}
-		} else if (word == "poner"){
+		} else if (word.equals("poner")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "pongo";
 			}
-		} else if (word == "saber"){
+		} else if (word.equals("saber")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "sé";
 			}
-		} else if (word == "salir"){
+		} else if (word.equals("salir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "salgo";
 			}
-		} else if (word == "traducir"){
+		} else if (word.equals("traducir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "traduzco";
 			}
-		} else if (word == "traer"){
+		} else if (word.equals("traer")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "traigo";
 			}
-		} else if (word == "valer"){
+		} else if (word.equals("valer")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "valgo";
 			}
-		} else if (word == "ver"){
+		} else if (word.equals("ver")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "veo";
 			}
-		} else if (word == "ser"){
+		} else if (word.equals("ser")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "soy";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -569,7 +570,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "son";
 			}
-		} else if (word == "estar"){
+		} else if (word.equals("estar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "estoy";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -583,7 +584,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "están";
 			}
-		} else if (word == "ir"){
+		} else if (word.equals("ir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "voy";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -597,7 +598,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "van";
 			}
-		} else if (word == "haber"){
+		} else if (word.equals("haber")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "he";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -612,7 +613,7 @@ public class SpnUtils {
 				conjVerb = "han";
 			}
 			//Beginning of e:ie stem changer verbs
-		} else if (word == "acertar"){
+		} else if (word.equals("acertar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "acierto";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -626,7 +627,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "aciertan";
 			}
-		} else if (word == "encender"){
+		} else if (word.equals("encender")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "enciendo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -640,7 +641,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "encienden";
 			}
-		} else if (word == "advertir"){
+		} else if (word.equals("advertir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "advierto";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -654,7 +655,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "advierten";
 			}
-		} else if (word == "entender"){
+		} else if (word.equals("entender")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "entiendo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -668,7 +669,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "entienden";
 			}
-		} else if (word == "cerrar"){
+		} else if (word.equals("cerrar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "cierro";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -682,7 +683,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "cierran";
 			}
-		} else if (word == "fregar"){
+		} else if (word.equals("fregar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "friego";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -696,7 +697,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "friegan";
 			}
-		} else if (word == "comenzar"){
+		} else if (word.equals("comenzar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "comienzo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -710,7 +711,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "comienzan";
 			}
-		} else if (word == "hervir"){
+		} else if (word.equals("hervir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "hiervo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -724,7 +725,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "hierven";
 			}
-		} else if (word == "confesar"){
+		} else if (word.equals("confesar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "confieso";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -738,7 +739,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "confiesan";
 			}
-		} else if (word == "mentir"){
+		} else if (word.equals("mentir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "miento";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -752,7 +753,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "mienten";
 			}
-		} else if (word == "consentir"){
+		} else if (word.equals("consentir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "consiento";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -766,7 +767,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "consienten";
 			}
-		} else if (word == "negar"){
+		} else if (word.equals("negar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "niego";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -780,7 +781,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "niegan";
 			}
-		} else if (word == "convertir"){
+		} else if (word.equals("convertir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "convierto";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -794,7 +795,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "convierten";
 			}
-		} else if (word == "pensar"){
+		} else if (word.equals("pensar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "pienso";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -808,7 +809,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "piensan";
 			}
-		} else if (word == "defender"){
+		} else if (word.equals("defender")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "defiendo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -822,7 +823,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "defienden";
 			}
-		} else if (word == "perder"){
+		} else if (word.equals("perder")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "pierdo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -836,7 +837,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "pierden";
 			}
-		} else if (word == "empezar"){
+		} else if (word.equals("empezar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "empiezo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -850,7 +851,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "empiezan";
 			}
-		} else if (word == "preferir"){
+		} else if (word.equals("preferir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "prefiero";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -865,7 +866,7 @@ public class SpnUtils {
 				conjVerb = "prefieren";
 			}
 			//Beginning of e:i stem changer verbs
-		} else if (word == "bendecir"){
+		} else if (word.equals("bendecir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "bendigo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -879,7 +880,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "bendicen";
 			}
-		} else if (word == "impedir"){
+		} else if (word.equals("impedir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "impido";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -893,7 +894,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "impiden";
 			}
-		} else if (word == "colegir"){
+		} else if (word.equals("colegir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "colijo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -907,7 +908,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "coligen";
 			}
-		} else if (word == "maldecir"){
+		} else if (word.equals("maldecir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "maldigo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -921,7 +922,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "maldicen";
 			}
-		} else if (word == "competir"){
+		} else if (word.equals("competir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "compito";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -935,7 +936,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "compiten";
 			}
-		} else if (word == "medir"){
+		} else if (word.equals("medir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "mido";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -949,7 +950,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "miden";
 			}
-		} else if (word == "conseguir"){
+		} else if (word.equals("conseguir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "consigo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -963,7 +964,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "consiguen";
 			}
-		}  else if (word == "pedir"){
+		}  else if (word.equals("pedir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "pido";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -977,7 +978,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "piden";
 			}
-		} else if (word == "corregir"){
+		} else if (word.equals("corregir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "corrijo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -991,7 +992,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "corrigen";
 			}
-		} else if (word == "perseguir"){
+		} else if (word.equals("perseguir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "persigo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1005,7 +1006,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "persiguen";
 			}
-		} else if (word == "decir"){
+		} else if (word.equals("decir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "digo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1019,7 +1020,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "dicen";
 			}
-		} else if (word == "reír"){
+		} else if (word.equals("reír")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "río";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1033,7 +1034,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "ríen";
 			}
-		} else if (word == "despedir"){
+		} else if (word.equals("despedir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "despido";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1047,7 +1048,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "despiden";	
 			}
-		} else if (word == "repetir"){
+		} else if (word.equals("repetir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "repito";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1061,7 +1062,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "repiten";	
 			}
-		} else if (word == "elegir"){
+		} else if (word.equals("elegir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "elijo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1075,7 +1076,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "eligen";	
 			}
-		} else if (word == "seguir"){
+		} else if (word.equals("seguir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "sigo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1089,7 +1090,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "siguen";
 			}
-		} else if (word == "freír"){
+		} else if (word.equals("freír")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "frío";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1103,7 +1104,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "fríen";
 			}
-		} else if (word == "servir"){
+		} else if (word.equals("servir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "sirvo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1117,7 +1118,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "sirven";
 			}
-		} else if (word == "gemir"){
+		} else if (word.equals("gemir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "gimo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1131,7 +1132,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "gimen";
 			}
-		} else if (word == "sonreír"){
+		} else if (word.equals("sonreír")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "sonrío";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1146,7 +1147,7 @@ public class SpnUtils {
 				conjVerb = "sonríen";
 			}
 			//Beginning of o:ue stem changer verbs
-		} else if (word == "almorzar"){
+		} else if (word.equals("almorzar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "almuerzo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1160,7 +1161,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "almuerzan";
 			}
-		} else if (word == "morir"){
+		} else if (word.equals("morir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "muero";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1174,7 +1175,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "mueren";
 			}
-		} else if (word == "aprobar"){
+		} else if (word.equals("aprobar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "apruebo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1188,7 +1189,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "aprueban";
 			}
-		} else if (word == "mostrar"){
+		} else if (word.equals("mostrar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "muestro";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1202,7 +1203,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "muestran";
 			}
-		} else if (word == "colgar"){
+		} else if (word.equals("colgar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "cuelgo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1216,7 +1217,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "cuelgan";
 			}
-		} else if (word == "mover"){
+		} else if (word.equals("mover")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "muevo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1230,7 +1231,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "mueven";
 			}
-		} else if (word == "contar"){
+		} else if (word.equals("contar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "cuento";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1244,7 +1245,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "cuentan";
 			}
-		} else if (word == "probar"){
+		} else if (word.equals("probar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "pruebo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1258,7 +1259,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "prueban";
 			}
-		} else if (word == "costar"){
+		} else if (word.equals("costar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "cuesto";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1272,7 +1273,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "cuestan";
 			}
-		} else if (word == "recordar"){
+		} else if (word.equals("recordar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "recuerdo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1286,7 +1287,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "recuerdan";
 			}
-		} else if (word == "devolver"){
+		} else if (word.equals("devolver")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "devuelvo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1300,7 +1301,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "devuelven";
 			}
-		} else if (word == "revolver"){
+		} else if (word.equals("revolver")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "revuelvo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1314,7 +1315,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "revuelven";
 			}
-		} else if (word == "volver"){
+		} else if (word.equals("volver")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "vuelvo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1328,7 +1329,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "vuelven";
 			}
-		} else if (word == "rogar"){
+		} else if (word.equals("rogar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "ruego";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1342,7 +1343,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "ruegan";
 			}
-		} else if (word == "dormir"){
+		} else if (word.equals("dormir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "duermo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1356,7 +1357,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "duermen";
 			}
-		} else if (word == "sonar"){
+		} else if (word.equals("sonar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "sueno";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1370,7 +1371,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "suenan";
 			}
-		} else if (word == "encontrar"){
+		} else if (word.equals("encontrar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "encuentro";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1384,7 +1385,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "encuentran";
 			}
-		} else if (word == "soñar"){
+		} else if (word.equals("soñar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "sueño";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1398,7 +1399,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "sueñan";
 			}
-		} else if (word == "envolver"){
+		} else if (word.equals("envolver")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "envuelvo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1412,7 +1413,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "envuelven";
 			}
-		} else if (word == "tostar"){
+		} else if (word.equals("tostar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "tuesto";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1426,7 +1427,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "tuestan";
 			}
-		} else if (word == "morder"){
+		} else if (word.equals("morder")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "muerdo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1440,7 +1441,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "muerden";
 			}
-		} else if (word == "volar"){
+		} else if (word.equals("volar")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "vuelo";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1460,7 +1461,7 @@ public class SpnUtils {
 	static String futureIrregularChecker(String word, String conjugation, int length){
 		String conjVerb = "";
 
-		if (word == "caber"){
+		if (word.equals("caber")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "cabré";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1474,7 +1475,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "cabrán";
 			} 
-		} else if (word == "decir"){
+		} else if (word.equals("decir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "diré";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1488,7 +1489,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "dirán";
 			}
-		} else if (word == "haber"){
+		} else if (word.equals("haber")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "habré";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1502,7 +1503,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "habrán";
 			}
-		} else if (word == "hacer"){
+		} else if (word.equals("hacer")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "haré";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1516,7 +1517,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "harán";
 			}
-		} else if (word == "poder"){
+		} else if (word.equals("poder")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "podré";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1530,7 +1531,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "podrán";
 			}
-		} else if (word == "poner"){
+		} else if (word.equals("poner")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "pondré";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1544,7 +1545,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "pondrán";
 			}
-		} else if (word == "querer"){
+		} else if (word.equals("querer")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "querré";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1558,7 +1559,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "querrán";
 			}
-		} else if (word == "saber"){
+		} else if (word.equals("saber")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "sabré";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1572,7 +1573,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "sabrán";
 			}
-		} else if (word == "salir"){
+		} else if (word.equals("salir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "saldré";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1586,7 +1587,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "saldrán";
 			}
-		} else if (word == "tener"){
+		} else if (word.equals("tener")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "tendré";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1600,7 +1601,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "tendrán";
 			} 
-		} else if (word == "valer"){
+		} else if (word.equals("valer")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "valdré";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1614,7 +1615,7 @@ public class SpnUtils {
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[7]) || conjugation.equals(SpnUtils.SUBJECTS[8]) || conjugation.equals(SpnUtils.SUBJECTS[9])){
 				conjVerb = "valdrán";
 			}
-		} else if (word == "venir"){
+		} else if (word.equals("venir")){
 			if (conjugation.equals(SpnUtils.SUBJECTS[0])){
 				conjVerb = "vendré";
 			} else if (conjugation.equals(SpnUtils.SUBJECTS[1])){
@@ -1633,25 +1634,25 @@ public class SpnUtils {
 	}
 	static String progressiveIrregularChecker(String word, int length){
 		String conjVerb = "";
-		if (word == "dormir"){
+		if (word.equals("dormir")){
 			conjVerb = "durmiendo";
-		} else if (word == "servir"){
+		} else if (word.equals("servir")){
 			conjVerb = "sirviendo";
-		} else if (word == "preferir"){
+		} else if (word.equals("preferir")){
 			conjVerb = "prefiriendo";
-		} else if (word == "seguir"){
+		} else if (word.equals("seguir")){
 			conjVerb = "siguiendo";
-		} else if (word == "sentir"){
+		} else if (word.equals("sentir")){
 			conjVerb = "sintiendo";
-		} else if (word == "pedir"){
+		} else if (word.equals("pedir")){
 			conjVerb = "pidiendo";
-		} else if (word == "convertir"){
+		} else if (word.equals("convertir")){
 			conjVerb = "convirtiendo";
-		} else if (word == "morir"){
+		} else if (word.equals("morir")){
 			conjVerb = "muriendo";
-		} else if (word == "repetir"){
+		} else if (word.equals("repetir")){
 			conjVerb = "repitiendo";
-		} else if (word == "oír"){
+		} else if (word.equals("oír")){
 			conjVerb = "oyendo";
 		}
 		return conjVerb;

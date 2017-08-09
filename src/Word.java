@@ -4,6 +4,7 @@ public class Word {
 	String word;
 	String language;
 	String pos;
+	boolean irregular;
 	
 	public Word(int id, String word, String language, String pos){
 		this.id = id;

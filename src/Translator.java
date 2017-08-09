@@ -252,7 +252,7 @@ public class Translator extends JFrame {
 						tempLength ++;
 						System.out.println(i);
 						/////REFLEXIVE SPANISH VERBS HANDLING
-					} else if (reader.engSpnMap.get(words[i]).length() > 5 && ((reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4).equals("arse") || reader.engSpnMap.get(words[i])
+						/* } else if (reader.engSpnMap.get(words[i]).length() > 5 && ((reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4).equals("arse") || reader.engSpnMap.get(words[i])
 											   .substring(reader.engSpnMap.get(words[i]).length() - 4).equals("irse") || reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4).equals("erse")))){
 						System.out.println("in there");
 						specialCase = true;
@@ -271,9 +271,18 @@ public class Translator extends JFrame {
 								}	
 								newWords.set(i, reader.engSpnMap.get(words[i]).subSequence(0, words[i].length() - 4).toString());
 							System.out.println(newWords.get(i));
-						
+						 */
+						//Tense Checker
+					} /* else if (newWords.get(i).getPos().equals("verb")){
+						//Past Tense Checker
+						if (newWords.get(i).substring(newWords.get(i).length() - 2).equals("ed") || newWords.get(i).substring(newWords.get(i).length() - 3).equals("ove")){
+							newWords.get(i).setTense("past");
+							//Future Tense Checker
+						}	else if (newWords.get(i - 1).equals("will") || ((newWords.get(i - 2).equals("going") && newWords.get(i - 1).equals("to")))){
+							newWords.get(i).setTense("future");
+						}
 						/////NON EXISTING WORDS HANDLING
-					} else
+					}*/ else
 						if (specialCase == false){
 							//newWords = new ArrayList<String>(words.length);
 							words[i] = reader.engSpnMap.get(words[i]);
