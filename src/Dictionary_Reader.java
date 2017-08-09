@@ -183,7 +183,7 @@ public class Dictionary_Reader {
 				strWords = strLine.split("	");
 				System.out.println(strWords[0]);
 				if(webWordCheck(strWords[0])) {
-					bw.write(gson.toJson(new Word(index, strWords[0], "en", pos)));
+					bw.write(gson.toJson(new Word(index, strWords[0], "en", pos, false)));
 					bw.flush();
 					index++;
 				}
@@ -206,7 +206,7 @@ public class Dictionary_Reader {
 				strWords = strLine.split("	");
 				System.out.println(strWords[0]);
 				if(webWordCheck(strWords[0])) {
-					words.add(new Word(index, strWords[0], "en", pos));
+					words.add(new Word(index, strWords[0], "en", pos, false));
 					index++;
 				}
 			}

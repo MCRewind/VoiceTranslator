@@ -3889,7 +3889,7 @@ hands	las manos
 egg	huevo
 transcendentalist	trascendentalista
 year	año
-yeah	si
+		si
 branch	rama
 acculturated	aculturado
 themes	temas

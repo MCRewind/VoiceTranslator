@@ -1,14 +1,12 @@
-import java.awt.Color;
-import java.awt.Graphics;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.LineNumberReader;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
@@ -16,39 +14,38 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.DataLine;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.SourceDataLine;
-import javax.sound.sampled.TargetDataLine;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParseException;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
 
 public class Main extends JFrame {
-	
-	Gson gson = new GsonBuilder().setPrettyPrinting().create();
-	
+
+	GsonBuilder gsonBuilder = new GsonBuilder().registerTypeAdapter(Word.class, new WordDeserializer());
+	Gson gson = gsonBuilder.setPrettyPrinting().create();
+
+	ArrayList<Word> words = new ArrayList<Word>();
+
 	String APIKey = "dict.1.1.20170728T185107Z.90ec571409763166.f186d1665f258b67d120a45aa57e09747e0193a9";
-	
+
 	String pos = "";
-	
+
 	public static void main(String[] args) {
 		new Main();
 	}
-	
+
 	public Main() {
-		indexer();
+		serializer();
 	}
-	
+
 	public void writeTest() {
 		BufferedWriter bw = null;
 		try {
@@ -63,24 +60,25 @@ public class Main extends JFrame {
 			e.printStackTrace();
 		}
 	}
-	
-	public void indexer() {
+
+	public void serializer() {
 		ArrayList<Word> words = new ArrayList<Word>();
 
 		int index = 0;
 		try{
 			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("Eng to Spn New.txt"), "UTF-8"));
-			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("word.json"), "UTF-8"));
+			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("words/" + index + ".json"), "UTF-8"));
 			String strLine;
 			String[] strWords;
 			while ((strLine = br.readLine()) != null) {
 				strWords = strLine.split("	");
 				System.out.println(strWords[0]);
 				if(webWordCheck(strWords[0])) {
-					words.add(new Word(index, strWords[0], "en", pos));
+					words.add(new Word(index, strWords[0], "en", pos, false));
 					bw.write(gson.toJson(words.get(index)));
 					bw.flush();
 					index++;
+					bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("words/" + index + ".json"), "UTF-8"));
 				}
 			}
 			bw.close();
@@ -88,7 +86,53 @@ public class Main extends JFrame {
 			System.err.println("Error: " + e.getMessage());
 		}
 	}
-	
+
+	public void fileToFiles() {
+		ArrayList<Word> words = new ArrayList<Word>();
+
+		int index = 0;
+		try{
+			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("word.json"), "UTF-8"));
+			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("words/" + index + ".json"), "UTF-8"));
+			String strLine;
+			String[] strWords;
+			while ((strLine = br.readLine()) != null) {
+				strWords = strLine.split("	");
+				System.out.println(strWords[0]);
+				words.add(new Word(index, strWords[0], "en", pos, false));
+				bw.write(gson.toJson(words.get(index)));
+				bw.flush();
+				index++;
+				bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("words/" + index + ".json"), "UTF-8"));
+			}
+			bw.close();
+		}catch (Exception e){
+			System.err.println("Error: " + e.getMessage());
+		}
+	}
+
+	public void deserializer() {
+		try{
+			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("word.json"), "UTF-8"));
+			Word word = gson.fromJson(br, Word.class);
+			System.out.println(word);
+		}catch (Exception e){
+			System.err.println("Error: " + e.getMessage());
+		}
+	}
+
+	private class WordDeserializer implements JsonDeserializer<Word> {
+		public Word deserialize(JsonElement json, java.lang.reflect.Type typeOfT, JsonDeserializationContext context)
+				throws JsonParseException {
+			final JsonObject jsonObject = json.getAsJsonObject();
+			return new Word(jsonObject.get("id").getAsInt(),
+					jsonObject.get("word").getAsString(),
+					jsonObject.get("language").getAsString(),
+					jsonObject.get("pos").getAsString(),
+					jsonObject.get("irregular").getAsBoolean());
+		}
+	}
+
 	public boolean webWordCheck(String word) {
 		String inLang = "en";
 		String outLang = "es";
@@ -125,14 +169,14 @@ public class Main extends JFrame {
 		if(rootobj.getAsJsonArray("def").size() >= 1) {				
 			String outIn = ((JsonObject) rootobj.getAsJsonArray("def").get(0)).get("text").getAsString();
 			pos = ((JsonObject) rootobj.getAsJsonArray("def").get(0)).get("pos").getAsString();
-		if (outIn.equals(word))
-			return true;
-		else
-			return false;
+			if (outIn.equals(word))
+				return true;
+			else
+				return false;
 		} else {
 			return false;
 		}
 	}
 
-	
+
 }

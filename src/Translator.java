@@ -48,7 +48,6 @@ public class Translator extends JFrame {
 	Debug debugWindow = new Debug();
 	boolean google = true, debug = false;
 
-
 	public static void main(String[] args) {
 		new Translator();
 	}
@@ -232,6 +231,7 @@ public class Translator extends JFrame {
 			if (graphics.curInLang == "English"){
 				int tempLength = words.length;
 				for(int i = 0; i < tempLength; i++) {
+					System.out.println(reader.engSpnMap.get("hello"));
 					specialCase = false;
 					if (newWords.get(i).equals("does") || newWords.get(i).equals("don't") || newWords.get(i).equals("do") || newWords.get(i).equals("doing") || newWords.get(i).equals("done") || newWords.get(i).equals("did") || newWords.get(i).equals("didn't") || newWords.get(i).equals("doesn't")){
 						newWords.remove(i);
@@ -252,36 +252,52 @@ public class Translator extends JFrame {
 						tempLength ++;
 						System.out.println(i);
 						/////REFLEXIVE SPANISH VERBS HANDLING
-					} else if (reader.engSpnMap.get(words[i]).length() > 5 && ((reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4).equals("arse") || reader.engSpnMap.get(words[i])
-											   .substring(reader.engSpnMap.get(words[i]).length() - 4).equals("irse") || reader.engSpnMap.get(words[i]).substring(reader.engSpnMap.get(words[i]).length() - 4).equals("erse")))){
-						System.out.println("in there");
-						specialCase = true;
-								if (reader.engSpnMap.get(words[i - 1]) == "yo"){
-									newWords.add(i - 1, "meR");
-								} else if (reader.engSpnMap.get(words[i - 1]) == "tu"){
-									newWords.add(i - 1, "teR");
-								} else if (reader.engSpnMap.get(words[i - 1]) == "el" || reader.engSpnMap.get(words[i - 1]) == "ella" || reader.engSpnMap.get(words[i - 1]) == "usted"){
-									newWords.add(i - 1, "seR");
-								} else if (reader.engSpnMap.get(words[i - 1]) == "nosotros"){
-									newWords.add(i - 1, "nosR");
-								} else if (reader.engSpnMap.get(words[i - 1]) == "vosotros"){
-									newWords.add(i - 1, "osR");
-								} else if (reader.engSpnMap.get(words[i - 1]) == "ellos" || reader.engSpnMap.get(words[i - 1]) == "ellas" || reader.engSpnMap.get(words[i - 1]) == "ustedes"){
-									newWords.add(i - 1, "seR");
-								}	
-								newWords.set(i, reader.engSpnMap.get(words[i]).subSequence(0, words[i].length() - 4).toString());
+					} else if (reader.engSpnMap.get(newWords.get(i)) != null) {
+						if (reader.engSpnMap.get(newWords.get(i)).length() > 5) {
+							if (reader.engSpnMap.get(newWords.get(i))
+									.substring(reader.engSpnMap.get(newWords.get(i)).length() - 4).equals("arse") || reader.engSpnMap.get(newWords.get(i))
+									.substring(reader.engSpnMap.get(newWords.get(i)).length() - 4).equals("irse") || reader.engSpnMap.get(newWords.get(i))
+									.substring(reader.engSpnMap.get(newWords.get(i)).length() - 4).equals("erse")) {
+								specialCase = true;
+								/*System.out.println(i);
 							System.out.println(newWords.get(i));
-						
-						/////NON EXISTING WORDS HANDLING
-					} else
-						if (specialCase == false){
-							//newWords = new ArrayList<String>(words.length);
-							words[i] = reader.engSpnMap.get(words[i]);
-						}
+							System.out.println(newWords.get(i - 1));
+							System.out.println(reader.engSpnMap.get(newWords.get(i - 1)));*/
+								if ((words[i - 1]).equalsIgnoreCase("i")){
+									newWords.add(i, "meR");
+									System.out.println("argsrgadfgyjgyjfcv");
+								} else if ((words[i - 1]).equalsIgnoreCase("you")){
+									newWords.add(i, "teR");
+								} else if (words[i - 1].equalsIgnoreCase("he") || words[i - 1].equalsIgnoreCase("she") || words[i - 1].equalsIgnoreCase("it")){
+									newWords.add(i, "seR");
+								} else if (words[i - 1].equalsIgnoreCase("we")){
+									newWords.add(i, "nosR");
+								} else if (words[i - 1].equalsIgnoreCase("yall") || words[i - 1].equalsIgnoreCase("y'all")){
+									newWords.add(i, "osR");
+								} else if (words[i - 1].equalsIgnoreCase("they") || words[i - 1].equalsIgnoreCase("them")){
+									newWords.add(i, "seR");
+								} else {
+									newWords.add(i, "seR");
+								}
+								newWords.set(i + 1, reader.engSpnMap.get(words[i]).subSequence(0, reader.engSpnMap.get(words[i]).length() - 2).toString());
+								System.out.println(newWords.get(i));
+
+								/////NON EXISTING WORDS HANDLING
+
+							}
+						} else
+							if (specialCase == false){
+								//newWords = new ArrayList<String>(words.length);
+								newWords.set(i, reader.engSpnMap.get(words[i]));
+							}	
+					}
 				} 
 				if (specialCase == true){
 					for (int x = 0; x < newWords.size(); x++){
-						newWords.set(x, reader.engSpnMap.get(newWords.get(x)));
+						//if (!(reader.engSpnMap.containsValue(newWords.get(x)))) {
+							newWords.set(x, reader.engSpnMap.get(newWords.get(x)));
+
+						//}
 					}
 				}
 
