@@ -74,7 +74,7 @@ public class Main extends JFrame {
 				strWords = strLine.split("	");
 				System.out.println(strWords[0]);
 				if(webWordCheck(strWords[0])) {
-					words.add(new Word(index, strWords[0], "en", pos, false));
+					words.add(new Word(index, strWords[0], "en", pos));
 					bw.write(gson.toJson(words.get(index)));
 					bw.flush();
 					index++;
@@ -99,7 +99,7 @@ public class Main extends JFrame {
 			while ((strLine = br.readLine()) != null) {
 				strWords = strLine.split("	");
 				System.out.println(strWords[0]);
-				words.add(new Word(index, strWords[0], "en", pos, false));
+				words.add(new Word(index, strWords[0], "en", pos));
 				bw.write(gson.toJson(words.get(index)));
 				bw.flush();
 				index++;
@@ -128,8 +128,7 @@ public class Main extends JFrame {
 			return new Word(jsonObject.get("id").getAsInt(),
 					jsonObject.get("word").getAsString(),
 					jsonObject.get("language").getAsString(),
-					jsonObject.get("pos").getAsString(),
-					jsonObject.get("irregular").getAsBoolean());
+					jsonObject.get("pos").getAsString());
 		}
 	}
 

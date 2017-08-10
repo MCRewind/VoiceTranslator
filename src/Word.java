@@ -4,14 +4,12 @@ public class Word {
 	String word;
 	String language;
 	String pos;
-	boolean irregular;
 	
-	public Word(int id, String word, String language, String pos, boolean irregular){
+	public Word(int id, String word, String language, String pos){
 		this.id = id;
 		this.word = word;
 		this.language = language;
 		this.pos = pos;
-		this.irregular = irregular;
 	}
 
 	public int getID(){
