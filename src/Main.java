@@ -74,7 +74,7 @@ public class Main extends JFrame {
 				strWords = strLine.split("	");
 				System.out.println(strWords[0]);
 				if(webWordCheck(strWords[0])) {
-					words.add(new Word(index, strWords[0], "en", pos, false));
+					words.add(new Word(index, strWords[0], "en", pos));
 					bw.write(gson.toJson(words.get(index)));
 					bw.flush();
 					index++;
