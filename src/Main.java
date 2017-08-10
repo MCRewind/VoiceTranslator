@@ -43,7 +43,7 @@ public class Main extends JFrame {
 	}
 
 	public Main() {
-		serializer();
+		deserializer();
 	}
 
 	public void writeTest() {
@@ -99,7 +99,7 @@ public class Main extends JFrame {
 			while ((strLine = br.readLine()) != null) {
 				strWords = strLine.split("	");
 				System.out.println(strWords[0]);
-				words.add(new Word(index, strWords[0], "en", pos, false));
+				words.add(new Word(index, strWords[0], "en", pos));
 				bw.write(gson.toJson(words.get(index)));
 				bw.flush();
 				index++;
@@ -112,12 +112,15 @@ public class Main extends JFrame {
 	}
 
 	public void deserializer() {
-		try{
-			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("word.json"), "UTF-8"));
-			Word word = gson.fromJson(br, Word.class);
-			System.out.println(word);
-		}catch (Exception e){
-			System.err.println("Error: " + e.getMessage());
+		BufferedReader br;
+		for (int i = 0; i < 4740; i++) {
+			try{
+				br = new BufferedReader(new InputStreamReader(new FileInputStream("words/" + i + ".json"), "UTF-8"));
+				Word word = gson.fromJson(br, Word.class);
+				System.out.println(word);
+			}catch (Exception e){
+				System.err.println("Error: " + e.getMessage());
+			}
 		}
 	}
 
@@ -128,8 +131,7 @@ public class Main extends JFrame {
 			return new Word(jsonObject.get("id").getAsInt(),
 					jsonObject.get("word").getAsString(),
 					jsonObject.get("language").getAsString(),
-					jsonObject.get("pos").getAsString(),
-					jsonObject.get("irregular").getAsBoolean());
+					jsonObject.get("pos").getAsString());
 		}
 	}
 
