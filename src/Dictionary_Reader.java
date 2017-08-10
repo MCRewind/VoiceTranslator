@@ -30,12 +30,19 @@ import com.google.gson.JsonSyntaxException;
 
 public class Dictionary_Reader {
 
-	public HashMap<String, String> engFrnMap = new HashMap<String, String>();
-	public HashMap<String, String> engSpnMap = new HashMap<String, String>();
-	public HashMap<String, String> spnEngMap = new HashMap<String, String>();
-	public HashMap<String, String> spnFrnMap = new HashMap<String, String>();
-	public HashMap<String, String> frnEngMap = new HashMap<String, String>();
-	public HashMap<String, String> frnSpnMap = new HashMap<String, String>();
+	public HashMap<String, String> engFrnStringMap = new HashMap<String, String>();
+	public HashMap<String, String> engSpnStringMap = new HashMap<String, String>();
+	public HashMap<String, String> spnEngStringMap = new HashMap<String, String>();
+	public HashMap<String, String> spnFrnStringMap = new HashMap<String, String>();
+	public HashMap<String, String> frnEngStringMap = new HashMap<String, String>();
+	public HashMap<String, String> frnSpnStringMap = new HashMap<String, String>();
+
+	public HashMap<Word, Word> engFrnMap = new HashMap<Word, Word>();
+	public HashMap<Word, Word> engSpnMap = new HashMap<Word, Word>();
+	public HashMap<Word, Word> spnEngMap = new HashMap<Word, Word>();
+	public HashMap<Word, Word> spnFrnMap = new HashMap<Word, Word>();
+	public HashMap<Word, Word> frnEngMap = new HashMap<Word, Word>();
+	public HashMap<Word, Word> frnSpnMap = new HashMap<Word, Word>();
 
 	String APIKey = "dict.1.1.20170728T185107Z.90ec571409763166.f186d1665f258b67d120a45aa57e09747e0193a9";
 
@@ -171,21 +178,24 @@ public class Dictionary_Reader {
 		
 	}
 	
-	public void serializer() { 
+	public void serializer() {
+		ArrayList<Word> words = new ArrayList<Word>();
 
 		int index = 0;
 		try{
 			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("Eng to Spn New.txt"), "UTF-8"));
-			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("word.json"), "UTF-8"));
+			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("words/" + index + ".json"), "UTF-8"));
 			String strLine;
 			String[] strWords;
 			while ((strLine = br.readLine()) != null) {
 				strWords = strLine.split("	");
 				System.out.println(strWords[0]);
 				if(webWordCheck(strWords[0])) {
-					bw.write(gson.toJson(new Word(index, strWords[0], "en", pos, false)));
+					words.add(new Word(index, strWords[0], "en", pos));
+					bw.write(gson.toJson(words.get(index)));
 					bw.flush();
 					index++;
+					bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("words/" + index + ".json"), "UTF-8"));
 				}
 			}
 			bw.close();
@@ -194,36 +204,52 @@ public class Dictionary_Reader {
 		}
 	}
 
-	public void deserializer() {
+	public void fileToFiles() {
 		ArrayList<Word> words = new ArrayList<Word>();
 
 		int index = 0;
 		try{
-			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("words.json"), "UTF-8"));
+			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("word.json"), "UTF-8"));
+			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("words/" + index + ".json"), "UTF-8"));
 			String strLine;
 			String[] strWords;
 			while ((strLine = br.readLine()) != null) {
 				strWords = strLine.split("	");
 				System.out.println(strWords[0]);
-				if(webWordCheck(strWords[0])) {
-					words.add(new Word(index, strWords[0], "en", pos, false));
-					index++;
-				}
+				words.add(new Word(index, strWords[0], "en", pos));
+				bw.write(gson.toJson(words.get(index)));
+				bw.flush();
+				index++;
+				bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("words/" + index + ".json"), "UTF-8"));
 			}
-		} catch (Exception e){
+			bw.close();
+		}catch (Exception e){
 			System.err.println("Error: " + e.getMessage());
 		}
 	}
-	
-	public class WordDeserializer implements JsonDeserializer {
 
-		@Override
-		public Word deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context)
-				throws JsonParseException {
-			
-			return null;
+	public void deserializer(HashMap<Word, Word> map, HashMap<String, String> stringMap, String lang) {
+		BufferedReader br;
+		for (int i = 0; i < 4739; i++) {
+			try{
+				br = new BufferedReader(new InputStreamReader(new FileInputStream("words/" + i + ".json"), "UTF-8"));
+				Word word = gson.fromJson(br, Word.class);
+				map.put(word, new Word(word.getId(), stringMap.get(word.getWord()), lang, word.getPos()));
+			}catch (Exception e){
+				System.err.println("Error: " + e.getMessage());
+			}
 		}
-		
+	}
+
+	private class WordDeserializer implements JsonDeserializer<Word> {
+		public Word deserialize(JsonElement json, java.lang.reflect.Type typeOfT, JsonDeserializationContext context)
+				throws JsonParseException {
+			final JsonObject jsonObject = json.getAsJsonObject();
+			return new Word(jsonObject.get("id").getAsInt(),
+					jsonObject.get("word").getAsString(),
+					jsonObject.get("language").getAsString(),
+					jsonObject.get("pos").getAsString());
+		}
 	}
 	
 	public HashMap<String, String> dictInverter (HashMap<String, String> map){
@@ -234,6 +260,14 @@ public class Dictionary_Reader {
 		return invertedMap;
 	}
 
+	public HashMap<Word, Word> wordDictInverter (HashMap<Word, Word> map){
+		HashMap<Word, Word> invertedMap = new HashMap<Word, Word>();
+		map.forEach((key, value) -> {
+			invertedMap.put(value, key);
+		});
+		return invertedMap;
+	}
+	
 	public boolean webWordCheck(String word) {
 		String inLang = "en";
 		String outLang = "es";

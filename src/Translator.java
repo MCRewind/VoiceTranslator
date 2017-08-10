@@ -63,19 +63,28 @@ public class Translator extends JFrame {
 			debugWindow.setVisible(false);
 
 		//Spanish Dictionaries
-		reader.spanishCleaner("Eng to Spn New.txt", reader.engSpnMap);
-		reader.spnEngMap = reader.dictInverter(reader.engSpnMap);
+		reader.spanishCleaner("Eng to Spn New.txt", reader.engSpnStringMap);
+		reader.spnEngStringMap = reader.dictInverter(reader.engSpnStringMap);
 
 		//French Dictionaries
-		reader.frenchCleaner("Eng to Frn.txt", reader.engFrnMap);
-		reader.frnEngMap = reader.dictInverter(reader.engFrnMap);
+		reader.frenchCleaner("Eng to Frn.txt", reader.engFrnStringMap);
+		reader.frnEngStringMap = reader.dictInverter(reader.engFrnStringMap);
 
 		//Non English Dictionaries
-		reader.frenchCleaner("Spn to Frn.txt", reader.spnFrnMap);
-		//reader.spnFrnMap = reader.dictMaker(reader.engSpnMap, reader.engFrnMap);
-		//reader.write("Spn to Frn.txt", reader.spnFrnMap);
+		reader.frenchCleaner("Spn to Frn.txt", reader.spnFrnStringMap);
+		//reader.spnFrnStringMap = reader.dictMaker(reader.engSpnStringMap, reader.engFrnStringMap);
+		//reader.write("Spn to Frn.txt", reader.spnFrnStringMap);
 
-		reader.frnSpnMap = reader.dictInverter(reader.spnFrnMap);
+		reader.frnSpnStringMap = reader.dictInverter(reader.spnFrnStringMap);
+
+		reader.deserializer(reader.engSpnMap, reader.engSpnStringMap, "sp");
+		reader.spnEngMap = reader.wordDictInverter(reader.engSpnMap);
+
+		reader.deserializer(reader.engFrnMap, reader.engFrnStringMap, "fr");
+		reader.frnEngMap = reader.wordDictInverter(reader.engFrnMap);
+
+		reader.deserializer(reader.spnFrnMap, reader.spnFrnStringMap, "fr");
+		reader.frnSpnMap = reader.wordDictInverter(reader.spnFrnMap);
 
 		//Init window	 stuff
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -199,19 +208,19 @@ public class Translator extends JFrame {
 			if (graphics.curInLang == "Spanish"){
 				for(int i = 0; i < words.length; i++) {
 					/////NON EXISTING WORDS HANDLING
-					if (reader.spnEngMap.get(words[i]) == null){
+					if (reader.spnEngStringMap.get(words[i]) == null){
 						newWords.set(i, words[i]);
 					} else {
-						newWords.set(i,  reader.spnEngMap.get(words[i]));
+						newWords.set(i,  reader.spnEngStringMap.get(words[i]));
 					}
 				}
 			} else if (graphics.curInLang == "French"){
 				for(int i = 0; i < words.length; i++) {
 					/////NON EXISTING WORDS HANDLING
-					if (reader.frnEngMap.get(words[i]) == null){
+					if (reader.frnEngStringMap.get(words[i]) == null){
 						newWords.set(i, words[i]);
 					} else { 
-						newWords.set(i,  reader.spnEngMap.get(words[i]));
+						newWords.set(i,  reader.spnEngStringMap.get(words[i]));
 					}
 				}
 			}
@@ -253,14 +262,14 @@ public class Translator extends JFrame {
 						System.out.println(i);
 						/////REFLEXIVE SPANISH VERBS HANDLING
 
-					} else if (reader.engSpnMap.get(newWords.get(i)) != null) {
+					} else if (reader.engSpnStringMap.get(newWords.get(i)) != null) {
 						specialCase = true;
-						if (reader.engSpnMap.get(newWords.get(i)).length() > 5) {
-							if (reader.engSpnMap.get(newWords.get(i)).substring(reader.engSpnMap.get(newWords.get(i)).length() - 4).equals("arse") || reader.engSpnMap.get(newWords.get(i)).substring(reader.engSpnMap.get(newWords.get(i)).length() - 4).equals("irse") || reader.engSpnMap.get(newWords.get(i)).substring(reader.engSpnMap.get(newWords.get(i)).length() - 4).equals("erse")) {
+						if (reader.engSpnStringMap.get(newWords.get(i)).length() > 5) {
+							if (reader.engSpnStringMap.get(newWords.get(i)).substring(reader.engSpnStringMap.get(newWords.get(i)).length() - 4).equals("arse") || reader.engSpnStringMap.get(newWords.get(i)).substring(reader.engSpnStringMap.get(newWords.get(i)).length() - 4).equals("irse") || reader.engSpnStringMap.get(newWords.get(i)).substring(reader.engSpnStringMap.get(newWords.get(i)).length() - 4).equals("erse")) {
 								/*System.out.println(i);
 							System.out.println(newWords.get(i));
 							System.out.println(newWords.get(i - 1));
-							System.out.println(reader.engSpnMap.get(newWords.get(i - 1)));*/
+							System.out.println(reader.engSpnStringMap.get(newWords.get(i - 1)));*/
 								if ((newWords.get(i - 1).equalsIgnoreCase("i"))){
 									newWords.add(i, "meR");
 									System.out.println("argsrgadfgyjgyjfcv");
@@ -277,19 +286,19 @@ public class Translator extends JFrame {
 								} else {
 									newWords.add(i, "seR");
 								}
-								newWords.set(i + 1, reader.engSpnMap.get(words[i]).subSequence(0, reader.engSpnMap.get(words[i]).length() - 2).toString());
+								newWords.set(i + 1, reader.engSpnStringMap.get(words[i]).subSequence(0, reader.engSpnStringMap.get(words[i]).length() - 2).toString());
 								System.out.println(newWords.get(i));
 								/////NON EXISTING WORDS HANDLING
 							}
 						}
 					} else if (specialCase == false){
-						words[i] = reader.engSpnMap.get(words[i]);
+						words[i] = reader.engSpnStringMap.get(words[i]);
 					}
 				}
 				if (specialCase == true){
 					for (int x = 0; x < newWords.size(); x++){
-						if (!(reader.engSpnMap.containsValue(newWords.get(x)))){
-							newWords.set(x, reader.engSpnMap.get(newWords.get(x)));
+						if (!(reader.engSpnStringMap.containsValue(newWords.get(x)))){
+							newWords.set(x, reader.engSpnStringMap.get(newWords.get(x)));
 						}
 					}
 
@@ -299,24 +308,24 @@ public class Translator extends JFrame {
 				for(int i = 0; i < words.length; i++) {
 					/////REFLEXIVE SPANISH VERBS HANDLING
 					/*
-					if (reader.frnSpnMap.get(words[i]).substring(reader.frnSpnMap.get(words[i]).length() - 4) == "arse" || reader.frnSpnMap.get(words[i]).substring(reader.frnSpnMap.get(words[i]).length() - 4) == "irse" || reader.frnSpnMap.get(words[i]).substring(reader.frnSpnMap.get(words[i]).length() - 4) == "erse"){
+					if (reader.frnSpnStringMap.get(words[i]).substring(reader.frnSpnStringMap.get(words[i]).length() - 4) == "arse" || reader.frnSpnStringMap.get(words[i]).substring(reader.frnSpnStringMap.get(words[i]).length() - 4) == "irse" || reader.frnSpnStringMap.get(words[i]).substring(reader.frnSpnStringMap.get(words[i]).length() - 4) == "erse"){
 						String[] longWords = new String[words.length + 1];
 						for (int x = 0; x < longWords.length; x ++){
 							if (x == i){
-								if (reader.frnSpnMap.get(words[i - 1]) == "yo"){
+								if (reader.frnSpnStringMap.get(words[i - 1]) == "yo"){
 									longWords[x] = "me";
-								} else if (reader.frnSpnMap.get(words[i - 1]) == "tu"){
+								} else if (reader.frnSpnStringMap.get(words[i - 1]) == "tu"){
 									longWords[x] = "te";
-								} else if (reader.frnSpnMap.get(words[i - 1]) == "el" || reader.engSpnMap.get(words[i - 1]) == "ella" || reader.engSpnMap.get(words[i - 1]) == "usted"){
+								} else if (reader.frnSpnStringMap.get(words[i - 1]) == "el" || reader.engSpnStringMap.get(words[i - 1]) == "ella" || reader.engSpnStringMap.get(words[i - 1]) == "usted"){
 									longWords[x] = "se";
-								} else if (reader.frnSpnMap.get(words[i - 1]) == "nosotros"){
+								} else if (reader.frnSpnStringMap.get(words[i - 1]) == "nosotros"){
 									longWords[x] = "nos";
-								} else if (reader.frnSpnMap.get(words[i - 1]) == "vosotros"){
+								} else if (reader.frnSpnStringMap.get(words[i - 1]) == "vosotros"){
 									longWords[x] = "os";
-								} else if (reader.frnSpnMap.get(words[i - 1]) == "ellos" || reader.engSpnMap.get(words[i - 1]) == "ellas" || reader.engSpnMap.get(words[i - 1]) == "ustedes"){
+								} else if (reader.frnSpnStringMap.get(words[i - 1]) == "ellos" || reader.engSpnStringMap.get(words[i - 1]) == "ellas" || reader.engSpnStringMap.get(words[i - 1]) == "ustedes"){
 									longWords[x] = "se";
 								}	
-								longWords[x + 1] = reader.frnSpnMap.get(words[i]).subSequence(0, words[i].length() - 4).toString();
+								longWords[x + 1] = reader.frnSpnStringMap.get(words[i]).subSequence(0, words[i].length() - 4).toString();
 								x++;
 							} else {
 								longWords[x] = words[x];
@@ -324,10 +333,10 @@ public class Translator extends JFrame {
 						}
 						newWords = longWords;
 						/////NON EXISTING WORDS HANDLING
-					} else */ if (reader.frnSpnMap.get(words[i]) == null){
+					} else */ if (reader.frnSpnStringMap.get(words[i]) == null){
 						newWords.set(i, words[i]);
 					} else {
-						newWords.set(i, reader.frnSpnMap.get(words[i]));
+						newWords.set(i, reader.frnSpnStringMap.get(words[i]));
 					}
 				}
 			}
@@ -366,7 +375,7 @@ public class Translator extends JFrame {
 								longWords[x] = words[x];
 							}
 						}
-						newWords[i] = reader.engFrnMap.get(longWords[i]);
+						newWords[i] = reader.engFrnStringMap.get(longWords[i]);
 						///// 've HANDLING
 					} else if (words[i].substring(words[i].length() - 3).equals("'ve")){
 						String[] longWords = new String[words.length + 1];
@@ -381,21 +390,21 @@ public class Translator extends JFrame {
 								longWords[x] = words[x];
 							}
 						}
-						newWords[i] = reader.engFrnMap.get(longWords[i]);
+						newWords[i] = reader.engFrnStringMap.get(longWords[i]);
 						/////NON EXISTING WORDS HANDLING
-					} else */  if (reader.engFrnMap.get(words[i]) == null){
+					} else */  if (reader.engFrnStringMap.get(words[i]) == null){
 						newWords[i] = words[i];
 					} else {
-						newWords[i] = reader.engFrnMap.get(words[i]);
+						newWords[i] = reader.engFrnStringMap.get(words[i]);
 					}
 				}
 			} else if (graphics.curInLang == "Spanish"){
 				for(int i = 0; i < words.length; i++) {
 					/////NON EXISTING WORDS HANDLING
-					if (reader.spnFrnMap.get(words[i]) == null){
+					if (reader.spnFrnStringMap.get(words[i]) == null){
 						newWords[i] = words[i];
 					} else {
-						newWords[i] = reader.spnFrnMap.get(words[i]);
+						newWords[i] = reader.spnFrnStringMap.get(words[i]);
 					}
 				}
 			}
