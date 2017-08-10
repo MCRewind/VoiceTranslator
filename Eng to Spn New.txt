@@ -2070,6 +2070,7 @@ good night	buenas noches
 goodbye	adiós ; hasta luego ; hasta vista ; hasta pronto ; nos vemos
 goose	ganso  ; oca  ; ánsar  
 goshawk	azor 
+by	de
 government	gobierno 
 grammar	gramática 
 grandchild	nieto
@@ -4925,7 +4926,7 @@ objurgated	reprendido
 queen	reina
 artefact	artefacto
 gut	intestino
-guy	tío (inf: hombre)
+guy	hombre
 lagger	vago
 calcareous	calcáreo
 wail	lamento

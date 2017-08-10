@@ -230,7 +230,7 @@ public class Dictionary_Reader {
 
 	public void deserializer(HashMap<Word, Word> map, HashMap<String, String> stringMap, String lang) {
 		BufferedReader br;
-		for (int i = 0; i < 4739; i++) {
+		for (int i = 0; i < 4741; i++) {
 			try{
 				br = new BufferedReader(new InputStreamReader(new FileInputStream("words/" + i + ".json"), "UTF-8"));
 				Word word = gson.fromJson(br, Word.class);
@@ -291,7 +291,7 @@ public class Dictionary_Reader {
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
-
+		
 		// Convert to a JSON object to print data
 		JsonParser jp = new JsonParser(); //from gson
 		JsonElement root = null;

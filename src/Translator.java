@@ -288,16 +288,38 @@ public class Translator extends JFrame {
 								}
 								newWords.set(i + 1, reader.engSpnStringMap.get(words[i]).subSequence(0, reader.engSpnStringMap.get(words[i]).length() - 2).toString());
 								System.out.println(newWords.get(i));
+								
+								//Tense Checker
+							  /* } else if (newWords.get(i).getPos().equals("verb")) {
+								//Past Tense Checker
+								if (newWords.get(i).substring(newWords.get(i).length() - 2).equals("ed") || newWords.get(i).substring(newWords.get(i).length() - 3).equals("ove")) {
+									newWords.get(i).setTense("past");
+									//Future Tense Checker
+								}	else if (newWords.get(i - 1).equals("will") || ((newWords.get(i - 2).equals("going") && newWords.get(i - 1).equals("to")))) {
+									newWords.get(i).setTense("future");
+								}*/
 								/////NON EXISTING WORDS HANDLING
 							}
 						}
 					} else if (specialCase == false){
-						words[i] = reader.engSpnStringMap.get(words[i]);
+						if (reader.engSpnStringMap.get(words[i]) == null) {
+							words[i] = words[i];
+						} else {
+							words[i] = reader.engSpnStringMap.get(words[i]);
+						}
 					}
+					if (reader.engSpnStringMap.get(words[i]) == null) {
+						words[i] = words[i];
+					} 
 				}
 				if (specialCase == true){
 					for (int x = 0; x < newWords.size(); x++){
 						if (!(reader.engSpnStringMap.containsValue(newWords.get(x)))){
+							newWords.set(x, reader.engSpnStringMap.get(newWords.get(x)));
+						}
+						if (reader.engSpnStringMap.get(newWords.get(x)) == null) {
+							newWords.set(x, newWords.get(x));
+						} else {
 							newWords.set(x, reader.engSpnStringMap.get(newWords.get(x)));
 						}
 					}
